@@ -1,0 +1,40 @@
+{
+  "generatedAt": "POC sample data - GitHub automation pending",
+  "summary": {
+    "totalCost": 39980,
+    "subscriptionCount": 6,
+    "resourceGroupCount": 24,
+    "resourceCount": 180
+  },
+  "costBySubscription": [
+    { "name": "EDP2 PROD", "cost": 10340 },
+    { "name": "EDP2 PPE", "cost": 8730 },
+    { "name": "Dev_Test", "cost": 6070 },
+    { "name": "EVS Prod", "cost": 4200 },
+    { "name": "Spoke", "cost": 3680 }
+  ],
+  "costByService": [
+    { "name": "Virtual Machines", "cost": 12800 },
+    { "name": "Storage", "cost": 6900 },
+    { "name": "Networking", "cost": 5200 },
+    { "name": "SQL Database", "cost": 4100 },
+    { "name": "Backup", "cost": 3200 }
+  ],
+  "costByResourceGroup": [
+    { "name": "API Management", "cost": 4800 },
+    { "name": "Application Gateway", "cost": 4200 },
+    { "name": "Automation", "cost": 3900 },
+    { "name": "Azure API Center", "cost": 3500 },
+    { "name": "Network", "cost": 3000 }
+  ],
+  "dailyTrend": [
+    { "date": "2026-07-01", "cost": 1290 },
+    { "date": "2026-07-02", "cost": 1420 },
+    { "date": "2026-07-03", "cost": 1350 },
+    { "date": "2026-07-04", "cost": 1510 }
+  ],
+  "topResources": [
+    { "resourceName": "appgw-prod", "subscriptionName": "EDP2 PROD", "resourceGroup": "Application Gateway", "service": "Networking", "cost": 4200 },
+    { "resourceName": "api-mgmt-prod", "subscriptionName": "EDP2 PROD", "resourceGroup": "API Management", "service": "API Management", "cost": 3900 }
+  ]
+}
