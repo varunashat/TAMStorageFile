@@ -11,50 +11,48 @@
   <header>
     <div>
       <h1>Azure FinOps Dashboard POC</h1>
-      <p>Automated Azure cost dashboard from Azure Cost Export → Blob Storage → GitHub Actions → JSON</p>
+      <p>Azure Cost Export → Blob Storage → GitHub Actions → JSON → GitHub Pages</p>
     </div>
     <div class="status">
       <span>Last updated</span>
       <strong id="lastUpdated">Loading...</strong>
+      <small id="sourceBlob"></small>
     </div>
   </header>
 
   <main>
+    <section class="filters">
+      <div><label>Subscription</label><select id="subscriptionFilter"><option value="all">All subscriptions</option></select></div>
+      <div><label>Service</label><select id="serviceFilter"><option value="all">All services</option></select></div>
+      <div><label>Resource Group</label><select id="resourceGroupFilter"><option value="all">All resource groups</option></select></div>
+      <div><label>Search resource</label><input id="resourceSearch" placeholder="Resource name / ID" /></div>
+    </section>
+
     <section class="kpi-grid">
-      <div class="card"><span>Total Cost</span><strong id="totalCost">-</strong></div>
-      <div class="card"><span>Subscriptions</span><strong id="subscriptionCount">-</strong></div>
-      <div class="card"><span>Resource Groups</span><strong id="resourceGroupCount">-</strong></div>
-      <div class="card"><span>Resources</span><strong id="resourceCount">-</strong></div>
+      <div class="card"><span>Total Cost</span><strong id="totalCost">-</strong><small>Actual billed cost</small></div>
+      <div class="card"><span>Subscriptions</span><strong id="subscriptionCount">-</strong><small>Unique subscriptions</small></div>
+      <div class="card"><span>Resource Groups</span><strong id="resourceGroupCount">-</strong><small>Active RGs</small></div>
+      <div class="card"><span>Resources</span><strong id="resourceCount">-</strong><small>Metered resources</small></div>
+      <div class="card"><span>Average Daily Cost</span><strong id="avgDailyCost">-</strong><small>Run rate indicator</small></div>
+      <div class="card"><span>Estimated Monthly Run Rate</span><strong id="monthlyRunRate">-</strong><small>Avg daily × 30</small></div>
     </section>
 
     <section class="grid two">
-      <div class="panel">
-        <h2>Cost by Subscription</h2>
-        <canvas id="subscriptionChart"></canvas>
-      </div>
-      <div class="panel">
-        <h2>Cost by Service</h2>
-        <canvas id="serviceChart"></canvas>
-      </div>
+      <div class="panel"><h2>Cost by Subscription</h2><canvas id="subscriptionChart"></canvas></div>
+      <div class="panel"><h2>Cost by Service</h2><canvas id="serviceChart"></canvas></div>
     </section>
 
     <section class="grid two">
-      <div class="panel">
-        <h2>Cost by Resource Group</h2>
-        <canvas id="resourceGroupChart"></canvas>
-      </div>
-      <div class="panel">
-        <h2>Daily Cost Trend</h2>
-        <canvas id="dailyTrendChart"></canvas>
-      </div>
+      <div class="panel"><h2>Cost by Resource Group</h2><canvas id="resourceGroupChart"></canvas></div>
+      <div class="panel"><h2>Cost by Region</h2><canvas id="regionChart"></canvas></div>
     </section>
+
+    <section class="panel"><h2>Daily Cost Trend</h2><canvas id="dailyTrendChart"></canvas></section>
 
     <section class="panel">
-      <h2>Top 20 Resources by Cost</h2>
+      <div class="panel-title"><h2>Top 20 Resources by Cost</h2><span id="tableInfo"></span></div>
       <table>
-        <thead>
-          <tr><th>Resource</th><th>Subscription</th><th>Resource Group</th><th>Service</th><th>Cost</th></tr>
-        </thead>
+        <thead><tr><th>Resource</th><th>Subscription</th><th>Resource Group</th><th>Service</th><th>Cost</th></tr></thead>
         <tbody id="topResources"></tbody>
       </table>
     </section>
