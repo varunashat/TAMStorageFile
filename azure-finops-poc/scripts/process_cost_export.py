@@ -15,10 +15,9 @@ SAS_TOKEN = os.environ["AZURE_STORAGE_SAS_TOKEN"].lstrip("?")
 OUTPUT = Path("azure-finops-poc/data/azure_cost.json")
 
 # Format: key|Display Name|blob-prefix, key|Display Name|blob-prefix
-# Existing Etihad prefix is etihad-dashboard/. DIFC prefix is difc/.
 CLIENT_CONFIG = os.environ.get(
     "AZURE_CLIENT_CONFIG",
-    "etihad|Etihad Airways|etihad-dashboard/,difc|DIFC|difc/",
+    "etihad|Etihad Airways|etihad-dashboard/,difc|DIFC|difc/,national-bonds|National Bonds|national-bonds/",
 )
 
 COST_COLUMNS = ["CostInBillingCurrency", "PreTaxCost", "Cost", "costInBillingCurrency"]
@@ -66,6 +65,13 @@ def normalize_date(value):
     return text[:10]
 
 
+def month_from_date(value):
+    date_text = normalize_date(value)
+    if date_text and len(date_text) >= 7 and date_text[4:5] == "-":
+        return date_text[:7]
+    return "Unknown"
+
+
 def latest_csv_blob(container_client, prefix):
     blobs = [
         b for b in container_client.list_blobs(name_starts_with=prefix)
@@ -100,11 +106,13 @@ def empty_accumulator():
         "by_rg": defaultdict(float),
         "by_region": defaultdict(float),
         "by_day": defaultdict(float),
+        "by_month": defaultdict(float),
         "by_client": defaultdict(float),
         "top_resources": defaultdict(lambda: {
             "cost": 0.0,
             "clientKey": "",
             "clientName": "",
+            "month": "",
             "resourceName": "",
             "resourceId": "",
             "subscriptionName": "",
@@ -128,6 +136,7 @@ def ingest_rows(acc, rows, client):
         resource_id = get_value(row, ["ResourceId", "resourceId", "InstanceId"], "")
         resource_name = get_value(row, ["ResourceName", "resourceName", "InstanceName"], resource_id.split("/")[-1] if resource_id else "Unknown")
         date = normalize_date(get_value(row, DATE_COLUMNS, ""))
+        month = month_from_date(date)
 
         if subscription_id:
             acc["subscriptions"].add(f"{client['key']}|{subscription_id}")
@@ -144,12 +153,14 @@ def ingest_rows(acc, rows, client):
         add_cost(acc["by_rg"], rg, cost)
         add_cost(acc["by_region"], region, cost)
         add_cost(acc["by_day"], date, cost)
+        add_cost(acc["by_month"], month, cost)
 
-        resource_key = f"{client['key']}|{resource_id or subscription + '|' + rg + '|' + resource_name}"
+        resource_key = f"{client['key']}|{month}|{resource_id or subscription + '|' + rg + '|' + resource_name}"
         item = acc["top_resources"][resource_key]
         item.update({
             "clientKey": client["key"],
             "clientName": client["name"],
+            "month": month,
             "resourceName": resource_name,
             "resourceId": resource_id,
             "subscriptionName": subscription,
@@ -165,6 +176,7 @@ def top_list(bucket, limit=25):
 
 
 def finalize(acc):
+    month_list = sorted([m for m in acc["by_month"].keys() if m])
     return {
         "summary": {
             "totalCost": round(acc["total_cost"], 2),
@@ -172,7 +184,9 @@ def finalize(acc):
             "resourceGroupCount": len(acc["resource_groups"]),
             "resourceCount": len(acc["resources"]),
         },
+        "monthList": month_list,
         "costByClient": top_list(acc["by_client"]),
+        "costByMonth": top_list(acc["by_month"], 36),
         "costBySubscription": top_list(acc["by_subscription"]),
         "costByService": top_list(acc["by_service"]),
         "costByResourceGroup": top_list(acc["by_rg"]),
@@ -192,6 +206,7 @@ def main():
 
     clients_cfg = parse_client_config(CLIENT_CONFIG)
     overall_acc = empty_accumulator()
+    overall_month_accs = defaultdict(empty_accumulator)
     clients_output = {}
     source_blobs = []
 
@@ -203,14 +218,22 @@ def main():
                 "name": client["name"],
                 "prefix": client["prefix"],
                 "status": "No CSV found",
+                "months": {},
                 **finalize(empty_accumulator()),
             }
             continue
 
         rows = read_csv_rows(container_client, blob.name)
         client_acc = empty_accumulator()
+        client_month_accs = defaultdict(empty_accumulator)
+
         ingest_rows(client_acc, rows, client)
         ingest_rows(overall_acc, rows, client)
+        for row in rows:
+            month = month_from_date(get_value(row, DATE_COLUMNS, ""))
+            ingest_rows(client_month_accs[month], [row], client)
+            ingest_rows(overall_month_accs[month], [row], client)
+
         source_blobs.append({"clientKey": client["key"], "clientName": client["name"], "blob": blob.name})
 
         clients_output[client["key"]] = {
@@ -219,25 +242,29 @@ def main():
             "prefix": client["prefix"],
             "status": "Loaded",
             "sourceBlob": blob.name,
+            "months": {m: finalize(a) for m, a in sorted(client_month_accs.items())},
             **finalize(client_acc),
         }
 
     overall = finalize(overall_acc)
+    overall["months"] = {m: finalize(a) for m, a in sorted(overall_month_accs.items())}
+    all_months = sorted(set(overall.get("monthList", [])))
     output = {
-        "version": "v3-multi-client",
+        "version": "v3-multi-client-month-filter",
         "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "sourceBlob": ", ".join([x["blob"] for x in source_blobs]),
         "sourceBlobs": source_blobs,
         "clientList": [{"key": c["key"], "name": c["name"], "prefix": c["prefix"]} for c in clients_cfg],
+        "monthList": all_months,
         "clients": clients_output,
         "overall": overall,
-        # Backward-compatible fields for the existing dashboard. These now represent All Clients.
+        # Backward-compatible fields for the existing dashboard. These now represent All Customers.
         **overall,
     }
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(output, indent=2), encoding="utf-8")
-    print(f"Wrote {OUTPUT} with {len(source_blobs)} client export(s)")
+    print(f"Wrote {OUTPUT} with {len(source_blobs)} client export(s) and {len(all_months)} month(s)")
 
 
 if __name__ == "__main__":
