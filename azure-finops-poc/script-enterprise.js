@@ -17,24 +17,46 @@ async function loadDashboard() {
   set('sourceBlob', rawData.sourceBlobs ? `Sources: ${rawData.sourceBlobs.length} export(s)` : (rawData.sourceBlob ? `Source: ${rawData.sourceBlob}` : ''));
 
   populateClientFilter();
+  populateMonthFilter(getBaseDataset());
   populateFilters(getSelectedDataset());
   bindFilters();
   renderDashboard();
 }
 
-function getSelectedDataset() {
+function getBaseDataset() {
   const clientKey = document.getElementById('clientFilter')?.value || 'all';
   if (clientKey !== 'all' && rawData.clients && rawData.clients[clientKey]) return rawData.clients[clientKey];
   return rawData.overall || rawData;
 }
 
+function getSelectedDataset() {
+  const base = getBaseDataset();
+  const month = document.getElementById('monthFilter')?.value || 'all';
+  if (month !== 'all' && base.months && base.months[month]) return base.months[month];
+  return base;
+}
+
 function populateClientFilter() {
   const s = document.getElementById('clientFilter');
   if (!s) return;
+  s.innerHTML = '<option value="all">All Customers</option>';
   (rawData.clientList || []).forEach(c => {
     const o = document.createElement('option');
     o.value = c.key;
     o.textContent = c.name;
+    s.appendChild(o);
+  });
+}
+
+function populateMonthFilter(d) {
+  const s = document.getElementById('monthFilter');
+  if (!s) return;
+  s.innerHTML = '<option value="all">All Months</option>';
+  const months = d.monthList || rawData.monthList || [];
+  months.forEach(m => {
+    const o = document.createElement('option');
+    o.value = m;
+    o.textContent = formatMonth(m);
     s.appendChild(o);
   });
 }
@@ -68,6 +90,15 @@ function fillSelect(id, rows) {
 function bindFilters() {
   const client = document.getElementById('clientFilter');
   if (client) client.addEventListener('input', () => {
+    populateMonthFilter(getBaseDataset());
+    monthFilter.value = 'all';
+    populateFilters(getSelectedDataset());
+    resourceSearch.value = '';
+    renderDashboard();
+  });
+
+  const month = document.getElementById('monthFilter');
+  if (month) month.addEventListener('input', () => {
     populateFilters(getSelectedDataset());
     resourceSearch.value = '';
     renderDashboard();
@@ -82,6 +113,8 @@ function bindFilters() {
   if (resetBtn) {
     resetBtn.onclick = () => {
       clientFilter.value = 'all';
+      populateMonthFilter(getBaseDataset());
+      monthFilter.value = 'all';
       populateFilters(getSelectedDataset());
       subscriptionFilter.value = 'all';
       serviceFilter.value = 'all';
@@ -193,6 +226,7 @@ function renderTable(rows) {
   body.innerHTML = rows.slice(0, 25).map(r => `
     <tr>
       <td><span class="pill">${esc(r.clientName || '')}</span></td>
+      <td>${esc(formatMonth(r.month || ''))}</td>
       <td>${esc(r.resourceName || r.resourceId || 'Unknown')}</td>
       <td>${esc(r.subscriptionName || '')}</td>
       <td>${esc(r.resourceGroup || '')}</td>
@@ -208,6 +242,14 @@ function topName(rows) {
 
 function average(v) {
   return v.length ? v.reduce((a, b) => a + b, 0) / v.length : 0;
+}
+
+function formatMonth(m) {
+  if (!m || m === 'Unknown') return m || '';
+  const parts = m.split('-');
+  if (parts.length !== 2) return m;
+  const date = new Date(Number(parts[0]), Number(parts[1]) - 1, 1);
+  return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 }
 
 function set(id, v) {
