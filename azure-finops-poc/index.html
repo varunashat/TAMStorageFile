@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Azure FinOps Dashboard POC</title>
-  <link rel="stylesheet" href="style-enterprise.css" />
+  <title>Azure FinOps Dashboard</title>
+  <link rel="stylesheet" href="style-enterprise.css?v=3.0" />
 </head>
 <body>
 <div class="app">
@@ -13,18 +13,19 @@
     <div class="subtitle">Azure Cost Dashboard</div>
     <nav class="nav">
       <a class="active" href="#overview">Overview</a>
+      <a href="#clients">Clients</a>
       <a href="#subscriptions">Subscriptions</a>
       <a href="#services">Services</a>
       <a href="#resources">Resources</a>
       <a href="#trend">Trend</a>
     </nav>
-    <div class="side-card">Automated from Azure Blob Storage using GitHub Actions. Dashboard refreshes after workflow update.</div>
+    <div class="side-card">Single URL with customer filter for all EA cost exports.</div>
   </aside>
   <section class="main">
     <header class="hero" id="overview">
       <div>
         <h1>Azure FinOps Executive Dashboard</h1>
-        <p>Cost export analytics for subscription, service, resource group, region and top resources.</p>
+        <p>Combined and customer-specific Azure consumption view.</p>
       </div>
       <div class="status">
         <span>Last updated</span>
@@ -35,6 +36,7 @@
     <main class="content">
       <section class="toolbar"><button class="btn secondary" id="resetFilters">Reset Filters</button><button class="btn" id="exportJson">Export JSON</button></section>
       <section class="filters">
+        <div class="filter"><label>Customer</label><select id="clientFilter"><option value="all">All Customers</option></select></div>
         <div class="filter"><label>Subscription</label><select id="subscriptionFilter"><option value="all">All subscriptions</option></select></div>
         <div class="filter"><label>Service</label><select id="serviceFilter"><option value="all">All services</option></select></div>
         <div class="filter"><label>Resource Group</label><select id="resourceGroupFilter"><option value="all">All resource groups</option></select></div>
@@ -42,33 +44,37 @@
       </section>
       <section class="kpi-grid">
         <div class="kpi"><span>Total Cost</span><strong id="totalCost">-</strong><small>Actual billed cost</small></div>
-        <div class="kpi green"><span>Subscriptions</span><strong id="subscriptionCount">-</strong><small>Unique subscriptions</small></div>
-        <div class="kpi purple"><span>Resource Groups</span><strong id="resourceGroupCount">-</strong><small>Active resource groups</small></div>
-        <div class="kpi cyan"><span>Resources</span><strong id="resourceCount">-</strong><small>Metered resources</small></div>
+        <div class="kpi green"><span>Customers</span><strong id="clientCount">-</strong><small>Loaded customers</small></div>
+        <div class="kpi purple"><span>Subscriptions</span><strong id="subscriptionCount">-</strong><small>Unique subscriptions</small></div>
+        <div class="kpi cyan"><span>Resource Groups</span><strong id="resourceGroupCount">-</strong><small>Active resource groups</small></div>
         <div class="kpi amber"><span>Avg Daily Cost</span><strong id="avgDailyCost">-</strong><small>Run-rate KPI</small></div>
         <div class="kpi red"><span>Monthly Run Rate</span><strong id="monthlyRunRate">-</strong><small>Avg daily × 30</small></div>
       </section>
       <section class="insights">
+        <div class="insight"><b>Top Customer</b><span id="insightTopClient">-</span></div>
         <div class="insight"><b>Top Subscription</b><span id="insightTopSub">-</span></div>
         <div class="insight"><b>Top Service</b><span id="insightTopSvc">-</span></div>
         <div class="insight"><b>Highest Daily Spend</b><span id="highestDay">-</span></div>
       </section>
-      <section class="grid two" id="subscriptions">
-        <div class="panel"><h2>Cost by Subscription</h2><div class="native-chart" id="subscriptionChart"></div></div>
-        <div class="panel" id="services"><h2>Cost by Service</h2><div class="native-chart" id="serviceChart"></div></div>
+      <section class="grid two" id="clients">
+        <div class="panel"><h2>Cost by Customer</h2><div class="native-chart" id="clientChart"></div></div>
+        <div class="panel" id="subscriptions"><h2>Cost by Subscription</h2><div class="native-chart" id="subscriptionChart"></div></div>
       </section>
       <section class="grid two">
+        <div class="panel" id="services"><h2>Cost by Service</h2><div class="native-chart" id="serviceChart"></div></div>
         <div class="panel"><h2>Cost by Resource Group</h2><div class="native-chart" id="resourceGroupChart"></div></div>
-        <div class="panel"><h2>Cost by Region</h2><div class="native-chart" id="regionChart"></div></div>
       </section>
-      <section class="panel" id="trend"><h2>Daily Cost Trend</h2><div class="trend-chart" id="dailyTrendChart"></div></section>
+      <section class="grid two">
+        <div class="panel"><h2>Cost by Region</h2><div class="native-chart" id="regionChart"></div></div>
+        <div class="panel" id="trend"><h2>Daily Cost Trend</h2><div class="trend-chart" id="dailyTrendChart"></div></div>
+      </section>
       <section class="panel" id="resources">
         <div class="panel-head"><h2>Top Resources by Cost</h2><span class="badge" id="tableInfo"></span></div>
-        <table><thead><tr><th>Resource</th><th>Subscription</th><th>Resource Group</th><th>Service</th><th>Cost</th></tr></thead><tbody id="topResources"></tbody></table>
+        <table><thead><tr><th>Customer</th><th>Resource</th><th>Subscription</th><th>Resource Group</th><th>Service</th><th>Cost</th></tr></thead><tbody id="topResources"></tbody></table>
       </section>
     </main>
   </section>
 </div>
-<script src="script-enterprise.js"></script>
+<script src="script-enterprise.js?v=3.0"></script>
 </body>
 </html>
