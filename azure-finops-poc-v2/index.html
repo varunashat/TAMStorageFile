@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Azure FinOps Dashboard V2</title>
+  <link rel="stylesheet" href="v2.css" />
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <div class="logo">Azure FinOps <span>V2</span></div>
+    <a href="#overview" class="active">Overview</a>
+    <a href="#spend">Spend Analytics</a>
+    <a href="#subscriptions">Subscriptions</a>
+    <a href="#services">Services</a>
+    <a href="#resources">Top Resources</a>
+    <a href="#governance">Governance</a>
+    <div class="mini">Master V1 preserved. This is enhanced V2.</div>
+  </aside>
+
+  <main>
+    <section class="hero" id="overview">
+      <div>
+        <div class="eyebrow">Automated FinOps Dashboard</div>
+        <h1>Azure Cost Intelligence</h1>
+        <p>Executive view for EA cost export, subscriptions, services, resource groups, regions, daily trend and optimization indicators.</p>
+      </div>
+      <div class="refreshBox">
+        <small>Last Updated</small>
+        <b id="lastUpdated">Loading...</b>
+        <span id="sourceBlob"></span>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <select id="subscriptionFilter"><option value="all">All Subscriptions</option></select>
+      <select id="serviceFilter"><option value="all">All Services</option></select>
+      <select id="resourceGroupFilter"><option value="all">All Resource Groups</option></select>
+      <input id="resourceSearch" placeholder="Search resource name or ID" />
+      <button id="resetFilters">Reset</button>
+      <button id="exportJson">Export JSON</button>
+    </section>
+
+    <section class="kpis">
+      <div class="kpi blue"><span>Total Cost</span><strong id="totalCost">-</strong><small>Actual billed spend</small></div>
+      <div class="kpi green"><span>Subscriptions</span><strong id="subscriptionCount">-</strong><small>Unique subscriptions</small></div>
+      <div class="kpi purple"><span>Resource Groups</span><strong id="resourceGroupCount">-</strong><small>Cost-bearing groups</small></div>
+      <div class="kpi cyan"><span>Resources</span><strong id="resourceCount">-</strong><small>Metered resources</small></div>
+      <div class="kpi orange"><span>Avg Daily</span><strong id="avgDailyCost">-</strong><small>Average daily run-rate</small></div>
+      <div class="kpi red"><span>Monthly Forecast</span><strong id="monthlyRunRate">-</strong><small>Avg daily × 30</small></div>
+    </section>
+
+    <section class="insights" id="governance">
+      <div><b>Top Subscription</b><span id="topSubscription">-</span></div>
+      <div><b>Top Service</b><span id="topService">-</span></div>
+      <div><b>Top Resource Group</b><span id="topResourceGroup">-</span></div>
+      <div><b>Highest Daily Spend</b><span id="highestDay">-</span></div>
+    </section>
+
+    <section class="grid two" id="spend">
+      <div class="panel"><h2>Daily Cost Trend</h2><div id="dailyTrendChart" class="trend"></div></div>
+      <div class="panel"><h2>Cost by Subscription</h2><div id="subscriptionChart" class="bars"></div></div>
+    </section>
+
+    <section class="grid three" id="subscriptions">
+      <div class="panel"><h2>Cost by Service</h2><div id="serviceChart" class="bars compact"></div></div>
+      <div class="panel"><h2>Cost by Resource Group</h2><div id="resourceGroupChart" class="bars compact"></div></div>
+      <div class="panel"><h2>Cost by Region</h2><div id="regionChart" class="bars compact"></div></div>
+    </section>
+
+    <section class="panel tablePanel" id="resources">
+      <div class="panelHead"><h2>Top 25 Resources by Cost</h2><span id="tableInfo"></span></div>
+      <table>
+        <thead><tr><th>Resource</th><th>Subscription</th><th>Resource Group</th><th>Service</th><th>Cost</th></tr></thead>
+        <tbody id="topResources"></tbody>
+      </table>
+    </section>
+  </main>
+</div>
+<script src="v2.js"></script>
+</body>
+</html>
