@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,13 +30,14 @@ jobs:
           AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
           AZURE_STORAGE_CONTAINER: ${{ secrets.AZURE_STORAGE_CONTAINER }}
           AZURE_STORAGE_SAS_TOKEN: ${{ secrets.AZURE_STORAGE_SAS_TOKEN }}
-          AZURE_BLOB_PREFIX: ${{ vars.AZURE_BLOB_PREFIX || 'etihad-dashboard/' }}
+          AZURE_CLIENT_CONFIG: ${{ vars.AZURE_CLIENT_CONFIG || 'etihad|Etihad Airways|etihad-dashboard/,difc|DIFC|difc/' }}
         run: python azure-finops-poc/scripts/process_cost_export.py
 
       - name: Commit updated dashboard data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
           git add azure-finops-poc/data/azure_cost.json
           git commit -m "Update Azure FinOps dashboard data" || echo "No changes to commit"
-          git push
+          git push origin main
