@@ -17,6 +17,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Sync latest main
+        run: git pull --rebase origin main
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -37,7 +40,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
           git add azure-finops-poc/data/azure_cost.json
           git commit -m "Update Azure FinOps dashboard data" || echo "No changes to commit"
           git push origin main
