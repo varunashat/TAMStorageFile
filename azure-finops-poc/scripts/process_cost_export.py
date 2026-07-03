@@ -12,11 +12,32 @@ from azure.storage.blob import ContainerClient
 STORAGE_ACCOUNT = os.environ["AZURE_STORAGE_ACCOUNT"]
 CONTAINER = os.environ["AZURE_STORAGE_CONTAINER"]
 SAS_TOKEN = os.environ["AZURE_STORAGE_SAS_TOKEN"].lstrip("?")
-PREFIX = os.environ.get("AZURE_BLOB_PREFIX", "etihad-dashboard/")
 OUTPUT = Path("azure-finops-poc/data/azure_cost.json")
+
+# Format: key|Display Name|blob-prefix, key|Display Name|blob-prefix
+# Existing Etihad prefix is etihad-dashboard/. DIFC prefix is difc/.
+CLIENT_CONFIG = os.environ.get(
+    "AZURE_CLIENT_CONFIG",
+    "etihad|Etihad Airways|etihad-dashboard/,difc|DIFC|difc/",
+)
 
 COST_COLUMNS = ["CostInBillingCurrency", "PreTaxCost", "Cost", "costInBillingCurrency"]
 DATE_COLUMNS = ["Date", "UsageDate", "date"]
+
+
+def parse_client_config(raw):
+    clients = []
+    for item in raw.split(","):
+        parts = [p.strip() for p in item.split("|")]
+        if len(parts) != 3:
+            continue
+        key, name, prefix = parts
+        if prefix and not prefix.endswith("/"):
+            prefix += "/"
+        clients.append({"key": key, "name": name, "prefix": prefix})
+    if not clients:
+        raise RuntimeError("No valid clients configured in AZURE_CLIENT_CONFIG")
+    return clients
 
 
 def get_value(row, names, default=""):
@@ -45,10 +66,13 @@ def normalize_date(value):
     return text[:10]
 
 
-def latest_csv_blob(container_client):
-    blobs = [b for b in container_client.list_blobs(name_starts_with=PREFIX) if b.name.lower().endswith((".csv", ".csv.gz"))]
+def latest_csv_blob(container_client, prefix):
+    blobs = [
+        b for b in container_client.list_blobs(name_starts_with=prefix)
+        if b.name.lower().endswith((".csv", ".csv.gz"))
+    ]
     if not blobs:
-        raise RuntimeError(f"No CSV files found under prefix: {PREFIX}")
+        return None
     return sorted(blobs, key=lambda b: b.last_modified or datetime.min.replace(tzinfo=timezone.utc), reverse=True)[0]
 
 
@@ -57,7 +81,7 @@ def read_csv_rows(container_client, blob_name):
     if blob_name.lower().endswith(".gz"):
         raw = gzip.decompress(raw)
     text = raw.decode("utf-8-sig", errors="replace")
-    return csv.DictReader(io.StringIO(text))
+    return list(csv.DictReader(io.StringIO(text)))
 
 
 def add_cost(bucket, key, cost):
@@ -65,27 +89,36 @@ def add_cost(bucket, key, cost):
         bucket[key] += cost
 
 
-def main():
-    account_url = f"https://{STORAGE_ACCOUNT}.blob.core.windows.net"
-    container_client = ContainerClient(account_url=account_url, container_name=CONTAINER, credential=SAS_TOKEN)
+def empty_accumulator():
+    return {
+        "total_cost": 0.0,
+        "subscriptions": set(),
+        "resource_groups": set(),
+        "resources": set(),
+        "by_subscription": defaultdict(float),
+        "by_service": defaultdict(float),
+        "by_rg": defaultdict(float),
+        "by_region": defaultdict(float),
+        "by_day": defaultdict(float),
+        "by_client": defaultdict(float),
+        "top_resources": defaultdict(lambda: {
+            "cost": 0.0,
+            "clientKey": "",
+            "clientName": "",
+            "resourceName": "",
+            "resourceId": "",
+            "subscriptionName": "",
+            "resourceGroup": "",
+            "service": "",
+            "region": "",
+        }),
+    }
 
-    blob = latest_csv_blob(container_client)
-    rows = read_csv_rows(container_client, blob.name)
 
-    total_cost = 0.0
-    subscriptions = set()
-    resource_groups = set()
-    resources = set()
-    by_subscription = defaultdict(float)
-    by_service = defaultdict(float)
-    by_rg = defaultdict(float)
-    by_region = defaultdict(float)
-    by_day = defaultdict(float)
-    top_resources = defaultdict(lambda: {"cost": 0.0, "resourceName": "", "resourceId": "", "subscriptionName": "", "resourceGroup": "", "service": ""})
-
+def ingest_rows(acc, rows, client):
     for row in rows:
         cost = parse_float(get_value(row, COST_COLUMNS, "0"))
-        total_cost += cost
+        acc["total_cost"] += cost
 
         subscription = get_value(row, ["SubscriptionName", "subscriptionName"], "Unassigned")
         subscription_id = get_value(row, ["SubscriptionId", "subscriptionId"], "")
@@ -97,48 +130,114 @@ def main():
         date = normalize_date(get_value(row, DATE_COLUMNS, ""))
 
         if subscription_id:
-            subscriptions.add(subscription_id)
+            acc["subscriptions"].add(f"{client['key']}|{subscription_id}")
         elif subscription:
-            subscriptions.add(subscription)
+            acc["subscriptions"].add(f"{client['key']}|{subscription}")
         if rg:
-            resource_groups.add(rg)
+            acc["resource_groups"].add(f"{client['key']}|{rg}")
         if resource_id:
-            resources.add(resource_id)
+            acc["resources"].add(f"{client['key']}|{resource_id}")
 
-        add_cost(by_subscription, subscription, cost)
-        add_cost(by_service, service, cost)
-        add_cost(by_rg, rg, cost)
-        add_cost(by_region, region, cost)
-        add_cost(by_day, date, cost)
+        add_cost(acc["by_client"], client["name"], cost)
+        add_cost(acc["by_subscription"], subscription, cost)
+        add_cost(acc["by_service"], service, cost)
+        add_cost(acc["by_rg"], rg, cost)
+        add_cost(acc["by_region"], region, cost)
+        add_cost(acc["by_day"], date, cost)
 
-        resource_key = resource_id or f"{subscription}|{rg}|{resource_name}"
-        item = top_resources[resource_key]
-        item.update({"resourceName": resource_name, "resourceId": resource_id, "subscriptionName": subscription, "resourceGroup": rg, "service": service})
+        resource_key = f"{client['key']}|{resource_id or subscription + '|' + rg + '|' + resource_name}"
+        item = acc["top_resources"][resource_key]
+        item.update({
+            "clientKey": client["key"],
+            "clientName": client["name"],
+            "resourceName": resource_name,
+            "resourceId": resource_id,
+            "subscriptionName": subscription,
+            "resourceGroup": rg,
+            "service": service,
+            "region": region,
+        })
         item["cost"] += cost
 
-    def top_list(bucket, limit=20):
-        return [{"name": k, "cost": round(v, 2)} for k, v in sorted(bucket.items(), key=lambda x: x[1], reverse=True)[:limit]]
 
-    output = {
-        "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
-        "sourceBlob": blob.name,
+def top_list(bucket, limit=25):
+    return [{"name": k, "cost": round(v, 2)} for k, v in sorted(bucket.items(), key=lambda x: x[1], reverse=True)[:limit]]
+
+
+def finalize(acc):
+    return {
         "summary": {
-            "totalCost": round(total_cost, 2),
-            "subscriptionCount": len(subscriptions),
-            "resourceGroupCount": len(resource_groups),
-            "resourceCount": len(resources),
+            "totalCost": round(acc["total_cost"], 2),
+            "subscriptionCount": len(acc["subscriptions"]),
+            "resourceGroupCount": len(acc["resource_groups"]),
+            "resourceCount": len(acc["resources"]),
         },
-        "costBySubscription": top_list(by_subscription),
-        "costByService": top_list(by_service),
-        "costByResourceGroup": top_list(by_rg),
-        "costByRegion": top_list(by_region),
-        "dailyTrend": [{"date": k, "cost": round(v, 2)} for k, v in sorted(by_day.items())],
-        "topResources": sorted(top_resources.values(), key=lambda x: x["cost"], reverse=True)[:20],
+        "costByClient": top_list(acc["by_client"]),
+        "costBySubscription": top_list(acc["by_subscription"]),
+        "costByService": top_list(acc["by_service"]),
+        "costByResourceGroup": top_list(acc["by_rg"]),
+        "costByRegion": top_list(acc["by_region"]),
+        "dailyTrend": [{"date": k, "cost": round(v, 2)} for k, v in sorted(acc["by_day"].items())],
+        "topResources": sorted(
+            [{**v, "cost": round(v["cost"], 2)} for v in acc["top_resources"].values()],
+            key=lambda x: x["cost"],
+            reverse=True,
+        )[:25],
+    }
+
+
+def main():
+    account_url = f"https://{STORAGE_ACCOUNT}.blob.core.windows.net"
+    container_client = ContainerClient(account_url=account_url, container_name=CONTAINER, credential=SAS_TOKEN)
+
+    clients_cfg = parse_client_config(CLIENT_CONFIG)
+    overall_acc = empty_accumulator()
+    clients_output = {}
+    source_blobs = []
+
+    for client in clients_cfg:
+        blob = latest_csv_blob(container_client, client["prefix"])
+        if not blob:
+            clients_output[client["key"]] = {
+                "key": client["key"],
+                "name": client["name"],
+                "prefix": client["prefix"],
+                "status": "No CSV found",
+                **finalize(empty_accumulator()),
+            }
+            continue
+
+        rows = read_csv_rows(container_client, blob.name)
+        client_acc = empty_accumulator()
+        ingest_rows(client_acc, rows, client)
+        ingest_rows(overall_acc, rows, client)
+        source_blobs.append({"clientKey": client["key"], "clientName": client["name"], "blob": blob.name})
+
+        clients_output[client["key"]] = {
+            "key": client["key"],
+            "name": client["name"],
+            "prefix": client["prefix"],
+            "status": "Loaded",
+            "sourceBlob": blob.name,
+            **finalize(client_acc),
+        }
+
+    overall = finalize(overall_acc)
+    output = {
+        "version": "v3-multi-client",
+        "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "sourceBlob": ", ".join([x["blob"] for x in source_blobs]),
+        "sourceBlobs": source_blobs,
+        "clientList": [{"key": c["key"], "name": c["name"], "prefix": c["prefix"]} for c in clients_cfg],
+        "clients": clients_output,
+        "overall": overall,
+        # Backward-compatible fields for the existing dashboard. These now represent All Clients.
+        **overall,
     }
 
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(output, indent=2), encoding="utf-8")
-    print(f"Wrote {OUTPUT} from {blob.name}")
+    print(f"Wrote {OUTPUT} with {len(source_blobs)} client export(s)")
 
 
 if __name__ == "__main__":
