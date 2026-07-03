@@ -33,7 +33,7 @@ jobs:
           AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
           AZURE_STORAGE_CONTAINER: ${{ secrets.AZURE_STORAGE_CONTAINER }}
           AZURE_STORAGE_SAS_TOKEN: ${{ secrets.AZURE_STORAGE_SAS_TOKEN }}
-          AZURE_CLIENT_CONFIG: ${{ vars.AZURE_CLIENT_CONFIG || 'etihad|Etihad Airways|etihad-dashboard/,difc|DIFC|difc/' }}
+          AZURE_CLIENT_CONFIG: ${{ vars.AZURE_CLIENT_CONFIG || 'etihad|Etihad Airways|etihad-dashboard/,difc|DIFC|difc/,national-bonds|National Bonds|national-bonds/' }}
         run: python azure-finops-poc/scripts/process_cost_export.py
 
       - name: Commit updated dashboard data
