@@ -1,0 +1,40 @@
+name: Update Azure FinOps Dashboard POC
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 18 * * *"   # Daily 18:00 UTC / 22:00 UAE
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install azure-storage-blob
+
+      - name: Generate dashboard JSON from Azure Cost Export
+        env:
+          AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
+          AZURE_STORAGE_CONTAINER: ${{ secrets.AZURE_STORAGE_CONTAINER }}
+          AZURE_STORAGE_SAS_TOKEN: ${{ secrets.AZURE_STORAGE_SAS_TOKEN }}
+          AZURE_BLOB_PREFIX: ${{ vars.AZURE_BLOB_PREFIX || 'etihad-dashboard/' }}
+        run: python azure-finops-poc/scripts/process_cost_export.py
+
+      - name: Commit updated dashboard data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add azure-finops-poc/data/azure_cost.json
+          git commit -m "Update Azure FinOps dashboard data" || echo "No changes to commit"
+          git push
