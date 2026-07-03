@@ -36,6 +36,12 @@ function getSelectedDataset() {
   return base;
 }
 
+function selectedCustomerCount() {
+  const clientKey = document.getElementById('clientFilter')?.value || 'all';
+  if (clientKey !== 'all') return 1;
+  return rawData.clientList ? rawData.clientList.length : 1;
+}
+
 function populateClientFilter() {
   const s = document.getElementById('clientFilter');
   if (!s) return;
@@ -126,13 +132,8 @@ function bindFilters() {
 
   const exportBtn = document.getElementById('exportJson');
   if (exportBtn) {
-    exportBtn.onclick = () => {
-      const b = new Blob([JSON.stringify(rawData, null, 2)], { type: 'application/json' });
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(b);
-      a.download = 'azure_cost_dashboard_v3.json';
-      a.click();
-    };
+    exportBtn.textContent = 'Export Excel';
+    exportBtn.onclick = exportCurrentViewCsv;
   }
 }
 
@@ -150,6 +151,12 @@ function filteredResources(d) {
   );
 }
 
+function currentRows() {
+  const d = getSelectedDataset();
+  const active = subscriptionFilter.value !== 'all' || serviceFilter.value !== 'all' || resourceGroupFilter.value !== 'all' || resourceSearch.value;
+  return active ? filteredResources(d) : (d.topResources || []);
+}
+
 function renderDashboard() {
   const d = getSelectedDataset();
   const fr = filteredResources(d);
@@ -159,7 +166,7 @@ function renderDashboard() {
   const maxDay = (d.dailyTrend || []).reduce((a, b) => (b.cost || 0) > (a.cost || 0) ? b : a, { date: '-', cost: 0 });
 
   set('totalCost', currency.format(cost || 0));
-  set('clientCount', rawData.clientList ? rawData.clientList.length : 1);
+  set('clientCount', selectedCustomerCount());
   set('subscriptionCount', d.summary.subscriptionCount || 0);
   set('resourceGroupCount', d.summary.resourceGroupCount || 0);
   set('resourceCount', d.summary.resourceCount || 0);
@@ -178,6 +185,38 @@ function renderDashboard() {
   renderBars('regionChart', d.costByRegion || [{ name: 'Region data pending', cost: d.summary.totalCost || 0 }]);
   renderTrend('dailyTrendChart', d.dailyTrend || []);
   renderTable(active ? fr : d.topResources || []);
+}
+
+function exportCurrentViewCsv() {
+  const rows = currentRows();
+  const headers = ['Customer', 'Month', 'Resource', 'Resource ID', 'Subscription', 'Resource Group', 'Service', 'Region', 'Cost'];
+  const body = rows.map(r => [
+    r.clientName || selectedClientName(),
+    formatMonth(r.month || monthFilter.value || ''),
+    r.resourceName || '',
+    r.resourceId || '',
+    r.subscriptionName || '',
+    r.resourceGroup || '',
+    r.service || '',
+    r.region || '',
+    Number(r.cost || 0).toFixed(2)
+  ]);
+  const csv = [headers, ...body].map(row => row.map(csvCell).join(',')).join('\n');
+  const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8;' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `azure_finops_${selectedClientName().replace(/[^a-z0-9]+/gi, '_')}_${monthFilter.value || 'all_months'}.csv`;
+  a.click();
+}
+
+function selectedClientName() {
+  const s = document.getElementById('clientFilter');
+  return s?.selectedOptions?.[0]?.textContent || 'All Customers';
+}
+
+function csvCell(value) {
+  const text = String(value ?? '');
+  return `"${text.replace(/"/g, '""')}"`;
 }
 
 function renderBars(id, rows) {
@@ -245,7 +284,7 @@ function average(v) {
 }
 
 function formatMonth(m) {
-  if (!m || m === 'Unknown') return m || '';
+  if (!m || m === 'Unknown' || m === 'all') return m === 'all' ? 'All Months' : (m || '');
   const parts = m.split('-');
   if (parts.length !== 2) return m;
   const date = new Date(Number(parts[0]), Number(parts[1]) - 1, 1);
