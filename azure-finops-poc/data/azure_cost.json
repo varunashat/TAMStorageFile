@@ -1,7 +1,7 @@
 {
   "version": "v3-multi-client-month-filter",
-  "generatedAt": "2026-07-03 19:41 UTC",
-  "sourceBlob": "etihad-dashboard/Dashboard-Reports-EtihadAirways-actual-cost/20260601-20260630/5feeef41-0dea-4be1-b69a-a23ac428f41f/part_0_0001.csv, difc/difc-dashboard-actual-cost/20260701-20260731/8be27d5b-9b12-46ae-a535-960eb82e7bbb/part_0_0001.csv",
+  "generatedAt": "2026-07-04 19:26 UTC",
+  "sourceBlob": "etihad-dashboard/Dashboard-Reports-EtihadAirways-actual-cost/20260601-20260630/5feeef41-0dea-4be1-b69a-a23ac428f41f/part_0_0001.csv, difc/difc-dashboard-actual-cost/20260601-20260630/6a704b1c-3ae8-436a-8506-3e2e52557aea/part_0_0001.csv",
   "sourceBlobs": [
     {
       "clientKey": "etihad",
@@ -11,7 +11,7 @@
     {
       "clientKey": "difc",
       "clientName": "DIFC",
-      "blob": "difc/difc-dashboard-actual-cost/20260701-20260731/8be27d5b-9b12-46ae-a535-960eb82e7bbb/part_0_0001.csv"
+      "blob": "difc/difc-dashboard-actual-cost/20260601-20260630/6a704b1c-3ae8-436a-8506-3e2e52557aea/part_0_0001.csv"
     }
   ],
   "clientList": [
@@ -32,8 +32,7 @@
     }
   ],
   "monthList": [
-    "2026-06",
-    "2026-07"
+    "2026-06"
   ],
   "clients": {
     "etihad": {
@@ -1742,304 +1741,308 @@
       "name": "DIFC",
       "prefix": "difc/",
       "status": "Loaded",
-      "sourceBlob": "difc/difc-dashboard-actual-cost/20260701-20260731/8be27d5b-9b12-46ae-a535-960eb82e7bbb/part_0_0001.csv",
+      "sourceBlob": "difc/difc-dashboard-actual-cost/20260601-20260630/6a704b1c-3ae8-436a-8506-3e2e52557aea/part_0_0001.csv",
       "months": {
-        "2026-07": {
+        "2026-06": {
           "summary": {
-            "totalCost": 2635.57,
-            "subscriptionCount": 7,
-            "resourceGroupCount": 105,
-            "resourceCount": 1010
+            "totalCost": 27574.26,
+            "subscriptionCount": 8,
+            "resourceGroupCount": 108,
+            "resourceCount": 1571
           },
           "monthList": [
-            "2026-07"
+            "2026-06"
           ],
           "costByClient": [
             {
               "name": "DIFC",
-              "cost": 2635.57
+              "cost": 27574.26
             }
           ],
           "costByMonth": [
             {
-              "name": "2026-07",
-              "cost": 2635.57
+              "name": "2026-06",
+              "cost": 27574.26
             }
           ],
           "costBySubscription": [
             {
               "name": "Digital",
-              "cost": 1122.25
+              "cost": 9846.23
             },
             {
               "name": "Enterprise Application BI",
-              "cost": 589.96
+              "cost": 6241.52
             },
             {
               "name": "InfoSEC-SOC",
-              "cost": 290.36
+              "cost": 3865.6
             },
             {
               "name": "Az Network",
-              "cost": 282.92
+              "cost": 3587.24
             },
             {
               "name": "Digital Dev/Test",
-              "cost": 257.41
+              "cost": 3096.9
             },
             {
               "name": "Enterprise Application Dev/Test",
-              "cost": 92.67
+              "cost": 944.33
             },
             {
               "name": "MS Defender",
               "cost": 0.0
+            },
+            {
+              "name": "Unassigned",
+              "cost": -7.56
             }
           ],
           "costByService": [
             {
               "name": "Azure Synapse Analytics",
-              "cost": 453.96
+              "cost": 4556.68
             },
             {
               "name": "Virtual Machines",
-              "cost": 378.47
-            },
-            {
-              "name": "Foundry Models",
-              "cost": 349.1
-            },
-            {
-              "name": "Foundry Tools",
-              "cost": 230.75
+              "cost": 4162.01
             },
             {
               "name": "Azure App Service",
-              "cost": 197.93
+              "cost": 2457.3
+            },
+            {
+              "name": "Foundry Models",
+              "cost": 2087.57
             },
             {
               "name": "Storage",
-              "cost": 150.41
+              "cost": 1784.7
+            },
+            {
+              "name": "Foundry Tools",
+              "cost": 1458.46
             },
             {
               "name": "SQL Database",
-              "cost": 105.27
+              "cost": 1275.21
             },
             {
               "name": "Virtual Network",
-              "cost": 98.74
-            },
-            {
-              "name": "Azure Database for PostgreSQL",
-              "cost": 87.43
+              "cost": 1174.42
             },
             {
               "name": "Microsoft Graph data connect",
-              "cost": 79.5
+              "cost": 931.5
             },
             {
               "name": "Azure Firewall",
-              "cost": 73.12
+              "cost": 927.26
+            },
+            {
+              "name": "Azure Database for PostgreSQL",
+              "cost": 879.48
             },
             {
               "name": "Azure Front Door Service",
-              "cost": 56.27
-            },
-            {
-              "name": "Functions",
-              "cost": 41.33
+              "cost": 709.64
             },
             {
               "name": "Azure Cosmos DB",
-              "cost": 38.1
+              "cost": 507.95
+            },
+            {
+              "name": "Functions",
+              "cost": 494.21
             },
             {
               "name": "Application Gateway",
-              "cost": 37.24
-            },
-            {
-              "name": "Container Registry",
-              "cost": 30.46
-            },
-            {
-              "name": "Redis Cache",
-              "cost": 21.57
-            },
-            {
-              "name": "Azure Bastion",
-              "cost": 21.28
+              "cost": 478.8
             },
             {
               "name": "Log Analytics",
-              "cost": 20.88
+              "cost": 389.02
+            },
+            {
+              "name": "SaaS",
+              "cost": 382.1
+            },
+            {
+              "name": "Container Registry",
+              "cost": 378.3
             },
             {
               "name": "Azure Database for MySQL",
-              "cost": 19.69
+              "cost": 297.82
+            },
+            {
+              "name": "Redis Cache",
+              "cost": 277.34
+            },
+            {
+              "name": "Azure Bastion",
+              "cost": 273.6
             },
             {
               "name": "Azure DevOps",
-              "cost": 18.52
+              "cost": 272.84
             },
             {
               "name": "Azure DDOS Protection",
-              "cost": 15.27
+              "cost": 196.27
             },
             {
               "name": "API Management",
-              "cost": 14.94
+              "cost": 192.1
             },
             {
               "name": "Load Balancer",
-              "cost": 14.65
-            },
-            {
-              "name": "Azure Monitor",
-              "cost": 12.99
+              "cost": 171.29
             }
           ],
           "costByResourceGroup": [
             {
-              "name": "rg-compliancesentinel",
-              "cost": 283.47
+              "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
+              "cost": 2794.57
             },
             {
               "name": "PRODUCTION",
-              "cost": 268.6
-            },
-            {
-              "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-              "cost": 216.84
+              "cost": 2601.15
             },
             {
               "name": "Production",
-              "cost": 188.88
-            },
-            {
-              "name": "rg-intelligenceonboarding",
-              "cost": 152.13
+              "cost": 2132.16
             },
             {
               "name": "rg-net01",
-              "cost": 144.24
+              "cost": 1842.38
             },
             {
-              "name": "rg-azureml01",
-              "cost": 112.46
+              "name": "rg-compliancesentinel",
+              "cost": 1551.73
             },
             {
               "name": "rg-spaces",
-              "cost": 100.07
+              "cost": 1367.69
+            },
+            {
+              "name": "rg-azureml01",
+              "cost": 1266.89
             },
             {
               "name": "rg-aiprospecting",
-              "cost": 92.53
+              "cost": 1028.13
             },
             {
-              "name": "rg-synapsedev",
-              "cost": 92.51
-            },
-            {
-              "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-              "cost": 75.36
+              "name": "rg-intelligenceonboarding",
+              "cost": 956.5
             },
             {
               "name": "rg-venuebooking",
-              "cost": 72.7
+              "cost": 938.11
+            },
+            {
+              "name": "rg-synapsedev",
+              "cost": 935.11
             },
             {
               "name": "rg-venuebooking-stg",
-              "cost": 50.77
-            },
-            {
-              "name": "rg-govservices",
-              "cost": 48.87
+              "cost": 654.46
             },
             {
               "name": "RG-COMMV01",
-              "cost": 47.27
+              "cost": 605.65
             },
             {
-              "name": "difc-prod-rg",
-              "cost": 36.4
-            },
-            {
-              "name": "rg-tenex-dev",
-              "cost": 35.92
-            },
-            {
-              "name": "rg-spaces-stg",
-              "cost": 35.74
-            },
-            {
-              "name": "rg-bpla",
-              "cost": 34.79
-            },
-            {
-              "name": "RG-AIPROSPECTING",
-              "cost": 32.84
+              "name": "rg-govservices",
+              "cost": 568.85
             },
             {
               "name": "IS_Foundry",
-              "cost": 31.17
+              "cost": 497.64
             },
             {
-              "name": "rg-MagOneAI",
-              "cost": 30.66
+              "name": "rg-tenex-dev",
+              "cost": 493.94
+            },
+            {
+              "name": "rg-bpla",
+              "cost": 488.35
+            },
+            {
+              "name": "difc-prod-rg",
+              "cost": 477.85
+            },
+            {
+              "name": "rg-spaces-stg",
+              "cost": 469.02
+            },
+            {
+              "name": "RG-AIPROSPECTING",
+              "cost": 424.61
             },
             {
               "name": "RG-COMMVRESTORE01",
-              "cost": 27.5
+              "cost": 359.05
             },
             {
               "name": "rg-OvelEdge",
-              "cost": 25.99
+              "cost": 337.38
             },
             {
-              "name": "rg-openai-account-dev",
-              "cost": 24.76
+              "name": "rg-azbs01",
+              "cost": 277.2
+            },
+            {
+              "name": "rg-bpla-stg",
+              "cost": 270.8
+            },
+            {
+              "name": "Unassigned",
+              "cost": 265.28
             }
           ],
           "costByRegion": [
             {
               "name": "uaenorth",
-              "cost": 2523.14
+              "cost": 26012.77
             },
             {
               "name": "All Regions",
-              "cost": 67.64
-            },
-            {
-              "name": "EastUS2",
-              "cost": 23.45
+              "cost": 1119.21
             },
             {
               "name": "CentralUS",
-              "cost": 18.52
+              "cost": 272.84
             },
             {
-              "name": "northeurope",
-              "cost": 0.96
-            },
-            {
-              "name": "EastUS",
-              "cost": 0.9
+              "name": "EastUS2",
+              "cost": 114.46
             },
             {
               "name": "eastasia",
-              "cost": 0.89
+              "cost": 18.15
+            },
+            {
+              "name": "Unassigned",
+              "cost": 12.39
+            },
+            {
+              "name": "northeurope",
+              "cost": 11.86
+            },
+            {
+              "name": "EastUS",
+              "cost": 11.28
+            },
+            {
+              "name": "westus3",
+              "cost": 1.21
             },
             {
               "name": "WestUS",
-              "cost": 0.08
-            },
-            {
-              "name": "Europe",
-              "cost": 0.0
-            },
-            {
-              "name": "NorthCentralUs",
-              "cost": 0.0
+              "cost": 0.09
             },
             {
               "name": "westeurope",
@@ -2050,30 +2053,142 @@
               "cost": 0.0
             },
             {
-              "name": "Unassigned",
+              "name": "Europe",
+              "cost": 0.0
+            },
+            {
+              "name": "NorthCentralUs",
               "cost": 0.0
             }
           ],
           "dailyTrend": [
             {
-              "date": "2026-07-01",
-              "cost": 1074.31
+              "date": "2026-06-01",
+              "cost": 940.46
             },
             {
-              "date": "2026-07-02",
-              "cost": 1113.68
+              "date": "2026-06-02",
+              "cost": 928.03
             },
             {
-              "date": "2026-07-03",
-              "cost": 447.58
+              "date": "2026-06-03",
+              "cost": 947.0
+            },
+            {
+              "date": "2026-06-04",
+              "cost": 1005.25
+            },
+            {
+              "date": "2026-06-05",
+              "cost": 868.77
+            },
+            {
+              "date": "2026-06-06",
+              "cost": 637.99
+            },
+            {
+              "date": "2026-06-07",
+              "cost": 640.33
+            },
+            {
+              "date": "2026-06-08",
+              "cost": 933.44
+            },
+            {
+              "date": "2026-06-09",
+              "cost": 979.75
+            },
+            {
+              "date": "2026-06-10",
+              "cost": 984.61
+            },
+            {
+              "date": "2026-06-11",
+              "cost": 958.63
+            },
+            {
+              "date": "2026-06-12",
+              "cost": 951.26
+            },
+            {
+              "date": "2026-06-13",
+              "cost": 686.87
+            },
+            {
+              "date": "2026-06-14",
+              "cost": 681.93
+            },
+            {
+              "date": "2026-06-15",
+              "cost": 850.4
+            },
+            {
+              "date": "2026-06-16",
+              "cost": 1035.95
+            },
+            {
+              "date": "2026-06-17",
+              "cost": 975.77
+            },
+            {
+              "date": "2026-06-18",
+              "cost": 1011.17
+            },
+            {
+              "date": "2026-06-19",
+              "cost": 974.15
+            },
+            {
+              "date": "2026-06-20",
+              "cost": 721.08
+            },
+            {
+              "date": "2026-06-21",
+              "cost": 682.19
+            },
+            {
+              "date": "2026-06-22",
+              "cost": 1017.32
+            },
+            {
+              "date": "2026-06-23",
+              "cost": 1016.51
+            },
+            {
+              "date": "2026-06-24",
+              "cost": 1053.74
+            },
+            {
+              "date": "2026-06-25",
+              "cost": 1073.76
+            },
+            {
+              "date": "2026-06-26",
+              "cost": 968.14
+            },
+            {
+              "date": "2026-06-27",
+              "cost": 691.81
+            },
+            {
+              "date": "2026-06-28",
+              "cost": 728.39
+            },
+            {
+              "date": "2026-06-29",
+              "cost": 1517.0
+            },
+            {
+              "date": "2026-06-30",
+              "cost": 1112.55
             }
           ],
           "topResources": [
             {
-              "cost": 266.52,
+              "cost": 2577.31,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "DIFCSYNAPSESTUDIOPROD",
               "resourceId": "/SUBSCRIPTIONS/45E85AD2-D281-4452-85F1-0E6B13DFAC32/RESOURCEGROUPS/PRODUCTION/PROVIDERS/MICROSOFT.SYNAPSE/WORKSPACES/DIFCSYNAPSESTUDIOPROD",
               "subscriptionName": "Enterprise Application BI",
@@ -2082,34 +2197,10 @@
               "region": "uaenorth"
             },
             {
-              "cost": 172.25,
+              "cost": 1063.86,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "openai-compliance-auto",
-              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/openai-compliance-auto",
-              "subscriptionName": "Digital",
-              "resourceGroup": "rg-compliancesentinel",
-              "service": "Foundry Models",
-              "region": "uaenorth"
-            },
-            {
-              "cost": 99.89,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "intelligent-onboarding-di",
-              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-di",
-              "subscriptionName": "Digital",
-              "resourceGroup": "rg-intelligenceonboarding",
-              "service": "Foundry Tools",
-              "region": "uaenorth"
-            },
-            {
-              "cost": 97.02,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "difcsynapsestudioprod",
               "resourceId": "/subscriptions/45E85AD2-D281-4452-85F1-0E6B13DFAC32/resourceGroups/Production/providers/Microsoft.Synapse/workspaces/difcsynapsestudioprod/sqlPools/difc_dwh_prod",
               "subscriptionName": "Enterprise Application BI",
@@ -2118,22 +2209,22 @@
               "region": "uaenorth"
             },
             {
-              "cost": 90.26,
+              "cost": 948.25,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "difcsynapsedev",
-              "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
-              "subscriptionName": "Enterprise Application Dev/Test",
-              "resourceGroup": "rg-synapsedev",
-              "service": "Azure Synapse Analytics",
+              "month": "2026-06",
+              "resourceName": "hub-fw01",
+              "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/azurefirewalls/hub-fw01",
+              "subscriptionName": "Az Network",
+              "resourceGroup": "rg-net01",
+              "service": "Azure Firewall",
               "region": "uaenorth"
             },
             {
-              "cost": 79.5,
+              "cost": 931.5,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "difcsynapsestudioprod",
               "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/Production/providers/Microsoft.DataFactory/factories/difcsynapsestudioprod",
               "subscriptionName": "Enterprise Application BI",
@@ -2142,46 +2233,22 @@
               "region": "uaenorth"
             },
             {
-              "cost": 77.96,
+              "cost": 902.47,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "di-compliance-auto",
-              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/di-compliance-auto",
-              "subscriptionName": "Digital",
-              "resourceGroup": "rg-compliancesentinel",
-              "service": "Foundry Tools",
+              "month": "2026-06",
+              "resourceName": "difcsynapsedev",
+              "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
+              "subscriptionName": "Enterprise Application Dev/Test",
+              "resourceGroup": "rg-synapsedev",
+              "service": "Azure Synapse Analytics",
               "region": "uaenorth"
             },
             {
-              "cost": 75.12,
+              "cost": 798.37,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "hub-fw01",
-              "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/azurefirewalls/hub-fw01",
-              "subscriptionName": "Az Network",
-              "resourceGroup": "rg-net01",
-              "service": "Bandwidth",
-              "region": "uaenorth"
-            },
-            {
-              "cost": 62.31,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "openai-account-cube-prod",
-              "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/rg-azureml01/providers/Microsoft.CognitiveServices/accounts/openai-account-cube-prod",
-              "subscriptionName": "Enterprise Application BI",
-              "resourceGroup": "rg-azureml01",
-              "service": "Foundry Models",
-              "region": "uaenorth"
-            },
-            {
-              "cost": 62.1,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "aks-trmodel-26684284-vmss",
               "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trmodel-26684284-vmss",
               "subscriptionName": "InfoSEC-SOC",
@@ -2190,10 +2257,10 @@
               "region": "uaenorth"
             },
             {
-              "cost": 62.05,
+              "cost": 797.7,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "aks-agentpool-26684284-vmss",
               "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-agentpool-26684284-vmss",
               "subscriptionName": "InfoSEC-SOC",
@@ -2202,10 +2269,10 @@
               "region": "uaenorth"
             },
             {
-              "cost": 62.05,
+              "cost": 797.36,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "aks-userpool-26684284-vmss",
               "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-userpool-26684284-vmss",
               "subscriptionName": "InfoSEC-SOC",
@@ -2214,34 +2281,70 @@
               "region": "uaenorth"
             },
             {
-              "cost": 38.18,
+              "cost": 749.87,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "intelligent-onboarding-openai",
-              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-openai",
+              "month": "2026-06",
+              "resourceName": "openai-compliance-auto",
+              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/openai-compliance-auto",
               "subscriptionName": "Digital",
-              "resourceGroup": "rg-intelligenceonboarding",
+              "resourceGroup": "rg-compliancesentinel",
               "service": "Foundry Models",
               "region": "uaenorth"
             },
             {
-              "cost": 37.24,
+              "cost": 569.28,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
+              "resourceName": "openai-account-cube-prod",
+              "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/rg-azureml01/providers/Microsoft.CognitiveServices/accounts/openai-account-cube-prod",
+              "subscriptionName": "Enterprise Application BI",
+              "resourceGroup": "rg-azureml01",
+              "service": "Foundry Models",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 543.04,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-06",
+              "resourceName": "intelligent-onboarding-di",
+              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-di",
+              "subscriptionName": "Digital",
+              "resourceGroup": "rg-intelligenceonboarding",
+              "service": "Foundry Tools",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 495.73,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-06",
               "resourceName": "hub-agw01",
               "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/applicationgateways/hub-agw01",
               "subscriptionName": "Az Network",
               "resourceGroup": "rg-net01",
-              "service": "Bandwidth",
+              "service": "Application Gateway",
               "region": "uaenorth"
             },
             {
-              "cost": 30.47,
+              "cost": 414.25,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
+              "resourceName": "di-compliance-auto",
+              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/di-compliance-auto",
+              "subscriptionName": "Digital",
+              "resourceGroup": "rg-compliancesentinel",
+              "service": "Foundry Tools",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 398.85,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-06",
               "resourceName": "aks-trproduibk-26684284-vmss",
               "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trproduibk-26684284-vmss",
               "subscriptionName": "InfoSEC-SOC",
@@ -2250,22 +2353,22 @@
               "region": "uaenorth"
             },
             {
-              "cost": 26.32,
+              "cost": 362.15,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "aks-agentpool-81867277-vmss",
-              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-agentpool-81867277-vmss",
-              "subscriptionName": "Digital",
-              "resourceGroup": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-              "service": "Virtual Machines",
-              "region": "uaenorth"
+              "month": "2026-06",
+              "resourceName": "claude-opus-4-8-42eefe3443e9437-bb13fbf8cf5d4e1d916177838a6a1640",
+              "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/IS_Foundry/providers/Microsoft.SaaS/resources/claude-opus-4-8-42eefe3443e9437-bb13fbf8cf5d4e1d916177838a6a1640",
+              "subscriptionName": "InfoSEC-SOC",
+              "resourceGroup": "IS_Foundry",
+              "service": "SaaS",
+              "region": "Unassigned"
             },
             {
-              "cost": 25.68,
+              "cost": 336.5,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "ai-prospecting-db-server",
               "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-aiprospecting/providers/Microsoft.Sql/servers/ai-prospecting-db-server/databases/xpressfeed_control_db",
               "subscriptionName": "Digital",
@@ -2274,10 +2377,10 @@
               "region": "uaenorth"
             },
             {
-              "cost": 25.64,
+              "cost": 335.85,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "sql-tenex-dev",
               "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-tenex-dev/providers/Microsoft.Sql/servers/sql-tenex-dev/databases/sqldb-tenex-dev",
               "subscriptionName": "Digital Dev/Test",
@@ -2286,10 +2389,10 @@
               "region": "uaenorth"
             },
             {
-              "cost": 25.45,
+              "cost": 320.51,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "difc-venue-fdp-uaen-01",
               "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-venuebooking/providers/microsoft.cdn/profiles/difc-venue-fdp-uaen-01",
               "subscriptionName": "Digital",
@@ -2298,10 +2401,10 @@
               "region": "All Regions"
             },
             {
-              "cost": 25.3,
+              "cost": 319.64,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "difc-venue-fdp-uat-uaen-01",
               "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourcegroups/rg-venuebooking-stg/providers/microsoft.cdn/profiles/difc-venue-fdp-uat-uaen-01",
               "subscriptionName": "Digital Dev/Test",
@@ -2310,46 +2413,22 @@
               "region": "All Regions"
             },
             {
-              "cost": 24.76,
+              "cost": 272.84,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "difc-azure-document-intelligence",
-              "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-openai-account-dev/providers/Microsoft.CognitiveServices/accounts/difc-azure-document-intelligence",
-              "subscriptionName": "Digital Dev/Test",
-              "resourceGroup": "rg-openai-account-dev",
-              "service": "Foundry Tools",
-              "region": "uaenorth"
-            },
-            {
-              "cost": 24.19,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "pg-magoneai",
-              "resourceId": "/subscriptions/FA06AE09-354E-4F82-9BA9-A2EE31257AE7/resourceGroups/rg-MagOneAI/providers/Microsoft.DBforPostgreSQL/flexibleservers/pg-magoneai",
+              "month": "2026-06",
+              "resourceName": "DIFCA",
+              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/providers/microsoft.visualstudio/organizations/DIFCA",
               "subscriptionName": "Digital",
-              "resourceGroup": "rg-MagOneAI",
-              "service": "Azure Database for PostgreSQL",
-              "region": "uaenorth"
+              "resourceGroup": "Unassigned",
+              "service": "Azure DevOps",
+              "region": "CentralUS"
             },
             {
-              "cost": 23.45,
+              "cost": 255.55,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "ai-pentester",
-              "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/IS_Foundry/providers/Microsoft.CognitiveServices/accounts/ai-pentester",
-              "subscriptionName": "InfoSEC-SOC",
-              "resourceGroup": "IS_Foundry",
-              "service": "Foundry Models",
-              "region": "EastUS2"
-            },
-            {
-              "cost": 19.88,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
               "resourceName": "vm-xpressfeed01",
               "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/RG-AIPROSPECTING/providers/Microsoft.Compute/virtualMachines/vm-xpressfeed01",
               "subscriptionName": "Digital",
@@ -2358,12 +2437,48 @@
               "region": "uaenorth"
             },
             {
-              "cost": 19.66,
+              "cost": 252.72,
               "clientKey": "difc",
               "clientName": "DIFC",
-              "month": "2026-07",
+              "month": "2026-06",
+              "resourceName": "difc-venue-asp-con-win-prod-uaen-01",
+              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-venuebooking/providers/microsoft.web/serverfarms/difc-venue-asp-con-win-prod-uaen-01",
+              "subscriptionName": "Digital",
+              "resourceGroup": "rg-venuebooking",
+              "service": "Azure App Service",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 252.72,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-06",
+              "resourceName": "difc-prod-asp",
+              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/difc-prod-rg/providers/microsoft.web/serverfarms/difc-prod-asp",
+              "subscriptionName": "Digital",
+              "resourceGroup": "difc-prod-rg",
+              "service": "Azure App Service",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 252.72,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-06",
               "resourceName": "spacesprodrg",
               "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-spaces/providers/microsoft.web/serverfarms/spacesprodrg",
+              "subscriptionName": "Digital",
+              "resourceGroup": "rg-spaces",
+              "service": "Azure App Service",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 252.72,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-06",
+              "resourceName": "spacesprodintapiappservice",
+              "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-spaces/providers/microsoft.web/serverfarms/spacesprodintapiappservice",
               "subscriptionName": "Digital",
               "resourceGroup": "rg-spaces",
               "service": "Azure App Service",
@@ -2373,300 +2488,304 @@
         }
       },
       "summary": {
-        "totalCost": 2635.57,
-        "subscriptionCount": 7,
-        "resourceGroupCount": 105,
-        "resourceCount": 1010
+        "totalCost": 27574.26,
+        "subscriptionCount": 8,
+        "resourceGroupCount": 108,
+        "resourceCount": 1571
       },
       "monthList": [
-        "2026-07"
+        "2026-06"
       ],
       "costByClient": [
         {
           "name": "DIFC",
-          "cost": 2635.57
+          "cost": 27574.26
         }
       ],
       "costByMonth": [
         {
-          "name": "2026-07",
-          "cost": 2635.57
+          "name": "2026-06",
+          "cost": 27574.26
         }
       ],
       "costBySubscription": [
         {
           "name": "Digital",
-          "cost": 1122.25
+          "cost": 9846.23
         },
         {
           "name": "Enterprise Application BI",
-          "cost": 589.96
+          "cost": 6241.52
         },
         {
           "name": "InfoSEC-SOC",
-          "cost": 290.36
+          "cost": 3865.6
         },
         {
           "name": "Az Network",
-          "cost": 282.92
+          "cost": 3587.24
         },
         {
           "name": "Digital Dev/Test",
-          "cost": 257.41
+          "cost": 3096.9
         },
         {
           "name": "Enterprise Application Dev/Test",
-          "cost": 92.67
+          "cost": 944.33
         },
         {
           "name": "MS Defender",
           "cost": 0.0
+        },
+        {
+          "name": "Unassigned",
+          "cost": -7.56
         }
       ],
       "costByService": [
         {
           "name": "Azure Synapse Analytics",
-          "cost": 453.96
+          "cost": 4556.68
         },
         {
           "name": "Virtual Machines",
-          "cost": 378.47
-        },
-        {
-          "name": "Foundry Models",
-          "cost": 349.1
-        },
-        {
-          "name": "Foundry Tools",
-          "cost": 230.75
+          "cost": 4162.01
         },
         {
           "name": "Azure App Service",
-          "cost": 197.93
+          "cost": 2457.3
+        },
+        {
+          "name": "Foundry Models",
+          "cost": 2087.57
         },
         {
           "name": "Storage",
-          "cost": 150.41
+          "cost": 1784.7
+        },
+        {
+          "name": "Foundry Tools",
+          "cost": 1458.46
         },
         {
           "name": "SQL Database",
-          "cost": 105.27
+          "cost": 1275.21
         },
         {
           "name": "Virtual Network",
-          "cost": 98.74
-        },
-        {
-          "name": "Azure Database for PostgreSQL",
-          "cost": 87.43
+          "cost": 1174.42
         },
         {
           "name": "Microsoft Graph data connect",
-          "cost": 79.5
+          "cost": 931.5
         },
         {
           "name": "Azure Firewall",
-          "cost": 73.12
+          "cost": 927.26
+        },
+        {
+          "name": "Azure Database for PostgreSQL",
+          "cost": 879.48
         },
         {
           "name": "Azure Front Door Service",
-          "cost": 56.27
-        },
-        {
-          "name": "Functions",
-          "cost": 41.33
+          "cost": 709.64
         },
         {
           "name": "Azure Cosmos DB",
-          "cost": 38.1
+          "cost": 507.95
+        },
+        {
+          "name": "Functions",
+          "cost": 494.21
         },
         {
           "name": "Application Gateway",
-          "cost": 37.24
-        },
-        {
-          "name": "Container Registry",
-          "cost": 30.46
-        },
-        {
-          "name": "Redis Cache",
-          "cost": 21.57
-        },
-        {
-          "name": "Azure Bastion",
-          "cost": 21.28
+          "cost": 478.8
         },
         {
           "name": "Log Analytics",
-          "cost": 20.88
+          "cost": 389.02
+        },
+        {
+          "name": "SaaS",
+          "cost": 382.1
+        },
+        {
+          "name": "Container Registry",
+          "cost": 378.3
         },
         {
           "name": "Azure Database for MySQL",
-          "cost": 19.69
+          "cost": 297.82
+        },
+        {
+          "name": "Redis Cache",
+          "cost": 277.34
+        },
+        {
+          "name": "Azure Bastion",
+          "cost": 273.6
         },
         {
           "name": "Azure DevOps",
-          "cost": 18.52
+          "cost": 272.84
         },
         {
           "name": "Azure DDOS Protection",
-          "cost": 15.27
+          "cost": 196.27
         },
         {
           "name": "API Management",
-          "cost": 14.94
+          "cost": 192.1
         },
         {
           "name": "Load Balancer",
-          "cost": 14.65
-        },
-        {
-          "name": "Azure Monitor",
-          "cost": 12.99
+          "cost": 171.29
         }
       ],
       "costByResourceGroup": [
         {
-          "name": "rg-compliancesentinel",
-          "cost": 283.47
+          "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
+          "cost": 2794.57
         },
         {
           "name": "PRODUCTION",
-          "cost": 268.6
-        },
-        {
-          "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "cost": 216.84
+          "cost": 2601.15
         },
         {
           "name": "Production",
-          "cost": 188.88
-        },
-        {
-          "name": "rg-intelligenceonboarding",
-          "cost": 152.13
+          "cost": 2132.16
         },
         {
           "name": "rg-net01",
-          "cost": 144.24
+          "cost": 1842.38
         },
         {
-          "name": "rg-azureml01",
-          "cost": 112.46
+          "name": "rg-compliancesentinel",
+          "cost": 1551.73
         },
         {
           "name": "rg-spaces",
-          "cost": 100.07
+          "cost": 1367.69
+        },
+        {
+          "name": "rg-azureml01",
+          "cost": 1266.89
         },
         {
           "name": "rg-aiprospecting",
-          "cost": 92.53
+          "cost": 1028.13
         },
         {
-          "name": "rg-synapsedev",
-          "cost": 92.51
-        },
-        {
-          "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-          "cost": 75.36
+          "name": "rg-intelligenceonboarding",
+          "cost": 956.5
         },
         {
           "name": "rg-venuebooking",
-          "cost": 72.7
+          "cost": 938.11
+        },
+        {
+          "name": "rg-synapsedev",
+          "cost": 935.11
         },
         {
           "name": "rg-venuebooking-stg",
-          "cost": 50.77
-        },
-        {
-          "name": "rg-govservices",
-          "cost": 48.87
+          "cost": 654.46
         },
         {
           "name": "RG-COMMV01",
-          "cost": 47.27
+          "cost": 605.65
         },
         {
-          "name": "difc-prod-rg",
-          "cost": 36.4
-        },
-        {
-          "name": "rg-tenex-dev",
-          "cost": 35.92
-        },
-        {
-          "name": "rg-spaces-stg",
-          "cost": 35.74
-        },
-        {
-          "name": "rg-bpla",
-          "cost": 34.79
-        },
-        {
-          "name": "RG-AIPROSPECTING",
-          "cost": 32.84
+          "name": "rg-govservices",
+          "cost": 568.85
         },
         {
           "name": "IS_Foundry",
-          "cost": 31.17
+          "cost": 497.64
         },
         {
-          "name": "rg-MagOneAI",
-          "cost": 30.66
+          "name": "rg-tenex-dev",
+          "cost": 493.94
+        },
+        {
+          "name": "rg-bpla",
+          "cost": 488.35
+        },
+        {
+          "name": "difc-prod-rg",
+          "cost": 477.85
+        },
+        {
+          "name": "rg-spaces-stg",
+          "cost": 469.02
+        },
+        {
+          "name": "RG-AIPROSPECTING",
+          "cost": 424.61
         },
         {
           "name": "RG-COMMVRESTORE01",
-          "cost": 27.5
+          "cost": 359.05
         },
         {
           "name": "rg-OvelEdge",
-          "cost": 25.99
+          "cost": 337.38
         },
         {
-          "name": "rg-openai-account-dev",
-          "cost": 24.76
+          "name": "rg-azbs01",
+          "cost": 277.2
+        },
+        {
+          "name": "rg-bpla-stg",
+          "cost": 270.8
+        },
+        {
+          "name": "Unassigned",
+          "cost": 265.28
         }
       ],
       "costByRegion": [
         {
           "name": "uaenorth",
-          "cost": 2523.14
+          "cost": 26012.77
         },
         {
           "name": "All Regions",
-          "cost": 67.64
-        },
-        {
-          "name": "EastUS2",
-          "cost": 23.45
+          "cost": 1119.21
         },
         {
           "name": "CentralUS",
-          "cost": 18.52
+          "cost": 272.84
         },
         {
-          "name": "northeurope",
-          "cost": 0.96
-        },
-        {
-          "name": "EastUS",
-          "cost": 0.9
+          "name": "EastUS2",
+          "cost": 114.46
         },
         {
           "name": "eastasia",
-          "cost": 0.89
+          "cost": 18.15
+        },
+        {
+          "name": "Unassigned",
+          "cost": 12.39
+        },
+        {
+          "name": "northeurope",
+          "cost": 11.86
+        },
+        {
+          "name": "EastUS",
+          "cost": 11.28
+        },
+        {
+          "name": "westus3",
+          "cost": 1.21
         },
         {
           "name": "WestUS",
-          "cost": 0.08
-        },
-        {
-          "name": "Europe",
-          "cost": 0.0
-        },
-        {
-          "name": "NorthCentralUs",
-          "cost": 0.0
+          "cost": 0.09
         },
         {
           "name": "westeurope",
@@ -2677,30 +2796,142 @@
           "cost": 0.0
         },
         {
-          "name": "Unassigned",
+          "name": "Europe",
+          "cost": 0.0
+        },
+        {
+          "name": "NorthCentralUs",
           "cost": 0.0
         }
       ],
       "dailyTrend": [
         {
-          "date": "2026-07-01",
-          "cost": 1074.31
+          "date": "2026-06-01",
+          "cost": 940.46
         },
         {
-          "date": "2026-07-02",
-          "cost": 1113.68
+          "date": "2026-06-02",
+          "cost": 928.03
         },
         {
-          "date": "2026-07-03",
-          "cost": 447.58
+          "date": "2026-06-03",
+          "cost": 947.0
+        },
+        {
+          "date": "2026-06-04",
+          "cost": 1005.25
+        },
+        {
+          "date": "2026-06-05",
+          "cost": 868.77
+        },
+        {
+          "date": "2026-06-06",
+          "cost": 637.99
+        },
+        {
+          "date": "2026-06-07",
+          "cost": 640.33
+        },
+        {
+          "date": "2026-06-08",
+          "cost": 933.44
+        },
+        {
+          "date": "2026-06-09",
+          "cost": 979.75
+        },
+        {
+          "date": "2026-06-10",
+          "cost": 984.61
+        },
+        {
+          "date": "2026-06-11",
+          "cost": 958.63
+        },
+        {
+          "date": "2026-06-12",
+          "cost": 951.26
+        },
+        {
+          "date": "2026-06-13",
+          "cost": 686.87
+        },
+        {
+          "date": "2026-06-14",
+          "cost": 681.93
+        },
+        {
+          "date": "2026-06-15",
+          "cost": 850.4
+        },
+        {
+          "date": "2026-06-16",
+          "cost": 1035.95
+        },
+        {
+          "date": "2026-06-17",
+          "cost": 975.77
+        },
+        {
+          "date": "2026-06-18",
+          "cost": 1011.17
+        },
+        {
+          "date": "2026-06-19",
+          "cost": 974.15
+        },
+        {
+          "date": "2026-06-20",
+          "cost": 721.08
+        },
+        {
+          "date": "2026-06-21",
+          "cost": 682.19
+        },
+        {
+          "date": "2026-06-22",
+          "cost": 1017.32
+        },
+        {
+          "date": "2026-06-23",
+          "cost": 1016.51
+        },
+        {
+          "date": "2026-06-24",
+          "cost": 1053.74
+        },
+        {
+          "date": "2026-06-25",
+          "cost": 1073.76
+        },
+        {
+          "date": "2026-06-26",
+          "cost": 968.14
+        },
+        {
+          "date": "2026-06-27",
+          "cost": 691.81
+        },
+        {
+          "date": "2026-06-28",
+          "cost": 728.39
+        },
+        {
+          "date": "2026-06-29",
+          "cost": 1517.0
+        },
+        {
+          "date": "2026-06-30",
+          "cost": 1112.55
         }
       ],
       "topResources": [
         {
-          "cost": 266.52,
+          "cost": 2577.31,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "DIFCSYNAPSESTUDIOPROD",
           "resourceId": "/SUBSCRIPTIONS/45E85AD2-D281-4452-85F1-0E6B13DFAC32/RESOURCEGROUPS/PRODUCTION/PROVIDERS/MICROSOFT.SYNAPSE/WORKSPACES/DIFCSYNAPSESTUDIOPROD",
           "subscriptionName": "Enterprise Application BI",
@@ -2709,34 +2940,10 @@
           "region": "uaenorth"
         },
         {
-          "cost": 172.25,
+          "cost": 1063.86,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "openai-compliance-auto",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/openai-compliance-auto",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-compliancesentinel",
-          "service": "Foundry Models",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 99.89,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "intelligent-onboarding-di",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-di",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-intelligenceonboarding",
-          "service": "Foundry Tools",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 97.02,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "difcsynapsestudioprod",
           "resourceId": "/subscriptions/45E85AD2-D281-4452-85F1-0E6B13DFAC32/resourceGroups/Production/providers/Microsoft.Synapse/workspaces/difcsynapsestudioprod/sqlPools/difc_dwh_prod",
           "subscriptionName": "Enterprise Application BI",
@@ -2745,22 +2952,22 @@
           "region": "uaenorth"
         },
         {
-          "cost": 90.26,
+          "cost": 948.25,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difcsynapsedev",
-          "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
-          "subscriptionName": "Enterprise Application Dev/Test",
-          "resourceGroup": "rg-synapsedev",
-          "service": "Azure Synapse Analytics",
+          "month": "2026-06",
+          "resourceName": "hub-fw01",
+          "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/azurefirewalls/hub-fw01",
+          "subscriptionName": "Az Network",
+          "resourceGroup": "rg-net01",
+          "service": "Azure Firewall",
           "region": "uaenorth"
         },
         {
-          "cost": 79.5,
+          "cost": 931.5,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "difcsynapsestudioprod",
           "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/Production/providers/Microsoft.DataFactory/factories/difcsynapsestudioprod",
           "subscriptionName": "Enterprise Application BI",
@@ -2769,46 +2976,22 @@
           "region": "uaenorth"
         },
         {
-          "cost": 77.96,
+          "cost": 902.47,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "di-compliance-auto",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/di-compliance-auto",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-compliancesentinel",
-          "service": "Foundry Tools",
+          "month": "2026-06",
+          "resourceName": "difcsynapsedev",
+          "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
+          "subscriptionName": "Enterprise Application Dev/Test",
+          "resourceGroup": "rg-synapsedev",
+          "service": "Azure Synapse Analytics",
           "region": "uaenorth"
         },
         {
-          "cost": 75.12,
+          "cost": 798.37,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "hub-fw01",
-          "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/azurefirewalls/hub-fw01",
-          "subscriptionName": "Az Network",
-          "resourceGroup": "rg-net01",
-          "service": "Bandwidth",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 62.31,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "openai-account-cube-prod",
-          "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/rg-azureml01/providers/Microsoft.CognitiveServices/accounts/openai-account-cube-prod",
-          "subscriptionName": "Enterprise Application BI",
-          "resourceGroup": "rg-azureml01",
-          "service": "Foundry Models",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 62.1,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "aks-trmodel-26684284-vmss",
           "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trmodel-26684284-vmss",
           "subscriptionName": "InfoSEC-SOC",
@@ -2817,10 +3000,10 @@
           "region": "uaenorth"
         },
         {
-          "cost": 62.05,
+          "cost": 797.7,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "aks-agentpool-26684284-vmss",
           "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-agentpool-26684284-vmss",
           "subscriptionName": "InfoSEC-SOC",
@@ -2829,10 +3012,10 @@
           "region": "uaenorth"
         },
         {
-          "cost": 62.05,
+          "cost": 797.36,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "aks-userpool-26684284-vmss",
           "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-userpool-26684284-vmss",
           "subscriptionName": "InfoSEC-SOC",
@@ -2841,34 +3024,70 @@
           "region": "uaenorth"
         },
         {
-          "cost": 38.18,
+          "cost": 749.87,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "intelligent-onboarding-openai",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-openai",
+          "month": "2026-06",
+          "resourceName": "openai-compliance-auto",
+          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/openai-compliance-auto",
           "subscriptionName": "Digital",
-          "resourceGroup": "rg-intelligenceonboarding",
+          "resourceGroup": "rg-compliancesentinel",
           "service": "Foundry Models",
           "region": "uaenorth"
         },
         {
-          "cost": 37.24,
+          "cost": 569.28,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
+          "resourceName": "openai-account-cube-prod",
+          "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/rg-azureml01/providers/Microsoft.CognitiveServices/accounts/openai-account-cube-prod",
+          "subscriptionName": "Enterprise Application BI",
+          "resourceGroup": "rg-azureml01",
+          "service": "Foundry Models",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 543.04,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-06",
+          "resourceName": "intelligent-onboarding-di",
+          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-di",
+          "subscriptionName": "Digital",
+          "resourceGroup": "rg-intelligenceonboarding",
+          "service": "Foundry Tools",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 495.73,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-06",
           "resourceName": "hub-agw01",
           "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/applicationgateways/hub-agw01",
           "subscriptionName": "Az Network",
           "resourceGroup": "rg-net01",
-          "service": "Bandwidth",
+          "service": "Application Gateway",
           "region": "uaenorth"
         },
         {
-          "cost": 30.47,
+          "cost": 414.25,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
+          "resourceName": "di-compliance-auto",
+          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/di-compliance-auto",
+          "subscriptionName": "Digital",
+          "resourceGroup": "rg-compliancesentinel",
+          "service": "Foundry Tools",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 398.85,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-06",
           "resourceName": "aks-trproduibk-26684284-vmss",
           "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trproduibk-26684284-vmss",
           "subscriptionName": "InfoSEC-SOC",
@@ -2877,22 +3096,22 @@
           "region": "uaenorth"
         },
         {
-          "cost": 26.32,
+          "cost": 362.15,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "aks-agentpool-81867277-vmss",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-agentpool-81867277-vmss",
-          "subscriptionName": "Digital",
-          "resourceGroup": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
+          "month": "2026-06",
+          "resourceName": "claude-opus-4-8-42eefe3443e9437-bb13fbf8cf5d4e1d916177838a6a1640",
+          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/IS_Foundry/providers/Microsoft.SaaS/resources/claude-opus-4-8-42eefe3443e9437-bb13fbf8cf5d4e1d916177838a6a1640",
+          "subscriptionName": "InfoSEC-SOC",
+          "resourceGroup": "IS_Foundry",
+          "service": "SaaS",
+          "region": "Unassigned"
         },
         {
-          "cost": 25.68,
+          "cost": 336.5,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "ai-prospecting-db-server",
           "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-aiprospecting/providers/Microsoft.Sql/servers/ai-prospecting-db-server/databases/xpressfeed_control_db",
           "subscriptionName": "Digital",
@@ -2901,10 +3120,10 @@
           "region": "uaenorth"
         },
         {
-          "cost": 25.64,
+          "cost": 335.85,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "sql-tenex-dev",
           "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-tenex-dev/providers/Microsoft.Sql/servers/sql-tenex-dev/databases/sqldb-tenex-dev",
           "subscriptionName": "Digital Dev/Test",
@@ -2913,10 +3132,10 @@
           "region": "uaenorth"
         },
         {
-          "cost": 25.45,
+          "cost": 320.51,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "difc-venue-fdp-uaen-01",
           "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-venuebooking/providers/microsoft.cdn/profiles/difc-venue-fdp-uaen-01",
           "subscriptionName": "Digital",
@@ -2925,10 +3144,10 @@
           "region": "All Regions"
         },
         {
-          "cost": 25.3,
+          "cost": 319.64,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "difc-venue-fdp-uat-uaen-01",
           "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourcegroups/rg-venuebooking-stg/providers/microsoft.cdn/profiles/difc-venue-fdp-uat-uaen-01",
           "subscriptionName": "Digital Dev/Test",
@@ -2937,46 +3156,22 @@
           "region": "All Regions"
         },
         {
-          "cost": 24.76,
+          "cost": 272.84,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difc-azure-document-intelligence",
-          "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-openai-account-dev/providers/Microsoft.CognitiveServices/accounts/difc-azure-document-intelligence",
-          "subscriptionName": "Digital Dev/Test",
-          "resourceGroup": "rg-openai-account-dev",
-          "service": "Foundry Tools",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 24.19,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "pg-magoneai",
-          "resourceId": "/subscriptions/FA06AE09-354E-4F82-9BA9-A2EE31257AE7/resourceGroups/rg-MagOneAI/providers/Microsoft.DBforPostgreSQL/flexibleservers/pg-magoneai",
+          "month": "2026-06",
+          "resourceName": "DIFCA",
+          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/providers/microsoft.visualstudio/organizations/DIFCA",
           "subscriptionName": "Digital",
-          "resourceGroup": "rg-MagOneAI",
-          "service": "Azure Database for PostgreSQL",
-          "region": "uaenorth"
+          "resourceGroup": "Unassigned",
+          "service": "Azure DevOps",
+          "region": "CentralUS"
         },
         {
-          "cost": 23.45,
+          "cost": 255.55,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "ai-pentester",
-          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/IS_Foundry/providers/Microsoft.CognitiveServices/accounts/ai-pentester",
-          "subscriptionName": "InfoSEC-SOC",
-          "resourceGroup": "IS_Foundry",
-          "service": "Foundry Models",
-          "region": "EastUS2"
-        },
-        {
-          "cost": 19.88,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
           "resourceName": "vm-xpressfeed01",
           "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/RG-AIPROSPECTING/providers/Microsoft.Compute/virtualMachines/vm-xpressfeed01",
           "subscriptionName": "Digital",
@@ -2985,12 +3180,48 @@
           "region": "uaenorth"
         },
         {
-          "cost": 19.66,
+          "cost": 252.72,
           "clientKey": "difc",
           "clientName": "DIFC",
-          "month": "2026-07",
+          "month": "2026-06",
+          "resourceName": "difc-venue-asp-con-win-prod-uaen-01",
+          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-venuebooking/providers/microsoft.web/serverfarms/difc-venue-asp-con-win-prod-uaen-01",
+          "subscriptionName": "Digital",
+          "resourceGroup": "rg-venuebooking",
+          "service": "Azure App Service",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 252.72,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-06",
+          "resourceName": "difc-prod-asp",
+          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/difc-prod-rg/providers/microsoft.web/serverfarms/difc-prod-asp",
+          "subscriptionName": "Digital",
+          "resourceGroup": "difc-prod-rg",
+          "service": "Azure App Service",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 252.72,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-06",
           "resourceName": "spacesprodrg",
           "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-spaces/providers/microsoft.web/serverfarms/spacesprodrg",
+          "subscriptionName": "Digital",
+          "resourceGroup": "rg-spaces",
+          "service": "Azure App Service",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 252.72,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-06",
+          "resourceName": "spacesprodintapiappservice",
+          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-spaces/providers/microsoft.web/serverfarms/spacesprodintapiappservice",
           "subscriptionName": "Digital",
           "resourceGroup": "rg-spaces",
           "service": "Azure App Service",
@@ -3023,14 +3254,13 @@
   },
   "overall": {
     "summary": {
-      "totalCost": 226374.4,
-      "subscriptionCount": 52,
-      "resourceGroupCount": 867,
-      "resourceCount": 194369
+      "totalCost": 251313.09,
+      "subscriptionCount": 53,
+      "resourceGroupCount": 870,
+      "resourceCount": 194930
     },
     "monthList": [
-      "2026-06",
-      "2026-07"
+      "2026-06"
     ],
     "costByClient": [
       {
@@ -3039,17 +3269,13 @@
       },
       {
         "name": "DIFC",
-        "cost": 2635.57
+        "cost": 27574.26
       }
     ],
     "costByMonth": [
       {
         "name": "2026-06",
-        "cost": 223738.83
-      },
-      {
-        "name": "2026-07",
-        "cost": 2635.57
+        "cost": 251313.09
       }
     ],
     "costBySubscription": [
@@ -3066,8 +3292,16 @@
         "cost": 24088.03
       },
       {
+        "name": "Digital",
+        "cost": 9846.23
+      },
+      {
         "name": "Spoke_EY_Digital",
         "cost": 9532.81
+      },
+      {
+        "name": "Enterprise Application BI",
+        "cost": 6241.52
       },
       {
         "name": "Dev_Test_EY_Digital",
@@ -3078,8 +3312,20 @@
         "cost": 4415.77
       },
       {
+        "name": "InfoSEC-SOC",
+        "cost": 3865.6
+      },
+      {
         "name": "EDP2 PPE",
         "cost": 3752.07
+      },
+      {
+        "name": "Az Network",
+        "cost": 3587.24
+      },
+      {
+        "name": "Digital Dev/Test",
+        "cost": 3096.9
       },
       {
         "name": "AI Hub - PPE",
@@ -3102,12 +3348,12 @@
         "cost": 1270.34
       },
       {
-        "name": "Digital",
-        "cost": 1122.25
-      },
-      {
         "name": "FPR production",
         "cost": 1074.58
+      },
+      {
+        "name": "Enterprise Application Dev/Test",
+        "cost": 944.33
       },
       {
         "name": "SecOps Azure LogsToQRadar",
@@ -3126,50 +3372,30 @@
         "cost": 653.62
       },
       {
-        "name": "Enterprise Application BI",
-        "cost": 589.96
-      },
-      {
         "name": "Landing Zone",
         "cost": 499.53
       },
       {
         "name": "Cargo PROD Azure Subscription",
         "cost": 426.49
-      },
-      {
-        "name": "SecurityOperations Azure QRadar Inegration",
-        "cost": 426.3
-      },
-      {
-        "name": "Managed File Transfer PPE",
-        "cost": 412.22
-      },
-      {
-        "name": "Landing Zone PPE",
-        "cost": 376.47
-      },
-      {
-        "name": "InfoSEC-SOC",
-        "cost": 290.36
       }
     ],
     "costByService": [
       {
         "name": "Storage",
-        "cost": 77699.19
+        "cost": 79333.49
       },
       {
         "name": "Virtual Machines",
-        "cost": 44701.83
+        "cost": 48485.37
       },
       {
         "name": "SaaS",
-        "cost": 33422.71
+        "cost": 33797.09
       },
       {
         "name": "Azure Synapse Analytics",
-        "cost": 22582.59
+        "cost": 26685.31
       },
       {
         "name": "Microsoft Fabric",
@@ -3177,31 +3403,47 @@
       },
       {
         "name": "Azure Cosmos DB",
-        "cost": 6376.98
-      },
-      {
-        "name": "Log Analytics",
-        "cost": 3063.23
-      },
-      {
-        "name": "Azure Database for PostgreSQL",
-        "cost": 1998.91
+        "cost": 6846.83
       },
       {
         "name": "Azure App Service",
-        "cost": 1878.31
+        "cost": 4137.68
       },
       {
-        "name": "API Management",
-        "cost": 1650.57
+        "name": "Log Analytics",
+        "cost": 3431.37
       },
       {
-        "name": "Redis Cache",
-        "cost": 1396.34
+        "name": "Azure Database for PostgreSQL",
+        "cost": 2790.97
       },
       {
         "name": "Virtual Network",
-        "cost": 1371.11
+        "cost": 2446.79
+      },
+      {
+        "name": "Foundry Models",
+        "cost": 2337.74
+      },
+      {
+        "name": "API Management",
+        "cost": 1827.73
+      },
+      {
+        "name": "Redis Cache",
+        "cost": 1652.12
+      },
+      {
+        "name": "Foundry Tools",
+        "cost": 1494.73
+      },
+      {
+        "name": "Load Balancer",
+        "cost": 1302.39
+      },
+      {
+        "name": "SQL Database",
+        "cost": 1277.16
       },
       {
         "name": "Azure Data Factory v2",
@@ -3212,54 +3454,38 @@
         "cost": 1249.32
       },
       {
-        "name": "Load Balancer",
-        "cost": 1145.75
+        "name": "Application Gateway",
+        "cost": 1237.48
+      },
+      {
+        "name": "Azure Front Door Service",
+        "cost": 938.49
+      },
+      {
+        "name": "Microsoft Graph data connect",
+        "cost": 931.5
       },
       {
         "name": "Backup",
-        "cost": 909.71
+        "cost": 929.52
+      },
+      {
+        "name": "Azure Firewall",
+        "cost": 927.26
       },
       {
         "name": "GitHub",
         "cost": 806.81
       },
       {
-        "name": "Application Gateway",
-        "cost": 795.92
-      },
-      {
-        "name": "Foundry Models",
-        "cost": 599.27
-      },
-      {
-        "name": "Event Hubs",
-        "cost": 561.92
-      },
-      {
         "name": "Azure Bastion",
-        "cost": 531.52
-      },
-      {
-        "name": "Bandwidth",
-        "cost": 438.54
-      },
-      {
-        "name": "Azure Front Door Service",
-        "cost": 285.12
-      },
-      {
-        "name": "Azure Cognitive Search",
-        "cost": 270.14
-      },
-      {
-        "name": "Foundry Tools",
-        "cost": 267.02
+        "cost": 783.84
       }
     ],
     "costByResourceGroup": [
       {
         "name": "Unassigned",
-        "cost": 150391.13
+        "cost": 150637.89
       },
       {
         "name": "ComplexEventProcessingMonthlyBilling",
@@ -3270,8 +3496,28 @@
         "cost": 6633.1
       },
       {
+        "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
+        "cost": 2794.57
+      },
+      {
+        "name": "PRODUCTION",
+        "cost": 2601.15
+      },
+      {
+        "name": "Production",
+        "cost": 2132.16
+      },
+      {
+        "name": "rg-net01",
+        "cost": 1842.38
+      },
+      {
         "name": "central-infosec-ms-weu",
         "cost": 1768.2
+      },
+      {
+        "name": "rg-compliancesentinel",
+        "cost": 1551.73
       },
       {
         "name": "rg-guestvalue-data-ingest-process-platform",
@@ -3280,6 +3526,14 @@
       {
         "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
         "cost": 1440.18
+      },
+      {
+        "name": "rg-spaces",
+        "cost": 1367.69
+      },
+      {
+        "name": "rg-azureml01",
+        "cost": 1266.89
       },
       {
         "name": "rg-edp-prod-data-serving-platform",
@@ -3298,6 +3552,22 @@
         "cost": 1040.8
       },
       {
+        "name": "rg-aiprospecting",
+        "cost": 1028.13
+      },
+      {
+        "name": "rg-intelligenceonboarding",
+        "cost": 956.5
+      },
+      {
+        "name": "rg-venuebooking",
+        "cost": 938.11
+      },
+      {
+        "name": "rg-synapsedev",
+        "cost": 935.11
+      },
+      {
         "name": "rg-edp-prod-azurevm-backups-platform",
         "cost": 885.84
       },
@@ -3306,66 +3576,22 @@
         "cost": 828.17
       },
       {
+        "name": "rg-venuebooking-stg",
+        "cost": 654.46
+      },
+      {
         "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
         "cost": 612.0
-      },
-      {
-        "name": "rg-aics",
-        "cost": 592.31
-      },
-      {
-        "name": "rg-edp-prod-data-ingest-platform",
-        "cost": 582.27
-      },
-      {
-        "name": "proded-shared-ms-neu",
-        "cost": 539.89
-      },
-      {
-        "name": "rg-edp-prod-consume-api-management-platform",
-        "cost": 538.22
-      },
-      {
-        "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-REVENUEMGMT-GAXKD7IJGK5KW",
-        "cost": 437.65
-      },
-      {
-        "name": "rg-edp-prod-cbi-data-storage-platform",
-        "cost": 418.44
-      },
-      {
-        "name": "rg-cops-ppe-monitoring",
-        "cost": 404.59
-      },
-      {
-        "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-        "cost": 381.08
-      },
-      {
-        "name": "rg-eyprdaiaspilots",
-        "cost": 338.86
-      },
-      {
-        "name": "ey-uaenor-hub-rg",
-        "cost": 334.43
-      },
-      {
-        "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-        "cost": 331.28
-      },
-      {
-        "name": "mc_deved-aks-ms-weu_deved-aks-ms-weu_westeurope",
-        "cost": 306.39
       }
     ],
     "costByRegion": [
       {
         "name": "uaenorth",
-        "cost": 154237.8
+        "cost": 177727.43
       },
       {
         "name": "Unassigned",
-        "cost": 32942.4
+        "cost": 32954.79
       },
       {
         "name": "westeurope",
@@ -3373,7 +3599,7 @@
       },
       {
         "name": "northeurope",
-        "cost": 13922.01
+        "cost": 13932.92
       },
       {
         "name": "Unknown",
@@ -3381,11 +3607,11 @@
       },
       {
         "name": "All Regions",
-        "cost": 1610.07
+        "cost": 2661.63
       },
       {
         "name": "EastUS",
-        "cost": 846.24
+        "cost": 856.63
       },
       {
         "name": "uaecentral",
@@ -3393,11 +3619,15 @@
       },
       {
         "name": "EastUS2",
-        "cost": 296.8
+        "cost": 387.8
+      },
+      {
+        "name": "CentralUS",
+        "cost": 288.67
       },
       {
         "name": "WestUS",
-        "cost": 81.95
+        "cost": 81.96
       },
       {
         "name": "westus2",
@@ -3408,12 +3638,12 @@
         "cost": 38.58
       },
       {
-        "name": "CentralUS",
-        "cost": 34.35
-      },
-      {
         "name": "swedencentral",
         "cost": 21.86
+      },
+      {
+        "name": "eastasia",
+        "cost": 18.9
       },
       {
         "name": "southindia",
@@ -3428,8 +3658,8 @@
         "cost": 2.96
       },
       {
-        "name": "eastasia",
-        "cost": 1.64
+        "name": "westus3",
+        "cost": 1.21
       },
       {
         "name": "uksouth",
@@ -3459,135 +3689,123 @@
     "dailyTrend": [
       {
         "date": "2026-06-01",
-        "cost": 11725.16
+        "cost": 12665.62
       },
       {
         "date": "2026-06-02",
-        "cost": 3771.73
+        "cost": 4699.76
       },
       {
         "date": "2026-06-03",
-        "cost": 7904.36
+        "cost": 8851.35
       },
       {
         "date": "2026-06-04",
-        "cost": 4186.77
+        "cost": 5192.02
       },
       {
         "date": "2026-06-05",
-        "cost": 883.33
+        "cost": 1752.1
       },
       {
         "date": "2026-06-06",
-        "cost": 2522.01
+        "cost": 3160.0
       },
       {
         "date": "2026-06-07",
-        "cost": 0.0
+        "cost": 640.33
       },
       {
         "date": "2026-06-08",
-        "cost": 3196.62
+        "cost": 4130.06
       },
       {
         "date": "2026-06-09",
-        "cost": 1155.57
+        "cost": 2135.32
       },
       {
         "date": "2026-06-10",
-        "cost": 0.0
+        "cost": 984.61
       },
       {
         "date": "2026-06-11",
-        "cost": 4828.0
+        "cost": 5786.63
       },
       {
         "date": "2026-06-12",
-        "cost": 1818.35
+        "cost": 2769.62
       },
       {
         "date": "2026-06-13",
-        "cost": 6367.02
+        "cost": 7053.89
       },
       {
         "date": "2026-06-14",
-        "cost": 1798.85
+        "cost": 2480.78
       },
       {
         "date": "2026-06-15",
-        "cost": 35216.98
+        "cost": 36067.39
       },
       {
         "date": "2026-06-16",
-        "cost": 3921.81
+        "cost": 4957.76
       },
       {
         "date": "2026-06-17",
-        "cost": 588.9
+        "cost": 1564.67
       },
       {
         "date": "2026-06-18",
-        "cost": 1246.64
+        "cost": 2257.82
       },
       {
         "date": "2026-06-19",
-        "cost": 10499.35
+        "cost": 11473.49
       },
       {
         "date": "2026-06-20",
-        "cost": 603.45
+        "cost": 1324.53
       },
       {
         "date": "2026-06-21",
-        "cost": 94775.97
+        "cost": 95458.16
       },
       {
         "date": "2026-06-22",
-        "cost": 6848.47
+        "cost": 7865.79
       },
       {
         "date": "2026-06-23",
-        "cost": 1478.42
+        "cost": 2494.93
       },
       {
         "date": "2026-06-24",
-        "cost": 397.73
+        "cost": 1451.48
       },
       {
         "date": "2026-06-25",
-        "cost": 795.89
+        "cost": 1869.66
       },
       {
         "date": "2026-06-26",
-        "cost": 2753.54
+        "cost": 3721.68
       },
       {
         "date": "2026-06-27",
-        "cost": 1129.63
+        "cost": 1821.44
       },
       {
         "date": "2026-06-28",
-        "cost": 2606.72
+        "cost": 3335.1
       },
       {
         "date": "2026-06-29",
-        "cost": 1909.24
+        "cost": 3426.24
       },
       {
         "date": "2026-06-30",
-        "cost": 8808.29
-      },
-      {
-        "date": "2026-07-01",
-        "cost": 1074.31
-      },
-      {
-        "date": "2026-07-02",
-        "cost": 1113.68
-      },
-      {
-        "date": "2026-07-03",
-        "cost": 447.58
+        "cost": 9920.84
       }
     ],
     "topResources": [
@@ -3820,6 +4038,18 @@
         "region": "westeurope"
       },
       {
+        "cost": 2577.31,
+        "clientKey": "difc",
+        "clientName": "DIFC",
+        "month": "2026-06",
+        "resourceName": "DIFCSYNAPSESTUDIOPROD",
+        "resourceId": "/SUBSCRIPTIONS/45E85AD2-D281-4452-85F1-0E6B13DFAC32/RESOURCEGROUPS/PRODUCTION/PROVIDERS/MICROSOFT.SYNAPSE/WORKSPACES/DIFCSYNAPSESTUDIOPROD",
+        "subscriptionName": "Enterprise Application BI",
+        "resourceGroup": "PRODUCTION",
+        "service": "Azure Synapse Analytics",
+        "region": "uaenorth"
+      },
+      {
         "cost": 2183.46,
         "clientKey": "etihad",
         "clientName": "Etihad Airways",
@@ -3878,27 +4108,15 @@
         "resourceGroup": "Unassigned",
         "service": "Virtual Machines",
         "region": "uaenorth"
-      },
-      {
-        "cost": 1403.8,
-        "clientKey": "etihad",
-        "clientName": "Etihad Airways",
-        "month": "2026-06",
-        "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/521be4ee-b602-48a5-ab4c-9780166764d4/reservations/",
-        "subscriptionName": "EDP2 PROD",
-        "resourceGroup": "Unassigned",
-        "service": "Virtual Machines",
-        "region": "uaenorth"
       }
     ],
     "months": {
       "2026-06": {
         "summary": {
-          "totalCost": 223738.83,
-          "subscriptionCount": 45,
-          "resourceGroupCount": 762,
-          "resourceCount": 193359
+          "totalCost": 251313.09,
+          "subscriptionCount": 53,
+          "resourceGroupCount": 870,
+          "resourceCount": 194930
         },
         "monthList": [
           "2026-06"
@@ -3907,12 +4125,16 @@
           {
             "name": "Etihad Airways",
             "cost": 223738.83
+          },
+          {
+            "name": "DIFC",
+            "cost": 27574.26
           }
         ],
         "costByMonth": [
           {
             "name": "2026-06",
-            "cost": 223738.83
+            "cost": 251313.09
           }
         ],
         "costBySubscription": [
@@ -3929,8 +4151,16 @@
             "cost": 24088.03
           },
           {
+            "name": "Digital",
+            "cost": 9846.23
+          },
+          {
             "name": "Spoke_EY_Digital",
             "cost": 9532.81
+          },
+          {
+            "name": "Enterprise Application BI",
+            "cost": 6241.52
           },
           {
             "name": "Dev_Test_EY_Digital",
@@ -3941,8 +4171,20 @@
             "cost": 4415.77
           },
           {
+            "name": "InfoSEC-SOC",
+            "cost": 3865.6
+          },
+          {
             "name": "EDP2 PPE",
             "cost": 3752.07
+          },
+          {
+            "name": "Az Network",
+            "cost": 3587.24
+          },
+          {
+            "name": "Digital Dev/Test",
+            "cost": 3096.9
           },
           {
             "name": "AI Hub - PPE",
@@ -3969,6 +4211,10 @@
             "cost": 1074.58
           },
           {
+            "name": "Enterprise Application Dev/Test",
+            "cost": 944.33
+          },
+          {
             "name": "SecOps Azure LogsToQRadar",
             "cost": 784.98
           },
@@ -3991,48 +4237,24 @@
           {
             "name": "Cargo PROD Azure Subscription",
             "cost": 426.49
-          },
-          {
-            "name": "SecurityOperations Azure QRadar Inegration",
-            "cost": 426.3
-          },
-          {
-            "name": "Managed File Transfer PPE",
-            "cost": 412.22
-          },
-          {
-            "name": "Landing Zone PPE",
-            "cost": 376.47
-          },
-          {
-            "name": "EVS Production",
-            "cost": 268.51
-          },
-          {
-            "name": "Cargo Azure PPE Subscription",
-            "cost": 249.66
-          },
-          {
-            "name": "PPE_Hub_EY_Digital",
-            "cost": 223.88
           }
         ],
         "costByService": [
           {
             "name": "Storage",
-            "cost": 77548.79
+            "cost": 79333.49
           },
           {
             "name": "Virtual Machines",
-            "cost": 44323.36
+            "cost": 48485.37
           },
           {
             "name": "SaaS",
-            "cost": 33414.99
+            "cost": 33797.09
           },
           {
             "name": "Azure Synapse Analytics",
-            "cost": 22128.63
+            "cost": 26685.31
           },
           {
             "name": "Microsoft Fabric",
@@ -4040,89 +4262,89 @@
           },
           {
             "name": "Azure Cosmos DB",
-            "cost": 6338.88
-          },
-          {
-            "name": "Log Analytics",
-            "cost": 3042.35
-          },
-          {
-            "name": "Azure Database for PostgreSQL",
-            "cost": 1911.48
+            "cost": 6846.83
           },
           {
             "name": "Azure App Service",
-            "cost": 1680.38
+            "cost": 4137.68
+          },
+          {
+            "name": "Log Analytics",
+            "cost": 3431.37
+          },
+          {
+            "name": "Azure Database for PostgreSQL",
+            "cost": 2790.97
+          },
+          {
+            "name": "Virtual Network",
+            "cost": 2446.79
+          },
+          {
+            "name": "Foundry Models",
+            "cost": 2337.74
           },
           {
             "name": "API Management",
-            "cost": 1635.63
+            "cost": 1827.73
           },
           {
             "name": "Redis Cache",
-            "cost": 1374.77
+            "cost": 1652.12
+          },
+          {
+            "name": "Foundry Tools",
+            "cost": 1494.73
+          },
+          {
+            "name": "Load Balancer",
+            "cost": 1302.39
+          },
+          {
+            "name": "SQL Database",
+            "cost": 1277.16
           },
           {
             "name": "Azure Data Factory v2",
             "cost": 1276.66
           },
           {
-            "name": "Virtual Network",
-            "cost": 1272.37
-          },
-          {
             "name": "Azure Databricks",
             "cost": 1249.32
           },
           {
-            "name": "Load Balancer",
-            "cost": 1131.1
+            "name": "Application Gateway",
+            "cost": 1237.48
+          },
+          {
+            "name": "Azure Front Door Service",
+            "cost": 938.49
+          },
+          {
+            "name": "Microsoft Graph data connect",
+            "cost": 931.5
           },
           {
             "name": "Backup",
-            "cost": 908.03
+            "cost": 929.52
+          },
+          {
+            "name": "Azure Firewall",
+            "cost": 927.26
           },
           {
             "name": "GitHub",
             "cost": 806.81
           },
           {
-            "name": "Application Gateway",
-            "cost": 758.68
-          },
-          {
-            "name": "Event Hubs",
-            "cost": 558.06
-          },
-          {
             "name": "Azure Bastion",
-            "cost": 510.24
-          },
-          {
-            "name": "Bandwidth",
-            "cost": 438.54
-          },
-          {
-            "name": "Azure Cognitive Search",
-            "cost": 264.48
-          },
-          {
-            "name": "Foundry Models",
-            "cost": 250.17
-          },
-          {
-            "name": "Azure Front Door Service",
-            "cost": 228.85
-          },
-          {
-            "name": "Azure DevOps",
-            "cost": 206.78
+            "cost": 783.84
           }
         ],
         "costByResourceGroup": [
           {
             "name": "Unassigned",
-            "cost": 150372.61
+            "cost": 150637.89
           },
           {
             "name": "ComplexEventProcessingMonthlyBilling",
@@ -4133,8 +4355,28 @@
             "cost": 6633.1
           },
           {
+            "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
+            "cost": 2794.57
+          },
+          {
+            "name": "PRODUCTION",
+            "cost": 2601.15
+          },
+          {
+            "name": "Production",
+            "cost": 2132.16
+          },
+          {
+            "name": "rg-net01",
+            "cost": 1842.38
+          },
+          {
             "name": "central-infosec-ms-weu",
             "cost": 1768.2
+          },
+          {
+            "name": "rg-compliancesentinel",
+            "cost": 1551.73
           },
           {
             "name": "rg-guestvalue-data-ingest-process-platform",
@@ -4143,6 +4385,14 @@
           {
             "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
             "cost": 1440.18
+          },
+          {
+            "name": "rg-spaces",
+            "cost": 1367.69
+          },
+          {
+            "name": "rg-azureml01",
+            "cost": 1266.89
           },
           {
             "name": "rg-edp-prod-data-serving-platform",
@@ -4161,6 +4411,22 @@
             "cost": 1040.8
           },
           {
+            "name": "rg-aiprospecting",
+            "cost": 1028.13
+          },
+          {
+            "name": "rg-intelligenceonboarding",
+            "cost": 956.5
+          },
+          {
+            "name": "rg-venuebooking",
+            "cost": 938.11
+          },
+          {
+            "name": "rg-synapsedev",
+            "cost": 935.11
+          },
+          {
             "name": "rg-edp-prod-azurevm-backups-platform",
             "cost": 885.84
           },
@@ -4169,66 +4435,22 @@
             "cost": 828.17
           },
           {
+            "name": "rg-venuebooking-stg",
+            "cost": 654.46
+          },
+          {
             "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
             "cost": 612.0
-          },
-          {
-            "name": "rg-aics",
-            "cost": 592.31
-          },
-          {
-            "name": "rg-edp-prod-data-ingest-platform",
-            "cost": 582.27
-          },
-          {
-            "name": "proded-shared-ms-neu",
-            "cost": 539.89
-          },
-          {
-            "name": "rg-edp-prod-consume-api-management-platform",
-            "cost": 538.22
-          },
-          {
-            "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-REVENUEMGMT-GAXKD7IJGK5KW",
-            "cost": 437.65
-          },
-          {
-            "name": "rg-edp-prod-cbi-data-storage-platform",
-            "cost": 418.44
-          },
-          {
-            "name": "rg-cops-ppe-monitoring",
-            "cost": 404.59
-          },
-          {
-            "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-            "cost": 381.08
-          },
-          {
-            "name": "rg-eyprdaiaspilots",
-            "cost": 338.86
-          },
-          {
-            "name": "ey-uaenor-hub-rg",
-            "cost": 334.43
-          },
-          {
-            "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-            "cost": 331.28
-          },
-          {
-            "name": "mc_deved-aks-ms-weu_deved-aks-ms-weu_westeurope",
-            "cost": 306.39
           }
         ],
         "costByRegion": [
           {
             "name": "uaenorth",
-            "cost": 151714.66
+            "cost": 177727.43
           },
           {
             "name": "Unassigned",
-            "cost": 32942.4
+            "cost": 32954.79
           },
           {
             "name": "westeurope",
@@ -4236,7 +4458,7 @@
           },
           {
             "name": "northeurope",
-            "cost": 13921.05
+            "cost": 13932.92
           },
           {
             "name": "Unknown",
@@ -4244,11 +4466,11 @@
           },
           {
             "name": "All Regions",
-            "cost": 1542.43
+            "cost": 2661.63
           },
           {
             "name": "EastUS",
-            "cost": 845.34
+            "cost": 856.63
           },
           {
             "name": "uaecentral",
@@ -4256,11 +4478,15 @@
           },
           {
             "name": "EastUS2",
-            "cost": 273.34
+            "cost": 387.8
+          },
+          {
+            "name": "CentralUS",
+            "cost": 288.67
           },
           {
             "name": "WestUS",
-            "cost": 81.87
+            "cost": 81.96
           },
           {
             "name": "westus2",
@@ -4275,8 +4501,8 @@
             "cost": 21.86
           },
           {
-            "name": "CentralUS",
-            "cost": 15.83
+            "name": "eastasia",
+            "cost": 18.9
           },
           {
             "name": "southindia",
@@ -4291,8 +4517,8 @@
             "cost": 2.96
           },
           {
-            "name": "eastasia",
-            "cost": 0.75
+            "name": "westus3",
+            "cost": 1.21
           },
           {
             "name": "uksouth",
@@ -4313,128 +4539,132 @@
           {
             "name": "canadacentral",
             "cost": 0.0
+          },
+          {
+            "name": "Europe",
+            "cost": 0.0
           }
         ],
         "dailyTrend": [
           {
             "date": "2026-06-01",
-            "cost": 11725.16
+            "cost": 12665.62
           },
           {
             "date": "2026-06-02",
-            "cost": 3771.73
+            "cost": 4699.76
           },
           {
             "date": "2026-06-03",
-            "cost": 7904.36
+            "cost": 8851.35
           },
           {
             "date": "2026-06-04",
-            "cost": 4186.77
+            "cost": 5192.02
           },
           {
             "date": "2026-06-05",
-            "cost": 883.33
+            "cost": 1752.1
           },
           {
             "date": "2026-06-06",
-            "cost": 2522.01
+            "cost": 3160.0
           },
           {
             "date": "2026-06-07",
-            "cost": 0.0
+            "cost": 640.33
           },
           {
             "date": "2026-06-08",
-            "cost": 3196.62
+            "cost": 4130.06
           },
           {
             "date": "2026-06-09",
-            "cost": 1155.57
+            "cost": 2135.32
           },
           {
             "date": "2026-06-10",
-            "cost": 0.0
+            "cost": 984.61
           },
           {
             "date": "2026-06-11",
-            "cost": 4828.0
+            "cost": 5786.63
           },
           {
             "date": "2026-06-12",
-            "cost": 1818.35
+            "cost": 2769.62
           },
           {
             "date": "2026-06-13",
-            "cost": 6367.02
+            "cost": 7053.89
           },
           {
             "date": "2026-06-14",
-            "cost": 1798.85
+            "cost": 2480.78
           },
           {
             "date": "2026-06-15",
-            "cost": 35216.98
+            "cost": 36067.39
           },
           {
             "date": "2026-06-16",
-            "cost": 3921.81
+            "cost": 4957.76
           },
           {
             "date": "2026-06-17",
-            "cost": 588.9
+            "cost": 1564.67
           },
           {
             "date": "2026-06-18",
-            "cost": 1246.64
+            "cost": 2257.82
           },
           {
             "date": "2026-06-19",
-            "cost": 10499.35
+            "cost": 11473.49
           },
           {
             "date": "2026-06-20",
-            "cost": 603.45
+            "cost": 1324.53
           },
           {
             "date": "2026-06-21",
-            "cost": 94775.97
+            "cost": 95458.16
           },
           {
             "date": "2026-06-22",
-            "cost": 6848.47
+            "cost": 7865.79
           },
           {
             "date": "2026-06-23",
-            "cost": 1478.42
+            "cost": 2494.93
           },
           {
             "date": "2026-06-24",
-            "cost": 397.73
+            "cost": 1451.48
           },
           {
             "date": "2026-06-25",
-            "cost": 795.89
+            "cost": 1869.66
           },
           {
             "date": "2026-06-26",
-            "cost": 2753.54
+            "cost": 3721.68
           },
           {
             "date": "2026-06-27",
-            "cost": 1129.63
+            "cost": 1821.44
           },
           {
             "date": "2026-06-28",
-            "cost": 2606.72
+            "cost": 3335.1
           },
           {
             "date": "2026-06-29",
-            "cost": 1909.24
+            "cost": 3426.24
           },
           {
             "date": "2026-06-30",
-            "cost": 8808.29
+            "cost": 9920.84
           }
         ],
         "topResources": [
@@ -4667,6 +4897,18 @@
             "region": "westeurope"
           },
           {
+            "cost": 2577.31,
+            "clientKey": "difc",
+            "clientName": "DIFC",
+            "month": "2026-06",
+            "resourceName": "DIFCSYNAPSESTUDIOPROD",
+            "resourceId": "/SUBSCRIPTIONS/45E85AD2-D281-4452-85F1-0E6B13DFAC32/RESOURCEGROUPS/PRODUCTION/PROVIDERS/MICROSOFT.SYNAPSE/WORKSPACES/DIFCSYNAPSESTUDIOPROD",
+            "subscriptionName": "Enterprise Application BI",
+            "resourceGroup": "PRODUCTION",
+            "service": "Azure Synapse Analytics",
+            "region": "uaenorth"
+          },
+          {
             "cost": 2183.46,
             "clientKey": "etihad",
             "clientName": "Etihad Airways",
@@ -4725,655 +4967,16 @@
             "resourceGroup": "Unassigned",
             "service": "Virtual Machines",
             "region": "uaenorth"
-          },
-          {
-            "cost": 1403.8,
-            "clientKey": "etihad",
-            "clientName": "Etihad Airways",
-            "month": "2026-06",
-            "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/521be4ee-b602-48a5-ab4c-9780166764d4/reservations/",
-            "subscriptionName": "EDP2 PROD",
-            "resourceGroup": "Unassigned",
-            "service": "Virtual Machines",
-            "region": "uaenorth"
-          }
-        ]
-      },
-      "2026-07": {
-        "summary": {
-          "totalCost": 2635.57,
-          "subscriptionCount": 7,
-          "resourceGroupCount": 105,
-          "resourceCount": 1010
-        },
-        "monthList": [
-          "2026-07"
-        ],
-        "costByClient": [
-          {
-            "name": "DIFC",
-            "cost": 2635.57
-          }
-        ],
-        "costByMonth": [
-          {
-            "name": "2026-07",
-            "cost": 2635.57
-          }
-        ],
-        "costBySubscription": [
-          {
-            "name": "Digital",
-            "cost": 1122.25
-          },
-          {
-            "name": "Enterprise Application BI",
-            "cost": 589.96
-          },
-          {
-            "name": "InfoSEC-SOC",
-            "cost": 290.36
-          },
-          {
-            "name": "Az Network",
-            "cost": 282.92
-          },
-          {
-            "name": "Digital Dev/Test",
-            "cost": 257.41
-          },
-          {
-            "name": "Enterprise Application Dev/Test",
-            "cost": 92.67
-          },
-          {
-            "name": "MS Defender",
-            "cost": 0.0
-          }
-        ],
-        "costByService": [
-          {
-            "name": "Azure Synapse Analytics",
-            "cost": 453.96
-          },
-          {
-            "name": "Virtual Machines",
-            "cost": 378.47
-          },
-          {
-            "name": "Foundry Models",
-            "cost": 349.1
-          },
-          {
-            "name": "Foundry Tools",
-            "cost": 230.75
-          },
-          {
-            "name": "Azure App Service",
-            "cost": 197.93
-          },
-          {
-            "name": "Storage",
-            "cost": 150.41
-          },
-          {
-            "name": "SQL Database",
-            "cost": 105.27
-          },
-          {
-            "name": "Virtual Network",
-            "cost": 98.74
-          },
-          {
-            "name": "Azure Database for PostgreSQL",
-            "cost": 87.43
-          },
-          {
-            "name": "Microsoft Graph data connect",
-            "cost": 79.5
-          },
-          {
-            "name": "Azure Firewall",
-            "cost": 73.12
-          },
-          {
-            "name": "Azure Front Door Service",
-            "cost": 56.27
-          },
-          {
-            "name": "Functions",
-            "cost": 41.33
-          },
-          {
-            "name": "Azure Cosmos DB",
-            "cost": 38.1
-          },
-          {
-            "name": "Application Gateway",
-            "cost": 37.24
-          },
-          {
-            "name": "Container Registry",
-            "cost": 30.46
-          },
-          {
-            "name": "Redis Cache",
-            "cost": 21.57
-          },
-          {
-            "name": "Azure Bastion",
-            "cost": 21.28
-          },
-          {
-            "name": "Log Analytics",
-            "cost": 20.88
-          },
-          {
-            "name": "Azure Database for MySQL",
-            "cost": 19.69
-          },
-          {
-            "name": "Azure DevOps",
-            "cost": 18.52
-          },
-          {
-            "name": "Azure DDOS Protection",
-            "cost": 15.27
-          },
-          {
-            "name": "API Management",
-            "cost": 14.94
-          },
-          {
-            "name": "Load Balancer",
-            "cost": 14.65
-          },
-          {
-            "name": "Azure Monitor",
-            "cost": 12.99
-          }
-        ],
-        "costByResourceGroup": [
-          {
-            "name": "rg-compliancesentinel",
-            "cost": 283.47
-          },
-          {
-            "name": "PRODUCTION",
-            "cost": 268.6
-          },
-          {
-            "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-            "cost": 216.84
-          },
-          {
-            "name": "Production",
-            "cost": 188.88
-          },
-          {
-            "name": "rg-intelligenceonboarding",
-            "cost": 152.13
-          },
-          {
-            "name": "rg-net01",
-            "cost": 144.24
-          },
-          {
-            "name": "rg-azureml01",
-            "cost": 112.46
-          },
-          {
-            "name": "rg-spaces",
-            "cost": 100.07
-          },
-          {
-            "name": "rg-aiprospecting",
-            "cost": 92.53
-          },
-          {
-            "name": "rg-synapsedev",
-            "cost": 92.51
-          },
-          {
-            "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-            "cost": 75.36
-          },
-          {
-            "name": "rg-venuebooking",
-            "cost": 72.7
-          },
-          {
-            "name": "rg-venuebooking-stg",
-            "cost": 50.77
-          },
-          {
-            "name": "rg-govservices",
-            "cost": 48.87
-          },
-          {
-            "name": "RG-COMMV01",
-            "cost": 47.27
-          },
-          {
-            "name": "difc-prod-rg",
-            "cost": 36.4
-          },
-          {
-            "name": "rg-tenex-dev",
-            "cost": 35.92
-          },
-          {
-            "name": "rg-spaces-stg",
-            "cost": 35.74
-          },
-          {
-            "name": "rg-bpla",
-            "cost": 34.79
-          },
-          {
-            "name": "RG-AIPROSPECTING",
-            "cost": 32.84
-          },
-          {
-            "name": "IS_Foundry",
-            "cost": 31.17
-          },
-          {
-            "name": "rg-MagOneAI",
-            "cost": 30.66
-          },
-          {
-            "name": "RG-COMMVRESTORE01",
-            "cost": 27.5
-          },
-          {
-            "name": "rg-OvelEdge",
-            "cost": 25.99
-          },
-          {
-            "name": "rg-openai-account-dev",
-            "cost": 24.76
-          }
-        ],
-        "costByRegion": [
-          {
-            "name": "uaenorth",
-            "cost": 2523.14
-          },
-          {
-            "name": "All Regions",
-            "cost": 67.64
-          },
-          {
-            "name": "EastUS2",
-            "cost": 23.45
-          },
-          {
-            "name": "CentralUS",
-            "cost": 18.52
-          },
-          {
-            "name": "northeurope",
-            "cost": 0.96
-          },
-          {
-            "name": "EastUS",
-            "cost": 0.9
-          },
-          {
-            "name": "eastasia",
-            "cost": 0.89
-          },
-          {
-            "name": "WestUS",
-            "cost": 0.08
-          },
-          {
-            "name": "Europe",
-            "cost": 0.0
-          },
-          {
-            "name": "NorthCentralUs",
-            "cost": 0.0
-          },
-          {
-            "name": "westeurope",
-            "cost": 0.0
-          },
-          {
-            "name": "westus2",
-            "cost": 0.0
-          },
-          {
-            "name": "Unassigned",
-            "cost": 0.0
-          }
-        ],
-        "dailyTrend": [
-          {
-            "date": "2026-07-01",
-            "cost": 1074.31
-          },
-          {
-            "date": "2026-07-02",
-            "cost": 1113.68
-          },
-          {
-            "date": "2026-07-03",
-            "cost": 447.58
-          }
-        ],
-        "topResources": [
-          {
-            "cost": 266.52,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "DIFCSYNAPSESTUDIOPROD",
-            "resourceId": "/SUBSCRIPTIONS/45E85AD2-D281-4452-85F1-0E6B13DFAC32/RESOURCEGROUPS/PRODUCTION/PROVIDERS/MICROSOFT.SYNAPSE/WORKSPACES/DIFCSYNAPSESTUDIOPROD",
-            "subscriptionName": "Enterprise Application BI",
-            "resourceGroup": "PRODUCTION",
-            "service": "Azure Synapse Analytics",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 172.25,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "openai-compliance-auto",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/openai-compliance-auto",
-            "subscriptionName": "Digital",
-            "resourceGroup": "rg-compliancesentinel",
-            "service": "Foundry Models",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 99.89,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "intelligent-onboarding-di",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-di",
-            "subscriptionName": "Digital",
-            "resourceGroup": "rg-intelligenceonboarding",
-            "service": "Foundry Tools",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 97.02,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "difcsynapsestudioprod",
-            "resourceId": "/subscriptions/45E85AD2-D281-4452-85F1-0E6B13DFAC32/resourceGroups/Production/providers/Microsoft.Synapse/workspaces/difcsynapsestudioprod/sqlPools/difc_dwh_prod",
-            "subscriptionName": "Enterprise Application BI",
-            "resourceGroup": "Production",
-            "service": "Azure Synapse Analytics",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 90.26,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "difcsynapsedev",
-            "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
-            "subscriptionName": "Enterprise Application Dev/Test",
-            "resourceGroup": "rg-synapsedev",
-            "service": "Azure Synapse Analytics",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 79.5,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "difcsynapsestudioprod",
-            "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/Production/providers/Microsoft.DataFactory/factories/difcsynapsestudioprod",
-            "subscriptionName": "Enterprise Application BI",
-            "resourceGroup": "Production",
-            "service": "Microsoft Graph data connect",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 77.96,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "di-compliance-auto",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/di-compliance-auto",
-            "subscriptionName": "Digital",
-            "resourceGroup": "rg-compliancesentinel",
-            "service": "Foundry Tools",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 75.12,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "hub-fw01",
-            "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/azurefirewalls/hub-fw01",
-            "subscriptionName": "Az Network",
-            "resourceGroup": "rg-net01",
-            "service": "Bandwidth",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 62.31,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "openai-account-cube-prod",
-            "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/rg-azureml01/providers/Microsoft.CognitiveServices/accounts/openai-account-cube-prod",
-            "subscriptionName": "Enterprise Application BI",
-            "resourceGroup": "rg-azureml01",
-            "service": "Foundry Models",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 62.1,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "aks-trmodel-26684284-vmss",
-            "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trmodel-26684284-vmss",
-            "subscriptionName": "InfoSEC-SOC",
-            "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-            "service": "Virtual Machines",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 62.05,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "aks-agentpool-26684284-vmss",
-            "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-agentpool-26684284-vmss",
-            "subscriptionName": "InfoSEC-SOC",
-            "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-            "service": "Virtual Machines",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 62.05,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "aks-userpool-26684284-vmss",
-            "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-userpool-26684284-vmss",
-            "subscriptionName": "InfoSEC-SOC",
-            "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-            "service": "Virtual Machines",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 38.18,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "intelligent-onboarding-openai",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-openai",
-            "subscriptionName": "Digital",
-            "resourceGroup": "rg-intelligenceonboarding",
-            "service": "Foundry Models",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 37.24,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "hub-agw01",
-            "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/applicationgateways/hub-agw01",
-            "subscriptionName": "Az Network",
-            "resourceGroup": "rg-net01",
-            "service": "Bandwidth",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 30.47,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "aks-trproduibk-26684284-vmss",
-            "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trproduibk-26684284-vmss",
-            "subscriptionName": "InfoSEC-SOC",
-            "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-            "service": "Virtual Machines",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 26.32,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "aks-agentpool-81867277-vmss",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-agentpool-81867277-vmss",
-            "subscriptionName": "Digital",
-            "resourceGroup": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-            "service": "Virtual Machines",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 25.68,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "ai-prospecting-db-server",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-aiprospecting/providers/Microsoft.Sql/servers/ai-prospecting-db-server/databases/xpressfeed_control_db",
-            "subscriptionName": "Digital",
-            "resourceGroup": "rg-aiprospecting",
-            "service": "SQL Database",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 25.64,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "sql-tenex-dev",
-            "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-tenex-dev/providers/Microsoft.Sql/servers/sql-tenex-dev/databases/sqldb-tenex-dev",
-            "subscriptionName": "Digital Dev/Test",
-            "resourceGroup": "rg-tenex-dev",
-            "service": "SQL Database",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 25.45,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "difc-venue-fdp-uaen-01",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-venuebooking/providers/microsoft.cdn/profiles/difc-venue-fdp-uaen-01",
-            "subscriptionName": "Digital",
-            "resourceGroup": "rg-venuebooking",
-            "service": "Azure Front Door Service",
-            "region": "All Regions"
-          },
-          {
-            "cost": 25.3,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "difc-venue-fdp-uat-uaen-01",
-            "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourcegroups/rg-venuebooking-stg/providers/microsoft.cdn/profiles/difc-venue-fdp-uat-uaen-01",
-            "subscriptionName": "Digital Dev/Test",
-            "resourceGroup": "rg-venuebooking-stg",
-            "service": "Azure Front Door Service",
-            "region": "All Regions"
-          },
-          {
-            "cost": 24.76,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "difc-azure-document-intelligence",
-            "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-openai-account-dev/providers/Microsoft.CognitiveServices/accounts/difc-azure-document-intelligence",
-            "subscriptionName": "Digital Dev/Test",
-            "resourceGroup": "rg-openai-account-dev",
-            "service": "Foundry Tools",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 24.19,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "pg-magoneai",
-            "resourceId": "/subscriptions/FA06AE09-354E-4F82-9BA9-A2EE31257AE7/resourceGroups/rg-MagOneAI/providers/Microsoft.DBforPostgreSQL/flexibleservers/pg-magoneai",
-            "subscriptionName": "Digital",
-            "resourceGroup": "rg-MagOneAI",
-            "service": "Azure Database for PostgreSQL",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 23.45,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "ai-pentester",
-            "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/IS_Foundry/providers/Microsoft.CognitiveServices/accounts/ai-pentester",
-            "subscriptionName": "InfoSEC-SOC",
-            "resourceGroup": "IS_Foundry",
-            "service": "Foundry Models",
-            "region": "EastUS2"
-          },
-          {
-            "cost": 19.88,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "vm-xpressfeed01",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/RG-AIPROSPECTING/providers/Microsoft.Compute/virtualMachines/vm-xpressfeed01",
-            "subscriptionName": "Digital",
-            "resourceGroup": "RG-AIPROSPECTING",
-            "service": "Virtual Machines",
-            "region": "uaenorth"
-          },
-          {
-            "cost": 19.66,
-            "clientKey": "difc",
-            "clientName": "DIFC",
-            "month": "2026-07",
-            "resourceName": "spacesprodrg",
-            "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-spaces/providers/microsoft.web/serverfarms/spacesprodrg",
-            "subscriptionName": "Digital",
-            "resourceGroup": "rg-spaces",
-            "service": "Azure App Service",
-            "region": "uaenorth"
           }
         ]
       }
     }
   },
   "summary": {
-    "totalCost": 226374.4,
-    "subscriptionCount": 52,
-    "resourceGroupCount": 867,
-    "resourceCount": 194369
+    "totalCost": 251313.09,
+    "subscriptionCount": 53,
+    "resourceGroupCount": 870,
+    "resourceCount": 194930
   },
   "costByClient": [
     {
@@ -5382,17 +4985,13 @@
     },
     {
       "name": "DIFC",
-      "cost": 2635.57
+      "cost": 27574.26
     }
   ],
   "costByMonth": [
     {
       "name": "2026-06",
-      "cost": 223738.83
-    },
-    {
-      "name": "2026-07",
-      "cost": 2635.57
+      "cost": 251313.09
     }
   ],
   "costBySubscription": [
@@ -5409,8 +5008,16 @@
       "cost": 24088.03
     },
     {
+      "name": "Digital",
+      "cost": 9846.23
+    },
+    {
       "name": "Spoke_EY_Digital",
       "cost": 9532.81
+    },
+    {
+      "name": "Enterprise Application BI",
+      "cost": 6241.52
     },
     {
       "name": "Dev_Test_EY_Digital",
@@ -5421,8 +5028,20 @@
       "cost": 4415.77
     },
     {
+      "name": "InfoSEC-SOC",
+      "cost": 3865.6
+    },
+    {
       "name": "EDP2 PPE",
       "cost": 3752.07
+    },
+    {
+      "name": "Az Network",
+      "cost": 3587.24
+    },
+    {
+      "name": "Digital Dev/Test",
+      "cost": 3096.9
     },
     {
       "name": "AI Hub - PPE",
@@ -5445,12 +5064,12 @@
       "cost": 1270.34
     },
     {
-      "name": "Digital",
-      "cost": 1122.25
-    },
-    {
       "name": "FPR production",
       "cost": 1074.58
+    },
+    {
+      "name": "Enterprise Application Dev/Test",
+      "cost": 944.33
     },
     {
       "name": "SecOps Azure LogsToQRadar",
@@ -5469,50 +5088,30 @@
       "cost": 653.62
     },
     {
-      "name": "Enterprise Application BI",
-      "cost": 589.96
-    },
-    {
       "name": "Landing Zone",
       "cost": 499.53
     },
     {
       "name": "Cargo PROD Azure Subscription",
       "cost": 426.49
-    },
-    {
-      "name": "SecurityOperations Azure QRadar Inegration",
-      "cost": 426.3
-    },
-    {
-      "name": "Managed File Transfer PPE",
-      "cost": 412.22
-    },
-    {
-      "name": "Landing Zone PPE",
-      "cost": 376.47
-    },
-    {
-      "name": "InfoSEC-SOC",
-      "cost": 290.36
     }
   ],
   "costByService": [
     {
       "name": "Storage",
-      "cost": 77699.19
+      "cost": 79333.49
     },
     {
       "name": "Virtual Machines",
-      "cost": 44701.83
+      "cost": 48485.37
     },
     {
       "name": "SaaS",
-      "cost": 33422.71
+      "cost": 33797.09
     },
     {
       "name": "Azure Synapse Analytics",
-      "cost": 22582.59
+      "cost": 26685.31
     },
     {
       "name": "Microsoft Fabric",
@@ -5520,31 +5119,47 @@
     },
     {
       "name": "Azure Cosmos DB",
-      "cost": 6376.98
-    },
-    {
-      "name": "Log Analytics",
-      "cost": 3063.23
-    },
-    {
-      "name": "Azure Database for PostgreSQL",
-      "cost": 1998.91
+      "cost": 6846.83
     },
     {
       "name": "Azure App Service",
-      "cost": 1878.31
+      "cost": 4137.68
     },
     {
-      "name": "API Management",
-      "cost": 1650.57
+      "name": "Log Analytics",
+      "cost": 3431.37
     },
     {
-      "name": "Redis Cache",
-      "cost": 1396.34
+      "name": "Azure Database for PostgreSQL",
+      "cost": 2790.97
     },
     {
       "name": "Virtual Network",
-      "cost": 1371.11
+      "cost": 2446.79
+    },
+    {
+      "name": "Foundry Models",
+      "cost": 2337.74
+    },
+    {
+      "name": "API Management",
+      "cost": 1827.73
+    },
+    {
+      "name": "Redis Cache",
+      "cost": 1652.12
+    },
+    {
+      "name": "Foundry Tools",
+      "cost": 1494.73
+    },
+    {
+      "name": "Load Balancer",
+      "cost": 1302.39
+    },
+    {
+      "name": "SQL Database",
+      "cost": 1277.16
     },
     {
       "name": "Azure Data Factory v2",
@@ -5555,54 +5170,38 @@
       "cost": 1249.32
     },
     {
-      "name": "Load Balancer",
-      "cost": 1145.75
+      "name": "Application Gateway",
+      "cost": 1237.48
+    },
+    {
+      "name": "Azure Front Door Service",
+      "cost": 938.49
+    },
+    {
+      "name": "Microsoft Graph data connect",
+      "cost": 931.5
     },
     {
       "name": "Backup",
-      "cost": 909.71
+      "cost": 929.52
+    },
+    {
+      "name": "Azure Firewall",
+      "cost": 927.26
     },
     {
       "name": "GitHub",
       "cost": 806.81
     },
     {
-      "name": "Application Gateway",
-      "cost": 795.92
-    },
-    {
-      "name": "Foundry Models",
-      "cost": 599.27
-    },
-    {
-      "name": "Event Hubs",
-      "cost": 561.92
-    },
-    {
       "name": "Azure Bastion",
-      "cost": 531.52
-    },
-    {
-      "name": "Bandwidth",
-      "cost": 438.54
-    },
-    {
-      "name": "Azure Front Door Service",
-      "cost": 285.12
-    },
-    {
-      "name": "Azure Cognitive Search",
-      "cost": 270.14
-    },
-    {
-      "name": "Foundry Tools",
-      "cost": 267.02
+      "cost": 783.84
     }
   ],
   "costByResourceGroup": [
     {
       "name": "Unassigned",
-      "cost": 150391.13
+      "cost": 150637.89
     },
     {
       "name": "ComplexEventProcessingMonthlyBilling",
@@ -5613,8 +5212,28 @@
       "cost": 6633.1
     },
     {
+      "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
+      "cost": 2794.57
+    },
+    {
+      "name": "PRODUCTION",
+      "cost": 2601.15
+    },
+    {
+      "name": "Production",
+      "cost": 2132.16
+    },
+    {
+      "name": "rg-net01",
+      "cost": 1842.38
+    },
+    {
       "name": "central-infosec-ms-weu",
       "cost": 1768.2
+    },
+    {
+      "name": "rg-compliancesentinel",
+      "cost": 1551.73
     },
     {
       "name": "rg-guestvalue-data-ingest-process-platform",
@@ -5623,6 +5242,14 @@
     {
       "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
       "cost": 1440.18
+    },
+    {
+      "name": "rg-spaces",
+      "cost": 1367.69
+    },
+    {
+      "name": "rg-azureml01",
+      "cost": 1266.89
     },
     {
       "name": "rg-edp-prod-data-serving-platform",
@@ -5641,6 +5268,22 @@
       "cost": 1040.8
     },
     {
+      "name": "rg-aiprospecting",
+      "cost": 1028.13
+    },
+    {
+      "name": "rg-intelligenceonboarding",
+      "cost": 956.5
+    },
+    {
+      "name": "rg-venuebooking",
+      "cost": 938.11
+    },
+    {
+      "name": "rg-synapsedev",
+      "cost": 935.11
+    },
+    {
       "name": "rg-edp-prod-azurevm-backups-platform",
       "cost": 885.84
     },
@@ -5649,66 +5292,22 @@
       "cost": 828.17
     },
     {
+      "name": "rg-venuebooking-stg",
+      "cost": 654.46
+    },
+    {
       "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
       "cost": 612.0
-    },
-    {
-      "name": "rg-aics",
-      "cost": 592.31
-    },
-    {
-      "name": "rg-edp-prod-data-ingest-platform",
-      "cost": 582.27
-    },
-    {
-      "name": "proded-shared-ms-neu",
-      "cost": 539.89
-    },
-    {
-      "name": "rg-edp-prod-consume-api-management-platform",
-      "cost": 538.22
-    },
-    {
-      "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-REVENUEMGMT-GAXKD7IJGK5KW",
-      "cost": 437.65
-    },
-    {
-      "name": "rg-edp-prod-cbi-data-storage-platform",
-      "cost": 418.44
-    },
-    {
-      "name": "rg-cops-ppe-monitoring",
-      "cost": 404.59
-    },
-    {
-      "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-      "cost": 381.08
-    },
-    {
-      "name": "rg-eyprdaiaspilots",
-      "cost": 338.86
-    },
-    {
-      "name": "ey-uaenor-hub-rg",
-      "cost": 334.43
-    },
-    {
-      "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-      "cost": 331.28
-    },
-    {
-      "name": "mc_deved-aks-ms-weu_deved-aks-ms-weu_westeurope",
-      "cost": 306.39
     }
   ],
   "costByRegion": [
     {
       "name": "uaenorth",
-      "cost": 154237.8
+      "cost": 177727.43
     },
     {
       "name": "Unassigned",
-      "cost": 32942.4
+      "cost": 32954.79
     },
     {
       "name": "westeurope",
@@ -5716,7 +5315,7 @@
     },
     {
       "name": "northeurope",
-      "cost": 13922.01
+      "cost": 13932.92
     },
     {
       "name": "Unknown",
@@ -5724,11 +5323,11 @@
     },
     {
       "name": "All Regions",
-      "cost": 1610.07
+      "cost": 2661.63
     },
     {
       "name": "EastUS",
-      "cost": 846.24
+      "cost": 856.63
     },
     {
       "name": "uaecentral",
@@ -5736,11 +5335,15 @@
     },
     {
       "name": "EastUS2",
-      "cost": 296.8
+      "cost": 387.8
+    },
+    {
+      "name": "CentralUS",
+      "cost": 288.67
     },
     {
       "name": "WestUS",
-      "cost": 81.95
+      "cost": 81.96
     },
     {
       "name": "westus2",
@@ -5751,12 +5354,12 @@
       "cost": 38.58
     },
     {
-      "name": "CentralUS",
-      "cost": 34.35
-    },
-    {
       "name": "swedencentral",
       "cost": 21.86
+    },
+    {
+      "name": "eastasia",
+      "cost": 18.9
     },
     {
       "name": "southindia",
@@ -5771,8 +5374,8 @@
       "cost": 2.96
     },
     {
-      "name": "eastasia",
-      "cost": 1.64
+      "name": "westus3",
+      "cost": 1.21
     },
     {
       "name": "uksouth",
@@ -5802,135 +5405,123 @@
   "dailyTrend": [
     {
       "date": "2026-06-01",
-      "cost": 11725.16
+      "cost": 12665.62
     },
     {
       "date": "2026-06-02",
-      "cost": 3771.73
+      "cost": 4699.76
     },
     {
       "date": "2026-06-03",
-      "cost": 7904.36
+      "cost": 8851.35
     },
     {
       "date": "2026-06-04",
-      "cost": 4186.77
+      "cost": 5192.02
     },
     {
       "date": "2026-06-05",
-      "cost": 883.33
+      "cost": 1752.1
     },
     {
       "date": "2026-06-06",
-      "cost": 2522.01
+      "cost": 3160.0
     },
     {
       "date": "2026-06-07",
-      "cost": 0.0
+      "cost": 640.33
     },
     {
       "date": "2026-06-08",
-      "cost": 3196.62
+      "cost": 4130.06
     },
     {
       "date": "2026-06-09",
-      "cost": 1155.57
+      "cost": 2135.32
     },
     {
       "date": "2026-06-10",
-      "cost": 0.0
+      "cost": 984.61
     },
     {
       "date": "2026-06-11",
-      "cost": 4828.0
+      "cost": 5786.63
     },
     {
       "date": "2026-06-12",
-      "cost": 1818.35
+      "cost": 2769.62
     },
     {
       "date": "2026-06-13",
-      "cost": 6367.02
+      "cost": 7053.89
     },
     {
       "date": "2026-06-14",
-      "cost": 1798.85
+      "cost": 2480.78
     },
     {
       "date": "2026-06-15",
-      "cost": 35216.98
+      "cost": 36067.39
     },
     {
       "date": "2026-06-16",
-      "cost": 3921.81
+      "cost": 4957.76
     },
     {
       "date": "2026-06-17",
-      "cost": 588.9
+      "cost": 1564.67
     },
     {
       "date": "2026-06-18",
-      "cost": 1246.64
+      "cost": 2257.82
     },
     {
       "date": "2026-06-19",
-      "cost": 10499.35
+      "cost": 11473.49
     },
     {
       "date": "2026-06-20",
-      "cost": 603.45
+      "cost": 1324.53
     },
     {
       "date": "2026-06-21",
-      "cost": 94775.97
+      "cost": 95458.16
     },
     {
       "date": "2026-06-22",
-      "cost": 6848.47
+      "cost": 7865.79
     },
     {
       "date": "2026-06-23",
-      "cost": 1478.42
+      "cost": 2494.93
     },
     {
       "date": "2026-06-24",
-      "cost": 397.73
+      "cost": 1451.48
     },
     {
       "date": "2026-06-25",
-      "cost": 795.89
+      "cost": 1869.66
     },
     {
       "date": "2026-06-26",
-      "cost": 2753.54
+      "cost": 3721.68
     },
     {
       "date": "2026-06-27",
-      "cost": 1129.63
+      "cost": 1821.44
     },
     {
       "date": "2026-06-28",
-      "cost": 2606.72
+      "cost": 3335.1
     },
     {
       "date": "2026-06-29",
-      "cost": 1909.24
+      "cost": 3426.24
     },
     {
       "date": "2026-06-30",
-      "cost": 8808.29
-    },
-    {
-      "date": "2026-07-01",
-      "cost": 1074.31
-    },
-    {
-      "date": "2026-07-02",
-      "cost": 1113.68
-    },
-    {
-      "date": "2026-07-03",
-      "cost": 447.58
+      "cost": 9920.84
     }
   ],
   "topResources": [
@@ -6163,6 +5754,18 @@
       "region": "westeurope"
     },
     {
+      "cost": 2577.31,
+      "clientKey": "difc",
+      "clientName": "DIFC",
+      "month": "2026-06",
+      "resourceName": "DIFCSYNAPSESTUDIOPROD",
+      "resourceId": "/SUBSCRIPTIONS/45E85AD2-D281-4452-85F1-0E6B13DFAC32/RESOURCEGROUPS/PRODUCTION/PROVIDERS/MICROSOFT.SYNAPSE/WORKSPACES/DIFCSYNAPSESTUDIOPROD",
+      "subscriptionName": "Enterprise Application BI",
+      "resourceGroup": "PRODUCTION",
+      "service": "Azure Synapse Analytics",
+      "region": "uaenorth"
+    },
+    {
       "cost": 2183.46,
       "clientKey": "etihad",
       "clientName": "Etihad Airways",
@@ -6221,27 +5824,15 @@
       "resourceGroup": "Unassigned",
       "service": "Virtual Machines",
       "region": "uaenorth"
-    },
-    {
-      "cost": 1403.8,
-      "clientKey": "etihad",
-      "clientName": "Etihad Airways",
-      "month": "2026-06",
-      "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/521be4ee-b602-48a5-ab4c-9780166764d4/reservations/",
-      "subscriptionName": "EDP2 PROD",
-      "resourceGroup": "Unassigned",
-      "service": "Virtual Machines",
-      "region": "uaenorth"
     }
   ],
   "months": {
     "2026-06": {
       "summary": {
-        "totalCost": 223738.83,
-        "subscriptionCount": 45,
-        "resourceGroupCount": 762,
-        "resourceCount": 193359
+        "totalCost": 251313.09,
+        "subscriptionCount": 53,
+        "resourceGroupCount": 870,
+        "resourceCount": 194930
       },
       "monthList": [
         "2026-06"
@@ -6250,12 +5841,16 @@
         {
           "name": "Etihad Airways",
           "cost": 223738.83
+        },
+        {
+          "name": "DIFC",
+          "cost": 27574.26
         }
       ],
       "costByMonth": [
         {
           "name": "2026-06",
-          "cost": 223738.83
+          "cost": 251313.09
         }
       ],
       "costBySubscription": [
@@ -6272,8 +5867,16 @@
           "cost": 24088.03
         },
         {
+          "name": "Digital",
+          "cost": 9846.23
+        },
+        {
           "name": "Spoke_EY_Digital",
           "cost": 9532.81
+        },
+        {
+          "name": "Enterprise Application BI",
+          "cost": 6241.52
         },
         {
           "name": "Dev_Test_EY_Digital",
@@ -6284,8 +5887,20 @@
           "cost": 4415.77
         },
         {
+          "name": "InfoSEC-SOC",
+          "cost": 3865.6
+        },
+        {
           "name": "EDP2 PPE",
           "cost": 3752.07
+        },
+        {
+          "name": "Az Network",
+          "cost": 3587.24
+        },
+        {
+          "name": "Digital Dev/Test",
+          "cost": 3096.9
         },
         {
           "name": "AI Hub - PPE",
@@ -6312,6 +5927,10 @@
           "cost": 1074.58
         },
         {
+          "name": "Enterprise Application Dev/Test",
+          "cost": 944.33
+        },
+        {
           "name": "SecOps Azure LogsToQRadar",
           "cost": 784.98
         },
@@ -6334,48 +5953,24 @@
         {
           "name": "Cargo PROD Azure Subscription",
           "cost": 426.49
-        },
-        {
-          "name": "SecurityOperations Azure QRadar Inegration",
-          "cost": 426.3
-        },
-        {
-          "name": "Managed File Transfer PPE",
-          "cost": 412.22
-        },
-        {
-          "name": "Landing Zone PPE",
-          "cost": 376.47
-        },
-        {
-          "name": "EVS Production",
-          "cost": 268.51
-        },
-        {
-          "name": "Cargo Azure PPE Subscription",
-          "cost": 249.66
-        },
-        {
-          "name": "PPE_Hub_EY_Digital",
-          "cost": 223.88
         }
       ],
       "costByService": [
         {
           "name": "Storage",
-          "cost": 77548.79
+          "cost": 79333.49
         },
         {
           "name": "Virtual Machines",
-          "cost": 44323.36
+          "cost": 48485.37
         },
         {
           "name": "SaaS",
-          "cost": 33414.99
+          "cost": 33797.09
         },
         {
           "name": "Azure Synapse Analytics",
-          "cost": 22128.63
+          "cost": 26685.31
         },
         {
           "name": "Microsoft Fabric",
@@ -6383,89 +5978,89 @@
         },
         {
           "name": "Azure Cosmos DB",
-          "cost": 6338.88
-        },
-        {
-          "name": "Log Analytics",
-          "cost": 3042.35
-        },
-        {
-          "name": "Azure Database for PostgreSQL",
-          "cost": 1911.48
+          "cost": 6846.83
         },
         {
           "name": "Azure App Service",
-          "cost": 1680.38
+          "cost": 4137.68
+        },
+        {
+          "name": "Log Analytics",
+          "cost": 3431.37
+        },
+        {
+          "name": "Azure Database for PostgreSQL",
+          "cost": 2790.97
+        },
+        {
+          "name": "Virtual Network",
+          "cost": 2446.79
+        },
+        {
+          "name": "Foundry Models",
+          "cost": 2337.74
         },
         {
           "name": "API Management",
-          "cost": 1635.63
+          "cost": 1827.73
         },
         {
           "name": "Redis Cache",
-          "cost": 1374.77
+          "cost": 1652.12
+        },
+        {
+          "name": "Foundry Tools",
+          "cost": 1494.73
+        },
+        {
+          "name": "Load Balancer",
+          "cost": 1302.39
+        },
+        {
+          "name": "SQL Database",
+          "cost": 1277.16
         },
         {
           "name": "Azure Data Factory v2",
           "cost": 1276.66
         },
         {
-          "name": "Virtual Network",
-          "cost": 1272.37
-        },
-        {
           "name": "Azure Databricks",
           "cost": 1249.32
         },
         {
-          "name": "Load Balancer",
-          "cost": 1131.1
+          "name": "Application Gateway",
+          "cost": 1237.48
+        },
+        {
+          "name": "Azure Front Door Service",
+          "cost": 938.49
+        },
+        {
+          "name": "Microsoft Graph data connect",
+          "cost": 931.5
         },
         {
           "name": "Backup",
-          "cost": 908.03
+          "cost": 929.52
+        },
+        {
+          "name": "Azure Firewall",
+          "cost": 927.26
         },
         {
           "name": "GitHub",
           "cost": 806.81
         },
         {
-          "name": "Application Gateway",
-          "cost": 758.68
-        },
-        {
-          "name": "Event Hubs",
-          "cost": 558.06
-        },
-        {
           "name": "Azure Bastion",
-          "cost": 510.24
-        },
-        {
-          "name": "Bandwidth",
-          "cost": 438.54
-        },
-        {
-          "name": "Azure Cognitive Search",
-          "cost": 264.48
-        },
-        {
-          "name": "Foundry Models",
-          "cost": 250.17
-        },
-        {
-          "name": "Azure Front Door Service",
-          "cost": 228.85
-        },
-        {
-          "name": "Azure DevOps",
-          "cost": 206.78
+          "cost": 783.84
         }
       ],
       "costByResourceGroup": [
         {
           "name": "Unassigned",
-          "cost": 150372.61
+          "cost": 150637.89
         },
         {
           "name": "ComplexEventProcessingMonthlyBilling",
@@ -6476,8 +6071,28 @@
           "cost": 6633.1
         },
         {
+          "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
+          "cost": 2794.57
+        },
+        {
+          "name": "PRODUCTION",
+          "cost": 2601.15
+        },
+        {
+          "name": "Production",
+          "cost": 2132.16
+        },
+        {
+          "name": "rg-net01",
+          "cost": 1842.38
+        },
+        {
           "name": "central-infosec-ms-weu",
           "cost": 1768.2
+        },
+        {
+          "name": "rg-compliancesentinel",
+          "cost": 1551.73
         },
         {
           "name": "rg-guestvalue-data-ingest-process-platform",
@@ -6486,6 +6101,14 @@
         {
           "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
           "cost": 1440.18
+        },
+        {
+          "name": "rg-spaces",
+          "cost": 1367.69
+        },
+        {
+          "name": "rg-azureml01",
+          "cost": 1266.89
         },
         {
           "name": "rg-edp-prod-data-serving-platform",
@@ -6504,6 +6127,22 @@
           "cost": 1040.8
         },
         {
+          "name": "rg-aiprospecting",
+          "cost": 1028.13
+        },
+        {
+          "name": "rg-intelligenceonboarding",
+          "cost": 956.5
+        },
+        {
+          "name": "rg-venuebooking",
+          "cost": 938.11
+        },
+        {
+          "name": "rg-synapsedev",
+          "cost": 935.11
+        },
+        {
           "name": "rg-edp-prod-azurevm-backups-platform",
           "cost": 885.84
         },
@@ -6512,66 +6151,22 @@
           "cost": 828.17
         },
         {
+          "name": "rg-venuebooking-stg",
+          "cost": 654.46
+        },
+        {
           "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
           "cost": 612.0
-        },
-        {
-          "name": "rg-aics",
-          "cost": 592.31
-        },
-        {
-          "name": "rg-edp-prod-data-ingest-platform",
-          "cost": 582.27
-        },
-        {
-          "name": "proded-shared-ms-neu",
-          "cost": 539.89
-        },
-        {
-          "name": "rg-edp-prod-consume-api-management-platform",
-          "cost": 538.22
-        },
-        {
-          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-REVENUEMGMT-GAXKD7IJGK5KW",
-          "cost": 437.65
-        },
-        {
-          "name": "rg-edp-prod-cbi-data-storage-platform",
-          "cost": 418.44
-        },
-        {
-          "name": "rg-cops-ppe-monitoring",
-          "cost": 404.59
-        },
-        {
-          "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-          "cost": 381.08
-        },
-        {
-          "name": "rg-eyprdaiaspilots",
-          "cost": 338.86
-        },
-        {
-          "name": "ey-uaenor-hub-rg",
-          "cost": 334.43
-        },
-        {
-          "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-          "cost": 331.28
-        },
-        {
-          "name": "mc_deved-aks-ms-weu_deved-aks-ms-weu_westeurope",
-          "cost": 306.39
         }
       ],
       "costByRegion": [
         {
           "name": "uaenorth",
-          "cost": 151714.66
+          "cost": 177727.43
         },
         {
           "name": "Unassigned",
-          "cost": 32942.4
+          "cost": 32954.79
         },
         {
           "name": "westeurope",
@@ -6579,7 +6174,7 @@
         },
         {
           "name": "northeurope",
-          "cost": 13921.05
+          "cost": 13932.92
         },
         {
           "name": "Unknown",
@@ -6587,11 +6182,11 @@
         },
         {
           "name": "All Regions",
-          "cost": 1542.43
+          "cost": 2661.63
         },
         {
           "name": "EastUS",
-          "cost": 845.34
+          "cost": 856.63
         },
         {
           "name": "uaecentral",
@@ -6599,11 +6194,15 @@
         },
         {
           "name": "EastUS2",
-          "cost": 273.34
+          "cost": 387.8
+        },
+        {
+          "name": "CentralUS",
+          "cost": 288.67
         },
         {
           "name": "WestUS",
-          "cost": 81.87
+          "cost": 81.96
         },
         {
           "name": "westus2",
@@ -6618,8 +6217,8 @@
           "cost": 21.86
         },
         {
-          "name": "CentralUS",
-          "cost": 15.83
+          "name": "eastasia",
+          "cost": 18.9
         },
         {
           "name": "southindia",
@@ -6634,8 +6233,8 @@
           "cost": 2.96
         },
         {
-          "name": "eastasia",
-          "cost": 0.75
+          "name": "westus3",
+          "cost": 1.21
         },
         {
           "name": "uksouth",
@@ -6656,128 +6255,132 @@
         {
           "name": "canadacentral",
           "cost": 0.0
+        },
+        {
+          "name": "Europe",
+          "cost": 0.0
         }
       ],
       "dailyTrend": [
         {
           "date": "2026-06-01",
-          "cost": 11725.16
+          "cost": 12665.62
         },
         {
           "date": "2026-06-02",
-          "cost": 3771.73
+          "cost": 4699.76
         },
         {
           "date": "2026-06-03",
-          "cost": 7904.36
+          "cost": 8851.35
         },
         {
           "date": "2026-06-04",
-          "cost": 4186.77
+          "cost": 5192.02
         },
         {
           "date": "2026-06-05",
-          "cost": 883.33
+          "cost": 1752.1
         },
         {
           "date": "2026-06-06",
-          "cost": 2522.01
+          "cost": 3160.0
         },
         {
           "date": "2026-06-07",
-          "cost": 0.0
+          "cost": 640.33
         },
         {
           "date": "2026-06-08",
-          "cost": 3196.62
+          "cost": 4130.06
         },
         {
           "date": "2026-06-09",
-          "cost": 1155.57
+          "cost": 2135.32
         },
         {
           "date": "2026-06-10",
-          "cost": 0.0
+          "cost": 984.61
         },
         {
           "date": "2026-06-11",
-          "cost": 4828.0
+          "cost": 5786.63
         },
         {
           "date": "2026-06-12",
-          "cost": 1818.35
+          "cost": 2769.62
         },
         {
           "date": "2026-06-13",
-          "cost": 6367.02
+          "cost": 7053.89
         },
         {
           "date": "2026-06-14",
-          "cost": 1798.85
+          "cost": 2480.78
         },
         {
           "date": "2026-06-15",
-          "cost": 35216.98
+          "cost": 36067.39
         },
         {
           "date": "2026-06-16",
-          "cost": 3921.81
+          "cost": 4957.76
         },
         {
           "date": "2026-06-17",
-          "cost": 588.9
+          "cost": 1564.67
         },
         {
           "date": "2026-06-18",
-          "cost": 1246.64
+          "cost": 2257.82
         },
         {
           "date": "2026-06-19",
-          "cost": 10499.35
+          "cost": 11473.49
         },
         {
           "date": "2026-06-20",
-          "cost": 603.45
+          "cost": 1324.53
         },
         {
           "date": "2026-06-21",
-          "cost": 94775.97
+          "cost": 95458.16
         },
         {
           "date": "2026-06-22",
-          "cost": 6848.47
+          "cost": 7865.79
         },
         {
           "date": "2026-06-23",
-          "cost": 1478.42
+          "cost": 2494.93
         },
         {
           "date": "2026-06-24",
-          "cost": 397.73
+          "cost": 1451.48
         },
         {
           "date": "2026-06-25",
-          "cost": 795.89
+          "cost": 1869.66
         },
         {
           "date": "2026-06-26",
-          "cost": 2753.54
+          "cost": 3721.68
         },
         {
           "date": "2026-06-27",
-          "cost": 1129.63
+          "cost": 1821.44
         },
         {
           "date": "2026-06-28",
-          "cost": 2606.72
+          "cost": 3335.1
         },
         {
           "date": "2026-06-29",
-          "cost": 1909.24
+          "cost": 3426.24
         },
         {
           "date": "2026-06-30",
-          "cost": 8808.29
+          "cost": 9920.84
         }
       ],
       "topResources": [
@@ -7010,6 +6613,18 @@
           "region": "westeurope"
         },
         {
+          "cost": 2577.31,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-06",
+          "resourceName": "DIFCSYNAPSESTUDIOPROD",
+          "resourceId": "/SUBSCRIPTIONS/45E85AD2-D281-4452-85F1-0E6B13DFAC32/RESOURCEGROUPS/PRODUCTION/PROVIDERS/MICROSOFT.SYNAPSE/WORKSPACES/DIFCSYNAPSESTUDIOPROD",
+          "subscriptionName": "Enterprise Application BI",
+          "resourceGroup": "PRODUCTION",
+          "service": "Azure Synapse Analytics",
+          "region": "uaenorth"
+        },
+        {
           "cost": 2183.46,
           "clientKey": "etihad",
           "clientName": "Etihad Airways",
@@ -7067,645 +6682,6 @@
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Virtual Machines",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 1403.8,
-          "clientKey": "etihad",
-          "clientName": "Etihad Airways",
-          "month": "2026-06",
-          "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/521be4ee-b602-48a5-ab4c-9780166764d4/reservations/",
-          "subscriptionName": "EDP2 PROD",
-          "resourceGroup": "Unassigned",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
-        }
-      ]
-    },
-    "2026-07": {
-      "summary": {
-        "totalCost": 2635.57,
-        "subscriptionCount": 7,
-        "resourceGroupCount": 105,
-        "resourceCount": 1010
-      },
-      "monthList": [
-        "2026-07"
-      ],
-      "costByClient": [
-        {
-          "name": "DIFC",
-          "cost": 2635.57
-        }
-      ],
-      "costByMonth": [
-        {
-          "name": "2026-07",
-          "cost": 2635.57
-        }
-      ],
-      "costBySubscription": [
-        {
-          "name": "Digital",
-          "cost": 1122.25
-        },
-        {
-          "name": "Enterprise Application BI",
-          "cost": 589.96
-        },
-        {
-          "name": "InfoSEC-SOC",
-          "cost": 290.36
-        },
-        {
-          "name": "Az Network",
-          "cost": 282.92
-        },
-        {
-          "name": "Digital Dev/Test",
-          "cost": 257.41
-        },
-        {
-          "name": "Enterprise Application Dev/Test",
-          "cost": 92.67
-        },
-        {
-          "name": "MS Defender",
-          "cost": 0.0
-        }
-      ],
-      "costByService": [
-        {
-          "name": "Azure Synapse Analytics",
-          "cost": 453.96
-        },
-        {
-          "name": "Virtual Machines",
-          "cost": 378.47
-        },
-        {
-          "name": "Foundry Models",
-          "cost": 349.1
-        },
-        {
-          "name": "Foundry Tools",
-          "cost": 230.75
-        },
-        {
-          "name": "Azure App Service",
-          "cost": 197.93
-        },
-        {
-          "name": "Storage",
-          "cost": 150.41
-        },
-        {
-          "name": "SQL Database",
-          "cost": 105.27
-        },
-        {
-          "name": "Virtual Network",
-          "cost": 98.74
-        },
-        {
-          "name": "Azure Database for PostgreSQL",
-          "cost": 87.43
-        },
-        {
-          "name": "Microsoft Graph data connect",
-          "cost": 79.5
-        },
-        {
-          "name": "Azure Firewall",
-          "cost": 73.12
-        },
-        {
-          "name": "Azure Front Door Service",
-          "cost": 56.27
-        },
-        {
-          "name": "Functions",
-          "cost": 41.33
-        },
-        {
-          "name": "Azure Cosmos DB",
-          "cost": 38.1
-        },
-        {
-          "name": "Application Gateway",
-          "cost": 37.24
-        },
-        {
-          "name": "Container Registry",
-          "cost": 30.46
-        },
-        {
-          "name": "Redis Cache",
-          "cost": 21.57
-        },
-        {
-          "name": "Azure Bastion",
-          "cost": 21.28
-        },
-        {
-          "name": "Log Analytics",
-          "cost": 20.88
-        },
-        {
-          "name": "Azure Database for MySQL",
-          "cost": 19.69
-        },
-        {
-          "name": "Azure DevOps",
-          "cost": 18.52
-        },
-        {
-          "name": "Azure DDOS Protection",
-          "cost": 15.27
-        },
-        {
-          "name": "API Management",
-          "cost": 14.94
-        },
-        {
-          "name": "Load Balancer",
-          "cost": 14.65
-        },
-        {
-          "name": "Azure Monitor",
-          "cost": 12.99
-        }
-      ],
-      "costByResourceGroup": [
-        {
-          "name": "rg-compliancesentinel",
-          "cost": 283.47
-        },
-        {
-          "name": "PRODUCTION",
-          "cost": 268.6
-        },
-        {
-          "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "cost": 216.84
-        },
-        {
-          "name": "Production",
-          "cost": 188.88
-        },
-        {
-          "name": "rg-intelligenceonboarding",
-          "cost": 152.13
-        },
-        {
-          "name": "rg-net01",
-          "cost": 144.24
-        },
-        {
-          "name": "rg-azureml01",
-          "cost": 112.46
-        },
-        {
-          "name": "rg-spaces",
-          "cost": 100.07
-        },
-        {
-          "name": "rg-aiprospecting",
-          "cost": 92.53
-        },
-        {
-          "name": "rg-synapsedev",
-          "cost": 92.51
-        },
-        {
-          "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-          "cost": 75.36
-        },
-        {
-          "name": "rg-venuebooking",
-          "cost": 72.7
-        },
-        {
-          "name": "rg-venuebooking-stg",
-          "cost": 50.77
-        },
-        {
-          "name": "rg-govservices",
-          "cost": 48.87
-        },
-        {
-          "name": "RG-COMMV01",
-          "cost": 47.27
-        },
-        {
-          "name": "difc-prod-rg",
-          "cost": 36.4
-        },
-        {
-          "name": "rg-tenex-dev",
-          "cost": 35.92
-        },
-        {
-          "name": "rg-spaces-stg",
-          "cost": 35.74
-        },
-        {
-          "name": "rg-bpla",
-          "cost": 34.79
-        },
-        {
-          "name": "RG-AIPROSPECTING",
-          "cost": 32.84
-        },
-        {
-          "name": "IS_Foundry",
-          "cost": 31.17
-        },
-        {
-          "name": "rg-MagOneAI",
-          "cost": 30.66
-        },
-        {
-          "name": "RG-COMMVRESTORE01",
-          "cost": 27.5
-        },
-        {
-          "name": "rg-OvelEdge",
-          "cost": 25.99
-        },
-        {
-          "name": "rg-openai-account-dev",
-          "cost": 24.76
-        }
-      ],
-      "costByRegion": [
-        {
-          "name": "uaenorth",
-          "cost": 2523.14
-        },
-        {
-          "name": "All Regions",
-          "cost": 67.64
-        },
-        {
-          "name": "EastUS2",
-          "cost": 23.45
-        },
-        {
-          "name": "CentralUS",
-          "cost": 18.52
-        },
-        {
-          "name": "northeurope",
-          "cost": 0.96
-        },
-        {
-          "name": "EastUS",
-          "cost": 0.9
-        },
-        {
-          "name": "eastasia",
-          "cost": 0.89
-        },
-        {
-          "name": "WestUS",
-          "cost": 0.08
-        },
-        {
-          "name": "Europe",
-          "cost": 0.0
-        },
-        {
-          "name": "NorthCentralUs",
-          "cost": 0.0
-        },
-        {
-          "name": "westeurope",
-          "cost": 0.0
-        },
-        {
-          "name": "westus2",
-          "cost": 0.0
-        },
-        {
-          "name": "Unassigned",
-          "cost": 0.0
-        }
-      ],
-      "dailyTrend": [
-        {
-          "date": "2026-07-01",
-          "cost": 1074.31
-        },
-        {
-          "date": "2026-07-02",
-          "cost": 1113.68
-        },
-        {
-          "date": "2026-07-03",
-          "cost": 447.58
-        }
-      ],
-      "topResources": [
-        {
-          "cost": 266.52,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "DIFCSYNAPSESTUDIOPROD",
-          "resourceId": "/SUBSCRIPTIONS/45E85AD2-D281-4452-85F1-0E6B13DFAC32/RESOURCEGROUPS/PRODUCTION/PROVIDERS/MICROSOFT.SYNAPSE/WORKSPACES/DIFCSYNAPSESTUDIOPROD",
-          "subscriptionName": "Enterprise Application BI",
-          "resourceGroup": "PRODUCTION",
-          "service": "Azure Synapse Analytics",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 172.25,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "openai-compliance-auto",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/openai-compliance-auto",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-compliancesentinel",
-          "service": "Foundry Models",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 99.89,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "intelligent-onboarding-di",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-di",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-intelligenceonboarding",
-          "service": "Foundry Tools",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 97.02,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difcsynapsestudioprod",
-          "resourceId": "/subscriptions/45E85AD2-D281-4452-85F1-0E6B13DFAC32/resourceGroups/Production/providers/Microsoft.Synapse/workspaces/difcsynapsestudioprod/sqlPools/difc_dwh_prod",
-          "subscriptionName": "Enterprise Application BI",
-          "resourceGroup": "Production",
-          "service": "Azure Synapse Analytics",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 90.26,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difcsynapsedev",
-          "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
-          "subscriptionName": "Enterprise Application Dev/Test",
-          "resourceGroup": "rg-synapsedev",
-          "service": "Azure Synapse Analytics",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 79.5,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difcsynapsestudioprod",
-          "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/Production/providers/Microsoft.DataFactory/factories/difcsynapsestudioprod",
-          "subscriptionName": "Enterprise Application BI",
-          "resourceGroup": "Production",
-          "service": "Microsoft Graph data connect",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 77.96,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "di-compliance-auto",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-compliancesentinel/providers/Microsoft.CognitiveServices/accounts/di-compliance-auto",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-compliancesentinel",
-          "service": "Foundry Tools",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 75.12,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "hub-fw01",
-          "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/azurefirewalls/hub-fw01",
-          "subscriptionName": "Az Network",
-          "resourceGroup": "rg-net01",
-          "service": "Bandwidth",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 62.31,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "openai-account-cube-prod",
-          "resourceId": "/subscriptions/45e85ad2-d281-4452-85f1-0e6b13dfac32/resourceGroups/rg-azureml01/providers/Microsoft.CognitiveServices/accounts/openai-account-cube-prod",
-          "subscriptionName": "Enterprise Application BI",
-          "resourceGroup": "rg-azureml01",
-          "service": "Foundry Models",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 62.1,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "aks-trmodel-26684284-vmss",
-          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trmodel-26684284-vmss",
-          "subscriptionName": "InfoSEC-SOC",
-          "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 62.05,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "aks-agentpool-26684284-vmss",
-          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-agentpool-26684284-vmss",
-          "subscriptionName": "InfoSEC-SOC",
-          "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 62.05,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "aks-userpool-26684284-vmss",
-          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-userpool-26684284-vmss",
-          "subscriptionName": "InfoSEC-SOC",
-          "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 38.18,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "intelligent-onboarding-openai",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-intelligenceonboarding/providers/Microsoft.CognitiveServices/accounts/intelligent-onboarding-openai",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-intelligenceonboarding",
-          "service": "Foundry Models",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 37.24,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "hub-agw01",
-          "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/applicationgateways/hub-agw01",
-          "subscriptionName": "Az Network",
-          "resourceGroup": "rg-net01",
-          "service": "Bandwidth",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 30.47,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "aks-trproduibk-26684284-vmss",
-          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trproduibk-26684284-vmss",
-          "subscriptionName": "InfoSEC-SOC",
-          "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 26.32,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "aks-agentpool-81867277-vmss",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-agentpool-81867277-vmss",
-          "subscriptionName": "Digital",
-          "resourceGroup": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 25.68,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "ai-prospecting-db-server",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/rg-aiprospecting/providers/Microsoft.Sql/servers/ai-prospecting-db-server/databases/xpressfeed_control_db",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-aiprospecting",
-          "service": "SQL Database",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 25.64,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "sql-tenex-dev",
-          "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-tenex-dev/providers/Microsoft.Sql/servers/sql-tenex-dev/databases/sqldb-tenex-dev",
-          "subscriptionName": "Digital Dev/Test",
-          "resourceGroup": "rg-tenex-dev",
-          "service": "SQL Database",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 25.45,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difc-venue-fdp-uaen-01",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-venuebooking/providers/microsoft.cdn/profiles/difc-venue-fdp-uaen-01",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-venuebooking",
-          "service": "Azure Front Door Service",
-          "region": "All Regions"
-        },
-        {
-          "cost": 25.3,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difc-venue-fdp-uat-uaen-01",
-          "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourcegroups/rg-venuebooking-stg/providers/microsoft.cdn/profiles/difc-venue-fdp-uat-uaen-01",
-          "subscriptionName": "Digital Dev/Test",
-          "resourceGroup": "rg-venuebooking-stg",
-          "service": "Azure Front Door Service",
-          "region": "All Regions"
-        },
-        {
-          "cost": 24.76,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difc-azure-document-intelligence",
-          "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-openai-account-dev/providers/Microsoft.CognitiveServices/accounts/difc-azure-document-intelligence",
-          "subscriptionName": "Digital Dev/Test",
-          "resourceGroup": "rg-openai-account-dev",
-          "service": "Foundry Tools",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 24.19,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "pg-magoneai",
-          "resourceId": "/subscriptions/FA06AE09-354E-4F82-9BA9-A2EE31257AE7/resourceGroups/rg-MagOneAI/providers/Microsoft.DBforPostgreSQL/flexibleservers/pg-magoneai",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-MagOneAI",
-          "service": "Azure Database for PostgreSQL",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 23.45,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "ai-pentester",
-          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/IS_Foundry/providers/Microsoft.CognitiveServices/accounts/ai-pentester",
-          "subscriptionName": "InfoSEC-SOC",
-          "resourceGroup": "IS_Foundry",
-          "service": "Foundry Models",
-          "region": "EastUS2"
-        },
-        {
-          "cost": 19.88,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "vm-xpressfeed01",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourceGroups/RG-AIPROSPECTING/providers/Microsoft.Compute/virtualMachines/vm-xpressfeed01",
-          "subscriptionName": "Digital",
-          "resourceGroup": "RG-AIPROSPECTING",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 19.66,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "spacesprodrg",
-          "resourceId": "/subscriptions/fa06ae09-354e-4f82-9ba9-a2ee31257ae7/resourcegroups/rg-spaces/providers/microsoft.web/serverfarms/spacesprodrg",
-          "subscriptionName": "Digital",
-          "resourceGroup": "rg-spaces",
-          "service": "Azure App Service",
           "region": "uaenorth"
         }
       ]
