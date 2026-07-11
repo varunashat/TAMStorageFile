@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - .github/workflows/deploy-youtube-ai-factory.yml
+      - azure-youtube-factory/.deploy-trigger
 
 permissions:
   id-token: write
