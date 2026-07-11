@@ -7,6 +7,9 @@ on:
       - main
     paths:
       - .github/workflows/deploy-youtube-ai-factory.yml
+      - azure-youtube-factory/deploy-fixed.sh
+      - azure-youtube-factory/deploy.sh
+      - azure-youtube-factory/worker/**
       - azure-youtube-factory/.deploy-trigger
 
 permissions:
@@ -43,8 +46,8 @@ jobs:
           GITHUB_RUN_NUMBER: ${{ github.run_number }}
           GITHUB_SHA: ${{ github.sha }}
         run: |
-          chmod +x azure-youtube-factory/deploy.sh
-          bash azure-youtube-factory/deploy.sh
+          chmod +x azure-youtube-factory/deploy-fixed.sh
+          bash azure-youtube-factory/deploy-fixed.sh
 
       - name: Write deployment summary
         if: always()
