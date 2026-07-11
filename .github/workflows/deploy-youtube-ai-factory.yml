@@ -10,6 +10,8 @@ on:
       - azure-youtube-factory/deploy-fixed.sh
       - azure-youtube-factory/deploy.sh
       - azure-youtube-factory/configure-agent-env.sh
+      - azure-youtube-factory/submit-topic.sh
+      - azure-youtube-factory/topic-request.json
       - azure-youtube-factory/worker/**
       - azure-youtube-factory/.deploy-trigger
 
@@ -55,6 +57,12 @@ jobs:
           chmod +x azure-youtube-factory/configure-agent-env.sh
           bash azure-youtube-factory/configure-agent-env.sh
 
+      - name: Submit requested YouTube topic
+        if: ${{ hashFiles('azure-youtube-factory/topic-request.json') != '' }}
+        run: |
+          chmod +x azure-youtube-factory/submit-topic.sh
+          bash azure-youtube-factory/submit-topic.sh
+
       - name: Write deployment summary
         if: always()
         run: |
@@ -63,4 +71,9 @@ jobs:
             cat deployment-summary.md >> "$GITHUB_STEP_SUMMARY"
           else
             echo "Deployment did not produce a summary. Review the workflow log." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f azure-youtube-factory/topic-request.json ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "## Requested video" >> "$GITHUB_STEP_SUMMARY"
+            cat azure-youtube-factory/topic-request.json >> "$GITHUB_STEP_SUMMARY"
           fi
