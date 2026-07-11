@@ -2,15 +2,11 @@ name: Deploy Azure YouTube AI Factory
 
 on:
   workflow_dispatch:
-    inputs:
-      azure_client_id:
-        description: Azure deployment identity client ID
-        required: true
-        type: string
-      azure_tenant_id:
-        description: Microsoft Entra tenant ID
-        required: true
-        type: string
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/deploy-youtube-ai-factory.yml
 
 permissions:
   id-token: write
@@ -33,8 +29,8 @@ jobs:
       - name: Sign in to Azure with OIDC
         uses: azure/login@v2
         with:
-          client-id: ${{ inputs.azure_client_id }}
-          tenant-id: ${{ inputs.azure_tenant_id }}
+          client-id: 7575c675-fb43-4cf0-a349-5ae0d6f04914
+          tenant-id: b5d8515a-66bc-4232-8dce-fe3788563725
           subscription-id: 46b6491f-e203-4e75-a882-355fbc782320
 
       - name: Install Container Apps CLI extension
