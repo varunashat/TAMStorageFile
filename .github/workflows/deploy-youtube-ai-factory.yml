@@ -1,0 +1,60 @@
+name: Deploy Azure YouTube AI Factory
+
+on:
+  workflow_dispatch:
+    inputs:
+      azure_client_id:
+        description: Azure deployment identity client ID
+        required: true
+        type: string
+      azure_tenant_id:
+        description: Microsoft Entra tenant ID
+        required: true
+        type: string
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: youtube-ai-factory-deployment
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy factory
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sign in to Azure with OIDC
+        uses: azure/login@v2
+        with:
+          client-id: ${{ inputs.azure_client_id }}
+          tenant-id: ${{ inputs.azure_tenant_id }}
+          subscription-id: 46b6491f-e203-4e75-a882-355fbc782320
+
+      - name: Install Container Apps CLI extension
+        run: |
+          az extension add --name containerapp --upgrade --yes --only-show-errors
+
+      - name: Deploy Azure YouTube AI Factory
+        env:
+          GITHUB_RUN_NUMBER: ${{ github.run_number }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: |
+          chmod +x azure-youtube-factory/deploy.sh
+          bash azure-youtube-factory/deploy.sh
+
+      - name: Write deployment summary
+        if: always()
+        run: |
+          echo "## Azure YouTube AI Factory" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f deployment-summary.md ]; then
+            cat deployment-summary.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Deployment did not produce a summary. Review the workflow log." >> "$GITHUB_STEP_SUMMARY"
+          fi
