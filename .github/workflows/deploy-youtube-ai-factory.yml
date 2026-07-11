@@ -9,6 +9,7 @@ on:
       - .github/workflows/deploy-youtube-ai-factory.yml
       - azure-youtube-factory/deploy-fixed.sh
       - azure-youtube-factory/deploy.sh
+      - azure-youtube-factory/configure-agent-env.sh
       - azure-youtube-factory/worker/**
       - azure-youtube-factory/.deploy-trigger
 
@@ -48,6 +49,11 @@ jobs:
         run: |
           chmod +x azure-youtube-factory/deploy-fixed.sh
           bash azure-youtube-factory/deploy-fixed.sh
+
+      - name: Repair Custom GPT queue configuration
+        run: |
+          chmod +x azure-youtube-factory/configure-agent-env.sh
+          bash azure-youtube-factory/configure-agent-env.sh
 
       - name: Write deployment summary
         if: always()
