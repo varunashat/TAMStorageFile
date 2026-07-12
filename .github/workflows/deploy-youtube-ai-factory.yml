@@ -18,6 +18,7 @@ on:
 permissions:
   id-token: write
   contents: read
+  issues: write
 
 concurrency:
   group: youtube-ai-factory-deployment
@@ -62,6 +63,82 @@ jobs:
         run: |
           chmod +x azure-youtube-factory/submit-topic.sh
           bash azure-youtube-factory/submit-topic.sh
+
+      - name: Start video job and publish diagnostics
+        if: ${{ hashFiles('azure-youtube-factory/topic-request.json') != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set +e
+          TARGET_RG="rg-youtube-ai-prod"
+          STORAGE_ACCOUNT="stytautocb9288fc"
+          JOB_NAME="job-youtube-ai-video"
+          CLIENT_ID="7575c675-fb43-4cf0-a349-5ae0d6f04914"
+          STORAGE_ID="$(az storage account show -g "$TARGET_RG" -n "$STORAGE_ACCOUNT" --query id -o tsv)"
+          PRINCIPAL_ID="$(az ad sp show --id "$CLIENT_ID" --query id -o tsv)"
+
+          for ROLE in "Storage Queue Data Contributor" "Storage Blob Data Reader"; do
+            COUNT="$(az role assignment list --assignee-object-id "$PRINCIPAL_ID" --scope "$STORAGE_ID" --query "[?roleDefinitionName=='$ROLE'] | length(@)" -o tsv)"
+            if [ "$COUNT" = "0" ]; then
+              az role assignment create --assignee-object-id "$PRINCIPAL_ID" --assignee-principal-type ServicePrincipal --role "$ROLE" --scope "$STORAGE_ID" --output none
+            fi
+          done
+
+          sleep 30
+          az containerapp job start -g "$TARGET_RG" -n "$JOB_NAME" --output none
+
+          STATUS="Unknown"
+          EXECUTION=""
+          for I in $(seq 1 40); do
+            EXECUTIONS="$(az containerapp job execution list -g "$TARGET_RG" -n "$JOB_NAME" -o json 2>/dev/null || echo '[]')"
+            EXECUTION="$(echo "$EXECUTIONS" | jq -r 'sort_by(.properties.startTime // "") | last | (.name // "")')"
+            STATUS="$(echo "$EXECUTIONS" | jq -r 'sort_by(.properties.startTime // "") | last | (.properties.status // "Unknown")')"
+            if [ "$STATUS" = "Succeeded" ] || [ "$STATUS" = "Failed" ] || [ "$STATUS" = "Stopped" ]; then
+              break
+            fi
+            sleep 15
+          done
+
+          QUEUES="$(az storage queue list --account-name "$STORAGE_ACCOUNT" --auth-mode login --query "[?name=='youtube-topics' || name=='youtube-status' || name=='youtube-deadletter'].{name:name,count:approximateMessageCount}" -o json 2>/dev/null || echo '[]')"
+          STATUSES="$(az storage message peek --queue-name youtube-status --account-name "$STORAGE_ACCOUNT" --auth-mode login --num-messages 10 -o json 2>/dev/null || echo '[]')"
+          DEADLETTER="$(az storage message peek --queue-name youtube-deadletter --account-name "$STORAGE_ACCOUNT" --auth-mode login --num-messages 5 -o json 2>/dev/null || echo '[]')"
+          VIDEO="$(az storage blob list --container-name videos --account-name "$STORAGE_ACCOUNT" --auth-mode login --query "sort_by(@,&properties.lastModified)[-1].{name:name,modified:properties.lastModified,size:properties.contentLength}" -o json 2>/dev/null || echo 'null')"
+          OAUTH="$(az keyvault secret list --vault-name kv-ytauto-cb9288fc --query "[?name=='youtube-client-secret-json' || name=='youtube-token-json'].{name:name,enabled:attributes.enabled}" -o json 2>/dev/null || echo '[]')"
+
+          cat > /tmp/youtube-diagnostic.md <<EOF
+          # YouTube Video Test Diagnostic
+
+          - GitHub run: ${GITHUB_RUN_ID}
+          - Container Apps execution: ${EXECUTION:-not-found}
+          - Execution status: ${STATUS}
+
+          ## OAuth secrets
+          \`\`\`json
+          ${OAUTH}
+          \`\`\`
+
+          ## Queue counts
+          \`\`\`json
+          ${QUEUES}
+          \`\`\`
+
+          ## Status messages
+          \`\`\`json
+          ${STATUSES}
+          \`\`\`
+
+          ## Dead-letter messages
+          \`\`\`json
+          ${DEADLETTER}
+          \`\`\`
+
+          ## Latest video blob
+          \`\`\`json
+          ${VIDEO}
+          \`\`\`
+          EOF
+
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "YouTube Video Test Diagnostic ${GITHUB_RUN_ID}" --body-file /tmp/youtube-diagnostic.md
 
       - name: Write deployment summary
         if: always()
