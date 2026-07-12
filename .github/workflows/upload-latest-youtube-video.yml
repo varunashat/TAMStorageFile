@@ -1,0 +1,165 @@
+name: Upload Latest Azure Video to YouTube
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/upload-latest-youtube-video.yml
+      - azure-youtube-factory/upload-latest-youtube.py
+
+permissions:
+  id-token: write
+  contents: read
+  issues: write
+
+jobs:
+  upload:
+    name: Upload latest generated video
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Sign in to Azure with OIDC
+        uses: azure/login@v2
+        with:
+          client-id: 7575c675-fb43-4cf0-a349-5ae0d6f04914
+          tenant-id: b5d8515a-66bc-4232-8dce-fe3788563725
+          subscription-id: 46b6491f-e203-4e75-a882-355fbc782320
+
+      - name: Prepare secure Azure access
+        run: |
+          set -Eeuo pipefail
+          TARGET_RG="rg-youtube-ai-prod"
+          STORAGE_ACCOUNT="stytautocb9288fc"
+          KEY_VAULT="kv-ytauto-cb9288fc"
+          CLIENT_ID="7575c675-fb43-4cf0-a349-5ae0d6f04914"
+
+          PRINCIPAL_ID="$(az ad sp show --id "$CLIENT_ID" --query id --output tsv)"
+          STORAGE_ID="$(az storage account show -g "$TARGET_RG" -n "$STORAGE_ACCOUNT" --query id --output tsv)"
+          KV_ID="$(az keyvault show -g "$TARGET_RG" -n "$KEY_VAULT" --query id --output tsv)"
+
+          assign_role() {
+            local role="$1"
+            local scope="$2"
+            local count
+            count="$(az role assignment list --assignee-object-id "$PRINCIPAL_ID" --scope "$scope" --query "[?roleDefinitionName=='$role'] | length(@)" --output tsv)"
+            if [ "$count" = "0" ]; then
+              az role assignment create \
+                --assignee-object-id "$PRINCIPAL_ID" \
+                --assignee-principal-type ServicePrincipal \
+                --role "$role" \
+                --scope "$scope" \
+                --output none
+              echo "Assigned role: $role"
+              sleep 30
+            fi
+          }
+
+          assign_role "Storage Blob Data Reader" "$STORAGE_ID"
+          assign_role "Storage Queue Data Contributor" "$STORAGE_ID"
+          assign_role "Key Vault Secrets User" "$KV_ID"
+
+      - name: Download latest generated video and OAuth token
+        id: download
+        run: |
+          set -Eeuo pipefail
+          umask 077
+          STORAGE_ACCOUNT="stytautocb9288fc"
+          KEY_VAULT="kv-ytauto-cb9288fc"
+
+          LATEST_BLOB="$(az storage blob list \
+            --account-name "$STORAGE_ACCOUNT" \
+            --container-name videos \
+            --auth-mode login \
+            --query "sort_by(@,&properties.lastModified)[-1].name" \
+            --output tsv)"
+
+          if [ -z "$LATEST_BLOB" ]; then
+            echo "No generated video was found in Azure Storage." >&2
+            exit 1
+          fi
+
+          az storage blob download \
+            --account-name "$STORAGE_ACCOUNT" \
+            --container-name videos \
+            --name "$LATEST_BLOB" \
+            --file /tmp/latest-video.mp4 \
+            --auth-mode login \
+            --overwrite \
+            --only-show-errors \
+            --output none
+
+          az keyvault secret show \
+            --vault-name "$KEY_VAULT" \
+            --name youtube-token-json \
+            --query value \
+            --output tsv > /tmp/youtube-token.json
+
+          test -s /tmp/latest-video.mp4
+          jq -e '.refresh_token and .client_id and .client_secret' /tmp/youtube-token.json >/dev/null
+          echo "blob=$LATEST_BLOB" >> "$GITHUB_OUTPUT"
+
+      - name: Upload private video to YouTube
+        id: youtube
+        run: |
+          set -Eeuo pipefail
+          python -m pip install --quiet google-api-python-client google-auth
+          python azure-youtube-factory/upload-latest-youtube.py \
+            /tmp/youtube-token.json \
+            /tmp/latest-video.mp4 \
+            azure-youtube-factory/topic-request.json \
+            /tmp/youtube-url.txt
+
+          YOUTUBE_URL="$(cat /tmp/youtube-url.txt)"
+          echo "url=$YOUTUBE_URL" >> "$GITHUB_OUTPUT"
+
+      - name: Save refreshed token and publish success status
+        env:
+          YOUTUBE_URL: ${{ steps.youtube.outputs.url }}
+          VIDEO_BLOB: ${{ steps.download.outputs.blob }}
+        run: |
+          set -Eeuo pipefail
+          STORAGE_ACCOUNT="stytautocb9288fc"
+          KEY_VAULT="kv-ytauto-cb9288fc"
+
+          az keyvault secret set \
+            --vault-name "$KEY_VAULT" \
+            --name youtube-token-json \
+            --file /tmp/youtube-token.json \
+            --encoding utf-8 \
+            --only-show-errors \
+            --output none
+
+          STATUS_PAYLOAD="$(jq -cn \
+            --arg state completed \
+            --arg title "Azure AI Foundry - By Varun" \
+            --arg youtubeUrl "$YOUTUBE_URL" \
+            --arg videoBlob "$VIDEO_BLOB" \
+            '{state:$state,title:$title,youtubeUrl:$youtubeUrl,videoBlob:$videoBlob,youtubeStatus:"uploaded"}')"
+
+          az storage message put \
+            --account-name "$STORAGE_ACCOUNT" \
+            --queue-name youtube-status \
+            --auth-mode login \
+            --content "$STATUS_PAYLOAD" \
+            --time-to-live 604800 \
+            --only-show-errors \
+            --output none
+
+          gh issue comment 1 \
+            --repo "$GITHUB_REPOSITORY" \
+            --body "YouTube upload completed successfully: $YOUTUBE_URL"
+
+          rm -f /tmp/youtube-token.json /tmp/latest-video.mp4 /tmp/youtube-url.txt
+
+      - name: Write result summary
+        env:
+          YOUTUBE_URL: ${{ steps.youtube.outputs.url }}
+        run: |
+          echo "## YouTube upload completed" >> "$GITHUB_STEP_SUMMARY"
+          echo "$YOUTUBE_URL" >> "$GITHUB_STEP_SUMMARY"
