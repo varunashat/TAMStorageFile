@@ -1,17 +1,17 @@
 {
   "version": "v3-multi-client-month-filter",
-  "generatedAt": "2026-07-30 19:44 UTC",
-  "sourceBlob": "etihad-dashboard/Dashboard-Reports-EtihadAirways-actual-cost/20260701-20260731/8d96936c-8b8e-497f-99c4-b868ac9e2e23/part_0_0001.csv, difc/difc-dashboard-actual-cost/20260701-20260731/cd84809c-2bec-48bc-adda-305abb6f7119/part_0_0001.csv",
+  "generatedAt": "2026-07-31 19:45 UTC",
+  "sourceBlob": "etihad-dashboard/Dashboard-Reports-EtihadAirways-actual-cost/20260701-20260731/691fe068-a465-40a3-ad03-c4ddf58af06b/part_0_0001.csv, difc/difc-dashboard-actual-cost/20260701-20260731/1217f6da-cf03-46e5-a2b9-418ba38c53e8/part_0_0001.csv",
   "sourceBlobs": [
     {
       "clientKey": "etihad",
       "clientName": "Etihad Airways",
-      "blob": "etihad-dashboard/Dashboard-Reports-EtihadAirways-actual-cost/20260701-20260731/8d96936c-8b8e-497f-99c4-b868ac9e2e23/part_0_0001.csv"
+      "blob": "etihad-dashboard/Dashboard-Reports-EtihadAirways-actual-cost/20260701-20260731/691fe068-a465-40a3-ad03-c4ddf58af06b/part_0_0001.csv"
     },
     {
       "clientKey": "difc",
       "clientName": "DIFC",
-      "blob": "difc/difc-dashboard-actual-cost/20260701-20260731/cd84809c-2bec-48bc-adda-305abb6f7119/part_0_0001.csv"
+      "blob": "difc/difc-dashboard-actual-cost/20260701-20260731/1217f6da-cf03-46e5-a2b9-418ba38c53e8/part_0_0001.csv"
     }
   ],
   "clientList": [
@@ -40,14 +40,14 @@
       "name": "Etihad Airways",
       "prefix": "etihad-dashboard/",
       "status": "Loaded",
-      "sourceBlob": "etihad-dashboard/Dashboard-Reports-EtihadAirways-actual-cost/20260701-20260731/8d96936c-8b8e-497f-99c4-b868ac9e2e23/part_0_0001.csv",
+      "sourceBlob": "etihad-dashboard/Dashboard-Reports-EtihadAirways-actual-cost/20260701-20260731/691fe068-a465-40a3-ad03-c4ddf58af06b/part_0_0001.csv",
       "months": {
         "2026-07": {
           "summary": {
-            "totalCost": 242120.83,
+            "totalCost": 234199.12,
             "subscriptionCount": 45,
-            "resourceGroupCount": 833,
-            "resourceCount": 220226
+            "resourceGroupCount": 823,
+            "resourceCount": 201172
           },
           "monthList": [
             "2026-07"
@@ -55,133 +55,133 @@
           "costByClient": [
             {
               "name": "Etihad Airways",
-              "cost": 242120.83
+              "cost": 234199.12
             }
           ],
           "costByMonth": [
             {
               "name": "2026-07",
-              "cost": 242120.83
+              "cost": 234199.12
             }
           ],
           "costBySubscription": [
             {
               "name": "EDP2 PROD",
-              "cost": 133738.89
+              "cost": 131365.27
             },
             {
               "name": "Connected Ops",
-              "cost": 33426.84
+              "cost": 32821.85
             },
             {
               "name": "Amadeus Data Platform",
-              "cost": 24432.16
+              "cost": 24413.65
             },
             {
               "name": "Spoke_EY_Digital",
-              "cost": 9679.17
+              "cost": 9548.6
             },
             {
               "name": "EDP2 PPE",
-              "cost": 8646.86
+              "cost": 7967.27
             },
             {
               "name": "Dev_Test_EY_Digital",
-              "cost": 5535.44
+              "cost": 5573.81
             },
             {
               "name": "PPE_Spoke_EY_Digital",
-              "cost": 4595.23
+              "cost": 4395.58
             },
             {
               "name": "AI Hub - PPE",
-              "cost": 3411.07
-            },
-            {
-              "name": "Source Code Management",
-              "cost": 2064.38
-            },
-            {
-              "name": "Managed File Transfer Prod",
-              "cost": 1867.04
-            },
-            {
-              "name": "Hub_EY_Digital",
-              "cost": 1530.58
-            },
-            {
-              "name": "SecOps Azure LogsToQRadar",
-              "cost": 1398.62
-            },
-            {
-              "name": "Crew PDA (F2O)",
-              "cost": 1331.6
-            },
-            {
-              "name": "Connected OPS PPE",
-              "cost": 1292.14
-            },
-            {
-              "name": "AI HUB",
-              "cost": 1014.27
-            },
-            {
-              "name": "FPR production",
-              "cost": 1009.78
-            },
-            {
-              "name": "SecurityOperations Azure QRadar Inegration",
-              "cost": 751.8
-            },
-            {
-              "name": "Landing Zone",
-              "cost": 682.39
-            },
-            {
-              "name": "Crew PDA (F2O) - PPE",
-              "cost": 636.59
-            },
-            {
-              "name": "Conversation Platform - PROD",
-              "cost": 584.21
+              "cost": 2622.92
             },
             {
               "name": "EVS Production",
-              "cost": 571.89
+              "cost": 1754.52
             },
             {
-              "name": "Managed File Transfer PPE",
-              "cost": 488.66
+              "name": "Managed File Transfer Prod",
+              "cost": 1690.15
+            },
+            {
+              "name": "FPR production",
+              "cost": 1133.35
+            },
+            {
+              "name": "Source Code Management",
+              "cost": 1085.17
+            },
+            {
+              "name": "Hub_EY_Digital",
+              "cost": 974.62
+            },
+            {
+              "name": "Crew PDA (F2O)",
+              "cost": 973.46
+            },
+            {
+              "name": "Connected OPS PPE",
+              "cost": 942.29
+            },
+            {
+              "name": "AI HUB",
+              "cost": 856.37
+            },
+            {
+              "name": "Conversation Platform - PROD",
+              "cost": 732.29
+            },
+            {
+              "name": "SecOps Azure LogsToQRadar",
+              "cost": 623.96
+            },
+            {
+              "name": "Crew PDA (F2O) - PPE",
+              "cost": 567.58
+            },
+            {
+              "name": "Landing Zone",
+              "cost": 516.46
             },
             {
               "name": "Landing Zone PPE",
-              "cost": 486.1
+              "cost": 457.29
             },
             {
-              "name": "Cargo PROD Azure Subscription",
-              "cost": 429.83
+              "name": "SecurityOperations Azure QRadar Inegration",
+              "cost": 440.78
             },
             {
               "name": "PPE_Hub_EY_Digital",
-              "cost": 380.78
+              "cost": 415.6
+            },
+            {
+              "name": "Managed File Transfer PPE",
+              "cost": 393.75
+            },
+            {
+              "name": "Cargo PROD Azure Subscription",
+              "cost": 355.97
             }
           ],
           "costByService": [
             {
               "name": "Storage",
-              "cost": 79152.06
+              "cost": 78134.57
             },
             {
               "name": "Virtual Machines",
-              "cost": 49294.82
+              "cost": 45922.7
             },
             {
               "name": "SaaS",
-              "cost": 33531.76
+              "cost": 33172.47
             },
             {
               "name": "Azure Synapse Analytics",
-              "cost": 23904.24
+              "cost": 23327.6
             },
             {
               "name": "Microsoft Fabric",
@@ -189,89 +189,89 @@
             },
             {
               "name": "Azure Cosmos DB",
-              "cost": 8114.31
+              "cost": 8140.2
             },
             {
               "name": "Azure Databricks",
-              "cost": 4428.42
+              "cost": 3724.49
             },
             {
               "name": "API Management",
-              "cost": 3051.81
-            },
-            {
-              "name": "Log Analytics",
-              "cost": 2363.84
-            },
-            {
-              "name": "GitHub",
-              "cost": 2104.1
+              "cost": 3158.83
             },
             {
               "name": "Azure Database for PostgreSQL",
-              "cost": 2034.07
-            },
-            {
-              "name": "Azure App Service",
-              "cost": 1815.04
-            },
-            {
-              "name": "Azure Data Factory v2",
-              "cost": 1742.89
-            },
-            {
-              "name": "Virtual Network",
-              "cost": 1738.01
-            },
-            {
-              "name": "Redis Cache",
-              "cost": 1461.08
-            },
-            {
-              "name": "Application Gateway",
-              "cost": 1063.84
-            },
-            {
-              "name": "Load Balancer",
-              "cost": 940.49
+              "cost": 1971.03
             },
             {
               "name": "Bandwidth",
-              "cost": 777.69
+              "cost": 1932.08
             },
             {
-              "name": "Backup",
-              "cost": 671.87
+              "name": "Azure App Service",
+              "cost": 1806.68
+            },
+            {
+              "name": "Log Analytics",
+              "cost": 1760.58
+            },
+            {
+              "name": "Azure Data Factory v2",
+              "cost": 1564.47
+            },
+            {
+              "name": "Redis Cache",
+              "cost": 1443.12
+            },
+            {
+              "name": "Virtual Network",
+              "cost": 1282.22
+            },
+            {
+              "name": "GitHub",
+              "cost": 1184.46
+            },
+            {
+              "name": "Application Gateway",
+              "cost": 900.3
+            },
+            {
+              "name": "Load Balancer",
+              "cost": 897.27
             },
             {
               "name": "Azure Bastion",
-              "cost": 640.04
-            },
-            {
-              "name": "Event Hubs",
-              "cost": 565.11
+              "cost": 623.17
             },
             {
               "name": "Foundry Models",
-              "cost": 547.87
+              "cost": 561.65
+            },
+            {
+              "name": "Event Hubs",
+              "cost": 487.38
+            },
+            {
+              "name": "Backup",
+              "cost": 445.06
+            },
+            {
+              "name": "Azure DDOS Protection",
+              "cost": 402.88
             },
             {
               "name": "Azure Cognitive Search",
-              "cost": 377.03
+              "cost": 318.16
             },
             {
               "name": "Azure Front Door Service",
-              "cost": 304.22
-            },
-            {
-              "name": "Logic Apps",
-              "cost": 236.07
+              "cost": 255.25
             }
           ],
           "costByResourceGroup": [
             {
               "name": "Unassigned",
-              "cost": 155312.07
+              "cost": 154433.09
             },
             {
               "name": "ComplexEventProcessingMonthlyBilling",
@@ -279,101 +279,101 @@
             },
             {
               "name": "rg-edp-prod-data-storage-platform",
-              "cost": 7581.87
-            },
-            {
-              "name": "central-infosec-ms-weu",
-              "cost": 1980.24
-            },
-            {
-              "name": "rg-edp-prod-data-serving-platform",
-              "cost": 1798.57
-            },
-            {
-              "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
-              "cost": 1768.96
-            },
-            {
-              "name": "RG-MFT-PROD-INGEST",
-              "cost": 1498.9
+              "cost": 6382.31
             },
             {
               "name": "rrg-edp-prod-data-ingest-process-platform",
-              "cost": 1332.95
+              "cost": 1594.18
             },
             {
-              "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-              "cost": 1283.69
+              "name": "rg-hr-vibe-01",
+              "cost": 1574.18
             },
             {
-              "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-BODBWEMHHFHVM",
-              "cost": 1103.39
+              "name": "central-infosec-ms-weu",
+              "cost": 1511.35
             },
             {
               "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-              "cost": 1010.27
+              "cost": 1491.98
             },
             {
-              "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
-              "cost": 999.84
+              "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
+              "cost": 1390.82
             },
             {
-              "name": "rg-aics",
-              "cost": 982.36
+              "name": "RG-MFT-PROD-INGEST",
+              "cost": 1333.28
             },
             {
-              "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-EXPLORATORY-2JIMZJYDE7PGS",
-              "cost": 978.25
-            },
-            {
-              "name": "rg-guestvalue-data-ingest-process-platform",
-              "cost": 806.39
-            },
-            {
-              "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-REVENUEMGMT-GAXKD7IJGK5KW",
-              "cost": 787.86
-            },
-            {
-              "name": "rg-prod-cops-uaen-01",
-              "cost": 733.04
-            },
-            {
-              "name": "rg-edp-prod-azurevm-backups-platform",
-              "cost": 632.88
-            },
-            {
-              "name": "ey-uaenor-hub-rg",
-              "cost": 593.23
-            },
-            {
-              "name": "rg-ppe-cops-uaen-01",
-              "cost": 586.67
+              "name": "rg-edp-prod-data-serving-platform",
+              "cost": 1169.52
             },
             {
               "name": "rg-edp-prod-cbi-data-storage-platform",
-              "cost": 544.74
+              "cost": 1001.25
             },
             {
-              "name": "rg-edp-data-ingest-process-platform",
-              "cost": 513.12
+              "name": "rg-guestvalue-data-ingest-process-platform",
+              "cost": 986.28
             },
             {
-              "name": "NETWORKWATCHERRG",
-              "cost": 494.7
-            },
-            {
-              "name": "rg-edp-prod-data-ingest-platform",
-              "cost": 491.86
+              "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
+              "cost": 927.74
             },
             {
               "name": "RG-EDP-DATA-SERVING-TABLEAU-PLATFORM",
-              "cost": 466.54
+              "cost": 875.36
+            },
+            {
+              "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-BODBWEMHHFHVM",
+              "cost": 850.0
+            },
+            {
+              "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-EXPLORATORY-2JIMZJYDE7PGS",
+              "cost": 786.61
+            },
+            {
+              "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-REVENUEMGMT-GAXKD7IJGK5KW",
+              "cost": 724.17
+            },
+            {
+              "name": "rg-edp-prod-consume-api-management-platform",
+              "cost": 689.95
+            },
+            {
+              "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
+              "cost": 640.28
+            },
+            {
+              "name": "rg-aicp",
+              "cost": 521.87
+            },
+            {
+              "name": "rg-edp-network-platform",
+              "cost": 455.61
+            },
+            {
+              "name": "rg-edp-prod-azurevm-backups-platform",
+              "cost": 422.38
+            },
+            {
+              "name": "ey-uaenor-hub-rg",
+              "cost": 413.11
+            },
+            {
+              "name": "rg-edp-prod-data-ingest-platform",
+              "cost": 407.39
+            },
+            {
+              "name": "DATABRICKS-MRG-AZDB-EDP-CBI-PROD-UAENORTH",
+              "cost": 400.54
             }
           ],
           "costByRegion": [
             {
               "name": "uaenorth",
-              "cost": 166250.01
+              "cost": 160826.27
             },
             {
               "name": "Unassigned",
@@ -381,75 +381,75 @@
             },
             {
               "name": "westeurope",
-              "cost": 17550.61
+              "cost": 16325.83
             },
             {
               "name": "northeurope",
-              "cost": 13676.0
+              "cost": 13726.64
             },
             {
               "name": "Unknown",
               "cost": 5665.23
             },
             {
-              "name": "EastUS",
-              "cost": 2153.69
+              "name": "All Regions",
+              "cost": 1331.46
             },
             {
-              "name": "All Regions",
-              "cost": 1754.27
+              "name": "EastUS",
+              "cost": 1218.49
             },
             {
               "name": "uaecentral",
-              "cost": 673.64
+              "cost": 701.05
             },
             {
               "name": "EastUS2",
-              "cost": 626.55
+              "cost": 673.21
             },
             {
               "name": "swedencentral",
-              "cost": 516.85
+              "cost": 531.95
             },
             {
               "name": "WestUS",
-              "cost": 149.96
+              "cost": 137.79
             },
             {
               "name": "westus2",
-              "cost": 69.73
-            },
-            {
-              "name": "southeastasia",
-              "cost": 19.16
+              "cost": 42.68
             },
             {
               "name": "southindia",
-              "cost": 18.46
+              "cost": 22.73
             },
             {
-              "name": "canadaeast",
-              "cost": 16.38
+              "name": "southeastasia",
+              "cost": 18.12
             },
             {
               "name": "CentralUS",
-              "cost": 15.13
+              "cost": 9.22
             },
             {
               "name": "NorthCentralUs",
-              "cost": 9.28
+              "cost": 9.13
+            },
+            {
+              "name": "canadaeast",
+              "cost": 4.02
             },
             {
               "name": "eastasia",
-              "cost": 1.02
+              "cost": 0.49
             },
             {
               "name": "uksouth",
-              "cost": 0.13
+              "cost": 0.15
             },
             {
               "name": "centralindia",
-              "cost": 0.1
+              "cost": 0.06
             },
             {
               "name": "westindia",
@@ -463,123 +463,127 @@
           "dailyTrend": [
             {
               "date": "2026-07-01",
-              "cost": 15196.01
+              "cost": 14272.08
             },
             {
               "date": "2026-07-02",
-              "cost": 2307.84
+              "cost": 572.88
             },
             {
               "date": "2026-07-03",
-              "cost": 6999.19
+              "cost": 7921.66
             },
             {
               "date": "2026-07-04",
-              "cost": 3927.58
+              "cost": 4665.84
             },
             {
               "date": "2026-07-05",
-              "cost": 2986.1
+              "cost": 2642.49
             },
             {
               "date": "2026-07-06",
-              "cost": 2040.53
+              "cost": 236.41
             },
             {
               "date": "2026-07-07",
-              "cost": 2166.94
+              "cost": 3621.34
             },
             {
               "date": "2026-07-08",
-              "cost": 518.85
+              "cost": 0.0
             },
             {
               "date": "2026-07-09",
-              "cost": 1669.72
+              "cost": 1334.87
             },
             {
               "date": "2026-07-10",
-              "cost": 2234.3
+              "cost": 525.47
             },
             {
               "date": "2026-07-11",
-              "cost": 5112.6
+              "cost": 3162.24
             },
             {
               "date": "2026-07-12",
-              "cost": 467.96
+              "cost": 0.0
             },
             {
               "date": "2026-07-13",
-              "cost": 7262.76
+              "cost": 7484.54
             },
             {
               "date": "2026-07-14",
-              "cost": 1989.44
+              "cost": 709.56
             },
             {
               "date": "2026-07-15",
-              "cost": 35040.45
+              "cost": 33010.58
             },
             {
               "date": "2026-07-16",
-              "cost": 3063.59
+              "cost": 2720.17
             },
             {
               "date": "2026-07-17",
-              "cost": 1081.47
+              "cost": 2746.35
             },
             {
               "date": "2026-07-18",
-              "cost": 626.91
+              "cost": 63.16
             },
             {
               "date": "2026-07-19",
-              "cost": 11516.15
+              "cost": 10597.38
             },
             {
               "date": "2026-07-20",
-              "cost": 2448.73
+              "cost": 1261.7
             },
             {
               "date": "2026-07-21",
-              "cost": 99981.54
+              "cost": 96437.84
             },
             {
               "date": "2026-07-22",
-              "cost": 8317.2
+              "cost": 9099.42
             },
             {
               "date": "2026-07-23",
-              "cost": 2916.14
+              "cost": 3417.15
             },
             {
               "date": "2026-07-24",
-              "cost": 543.99
+              "cost": 784.44
             },
             {
               "date": "2026-07-25",
-              "cost": 0.0
+              "cost": 2168.74
             },
             {
               "date": "2026-07-26",
-              "cost": 2169.14
+              "cost": 763.56
             },
             {
               "date": "2026-07-27",
-              "cost": 0.0
+              "cost": 2298.11
             },
             {
               "date": "2026-07-28",
-              "cost": 635.9
+              "cost": 526.71
             },
             {
               "date": "2026-07-29",
-              "cost": 595.56
+              "cost": 2061.38
             },
             {
               "date": "2026-07-30",
-              "cost": 18304.22
+              "cost": 11420.95
+            },
+            {
+              "date": "2026-07-31",
+              "cost": 7672.1
             }
           ],
           "topResources": [
@@ -644,7 +648,7 @@
               "region": "northeurope"
             },
             {
-              "cost": 7572.85,
+              "cost": 6376.32,
               "clientKey": "etihad",
               "clientName": "Etihad Airways",
               "month": "2026-07",
@@ -661,7 +665,7 @@
               "clientName": "Etihad Airways",
               "month": "2026-07",
               "resourceName": "",
-              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
+              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
               "subscriptionName": "EDP2 PROD",
               "resourceGroup": "Unassigned",
               "service": "Microsoft Fabric",
@@ -673,7 +677,7 @@
               "clientName": "Etihad Airways",
               "month": "2026-07",
               "resourceName": "",
-              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
+              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
               "subscriptionName": "EDP2 PROD",
               "resourceGroup": "Unassigned",
               "service": "Microsoft Fabric",
@@ -697,7 +701,7 @@
               "clientName": "Etihad Airways",
               "month": "2026-07",
               "resourceName": "",
-              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
+              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
               "subscriptionName": "EDP2 PROD",
               "resourceGroup": "Unassigned",
               "service": "Virtual Machines",
@@ -709,7 +713,7 @@
               "clientName": "Etihad Airways",
               "month": "2026-07",
               "resourceName": "",
-              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
+              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
               "subscriptionName": "EDP2 PROD",
               "resourceGroup": "Unassigned",
               "service": "Virtual Machines",
@@ -733,7 +737,7 @@
               "clientName": "Etihad Airways",
               "month": "2026-07",
               "resourceName": "",
-              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
+              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
               "subscriptionName": "EDP2 PROD",
               "resourceGroup": "Unassigned",
               "service": "Microsoft Fabric",
@@ -745,7 +749,7 @@
               "clientName": "Etihad Airways",
               "month": "2026-07",
               "resourceName": "",
-              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
+              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
               "subscriptionName": "EDP2 PROD",
               "resourceGroup": "Unassigned",
               "service": "Microsoft Fabric",
@@ -781,7 +785,7 @@
               "clientName": "Etihad Airways",
               "month": "2026-07",
               "resourceName": "",
-              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
+              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
               "subscriptionName": "EDP2 PROD",
               "resourceGroup": "Unassigned",
               "service": "Storage",
@@ -793,7 +797,7 @@
               "clientName": "Etihad Airways",
               "month": "2026-07",
               "resourceName": "",
-              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
+              "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
               "subscriptionName": "EDP2 PROD",
               "resourceGroup": "Unassigned",
               "service": "Storage",
@@ -824,16 +828,16 @@
               "region": "uaenorth"
             },
             {
-              "cost": 2064.38,
+              "cost": 1505.59,
               "clientKey": "etihad",
               "clientName": "Etihad Airways",
               "month": "2026-07",
-              "resourceName": "customer-25682944",
-              "resourceId": "/subscriptions/f3f76fa6-5d40-4141-b2ad-a7265533ffa0/providers/GitHub/EnterpriseAccount/customer-25682944",
-              "subscriptionName": "Source Code Management",
-              "resourceGroup": "Unassigned",
-              "service": "GitHub",
-              "region": "EastUS"
+              "resourceName": "vibevideostore",
+              "resourceId": "/subscriptions/ca5c19c2-6ca0-478d-aedd-aaf72b8f5731/resourceGroups/rg-hr-vibe-01/providers/Microsoft.Storage/storageAccounts/vibevideostore",
+              "subscriptionName": "EVS Production",
+              "resourceGroup": "rg-hr-vibe-01",
+              "service": "Storage",
+              "region": "uaenorth"
             },
             {
               "cost": 1467.16,
@@ -887,10 +891,10 @@
         }
       },
       "summary": {
-        "totalCost": 242120.83,
+        "totalCost": 234199.12,
         "subscriptionCount": 45,
-        "resourceGroupCount": 833,
-        "resourceCount": 220226
+        "resourceGroupCount": 823,
+        "resourceCount": 201172
       },
       "monthList": [
         "2026-07"
@@ -898,133 +902,133 @@
       "costByClient": [
         {
           "name": "Etihad Airways",
-          "cost": 242120.83
+          "cost": 234199.12
         }
       ],
       "costByMonth": [
         {
           "name": "2026-07",
-          "cost": 242120.83
+          "cost": 234199.12
         }
       ],
       "costBySubscription": [
         {
           "name": "EDP2 PROD",
-          "cost": 133738.89
+          "cost": 131365.27
         },
         {
           "name": "Connected Ops",
-          "cost": 33426.84
+          "cost": 32821.85
         },
         {
           "name": "Amadeus Data Platform",
-          "cost": 24432.16
+          "cost": 24413.65
         },
         {
           "name": "Spoke_EY_Digital",
-          "cost": 9679.17
+          "cost": 9548.6
         },
         {
           "name": "EDP2 PPE",
-          "cost": 8646.86
+          "cost": 7967.27
         },
         {
           "name": "Dev_Test_EY_Digital",
-          "cost": 5535.44
+          "cost": 5573.81
         },
         {
           "name": "PPE_Spoke_EY_Digital",
-          "cost": 4595.23
+          "cost": 4395.58
         },
         {
           "name": "AI Hub - PPE",
-          "cost": 3411.07
-        },
-        {
-          "name": "Source Code Management",
-          "cost": 2064.38
-        },
-        {
-          "name": "Managed File Transfer Prod",
-          "cost": 1867.04
-        },
-        {
-          "name": "Hub_EY_Digital",
-          "cost": 1530.58
-        },
-        {
-          "name": "SecOps Azure LogsToQRadar",
-          "cost": 1398.62
-        },
-        {
-          "name": "Crew PDA (F2O)",
-          "cost": 1331.6
-        },
-        {
-          "name": "Connected OPS PPE",
-          "cost": 1292.14
-        },
-        {
-          "name": "AI HUB",
-          "cost": 1014.27
-        },
-        {
-          "name": "FPR production",
-          "cost": 1009.78
-        },
-        {
-          "name": "SecurityOperations Azure QRadar Inegration",
-          "cost": 751.8
-        },
-        {
-          "name": "Landing Zone",
-          "cost": 682.39
-        },
-        {
-          "name": "Crew PDA (F2O) - PPE",
-          "cost": 636.59
-        },
-        {
-          "name": "Conversation Platform - PROD",
-          "cost": 584.21
+          "cost": 2622.92
         },
         {
           "name": "EVS Production",
-          "cost": 571.89
+          "cost": 1754.52
         },
         {
-          "name": "Managed File Transfer PPE",
-          "cost": 488.66
+          "name": "Managed File Transfer Prod",
+          "cost": 1690.15
+        },
+        {
+          "name": "FPR production",
+          "cost": 1133.35
+        },
+        {
+          "name": "Source Code Management",
+          "cost": 1085.17
+        },
+        {
+          "name": "Hub_EY_Digital",
+          "cost": 974.62
+        },
+        {
+          "name": "Crew PDA (F2O)",
+          "cost": 973.46
+        },
+        {
+          "name": "Connected OPS PPE",
+          "cost": 942.29
+        },
+        {
+          "name": "AI HUB",
+          "cost": 856.37
+        },
+        {
+          "name": "Conversation Platform - PROD",
+          "cost": 732.29
+        },
+        {
+          "name": "SecOps Azure LogsToQRadar",
+          "cost": 623.96
+        },
+        {
+          "name": "Crew PDA (F2O) - PPE",
+          "cost": 567.58
+        },
+        {
+          "name": "Landing Zone",
+          "cost": 516.46
         },
         {
           "name": "Landing Zone PPE",
-          "cost": 486.1
+          "cost": 457.29
         },
         {
-          "name": "Cargo PROD Azure Subscription",
-          "cost": 429.83
+          "name": "SecurityOperations Azure QRadar Inegration",
+          "cost": 440.78
         },
         {
           "name": "PPE_Hub_EY_Digital",
-          "cost": 380.78
+          "cost": 415.6
+        },
+        {
+          "name": "Managed File Transfer PPE",
+          "cost": 393.75
+        },
+        {
+          "name": "Cargo PROD Azure Subscription",
+          "cost": 355.97
         }
       ],
       "costByService": [
         {
           "name": "Storage",
-          "cost": 79152.06
+          "cost": 78134.57
         },
         {
           "name": "Virtual Machines",
-          "cost": 49294.82
+          "cost": 45922.7
         },
         {
           "name": "SaaS",
-          "cost": 33531.76
+          "cost": 33172.47
         },
         {
           "name": "Azure Synapse Analytics",
-          "cost": 23904.24
+          "cost": 23327.6
         },
         {
           "name": "Microsoft Fabric",
@@ -1032,89 +1036,89 @@
         },
         {
           "name": "Azure Cosmos DB",
-          "cost": 8114.31
+          "cost": 8140.2
         },
         {
           "name": "Azure Databricks",
-          "cost": 4428.42
+          "cost": 3724.49
         },
         {
           "name": "API Management",
-          "cost": 3051.81
-        },
-        {
-          "name": "Log Analytics",
-          "cost": 2363.84
-        },
-        {
-          "name": "GitHub",
-          "cost": 2104.1
+          "cost": 3158.83
         },
         {
           "name": "Azure Database for PostgreSQL",
-          "cost": 2034.07
-        },
-        {
-          "name": "Azure App Service",
-          "cost": 1815.04
-        },
-        {
-          "name": "Azure Data Factory v2",
-          "cost": 1742.89
-        },
-        {
-          "name": "Virtual Network",
-          "cost": 1738.01
-        },
-        {
-          "name": "Redis Cache",
-          "cost": 1461.08
-        },
-        {
-          "name": "Application Gateway",
-          "cost": 1063.84
-        },
-        {
-          "name": "Load Balancer",
-          "cost": 940.49
+          "cost": 1971.03
         },
         {
           "name": "Bandwidth",
-          "cost": 777.69
+          "cost": 1932.08
         },
         {
-          "name": "Backup",
-          "cost": 671.87
+          "name": "Azure App Service",
+          "cost": 1806.68
+        },
+        {
+          "name": "Log Analytics",
+          "cost": 1760.58
+        },
+        {
+          "name": "Azure Data Factory v2",
+          "cost": 1564.47
+        },
+        {
+          "name": "Redis Cache",
+          "cost": 1443.12
+        },
+        {
+          "name": "Virtual Network",
+          "cost": 1282.22
+        },
+        {
+          "name": "GitHub",
+          "cost": 1184.46
+        },
+        {
+          "name": "Application Gateway",
+          "cost": 900.3
+        },
+        {
+          "name": "Load Balancer",
+          "cost": 897.27
         },
         {
           "name": "Azure Bastion",
-          "cost": 640.04
-        },
-        {
-          "name": "Event Hubs",
-          "cost": 565.11
+          "cost": 623.17
         },
         {
           "name": "Foundry Models",
-          "cost": 547.87
+          "cost": 561.65
+        },
+        {
+          "name": "Event Hubs",
+          "cost": 487.38
+        },
+        {
+          "name": "Backup",
+          "cost": 445.06
+        },
+        {
+          "name": "Azure DDOS Protection",
+          "cost": 402.88
         },
         {
           "name": "Azure Cognitive Search",
-          "cost": 377.03
+          "cost": 318.16
         },
         {
           "name": "Azure Front Door Service",
-          "cost": 304.22
-        },
-        {
-          "name": "Logic Apps",
-          "cost": 236.07
+          "cost": 255.25
         }
       ],
       "costByResourceGroup": [
         {
           "name": "Unassigned",
-          "cost": 155312.07
+          "cost": 154433.09
         },
         {
           "name": "ComplexEventProcessingMonthlyBilling",
@@ -1122,101 +1126,101 @@
         },
         {
           "name": "rg-edp-prod-data-storage-platform",
-          "cost": 7581.87
-        },
-        {
-          "name": "central-infosec-ms-weu",
-          "cost": 1980.24
-        },
-        {
-          "name": "rg-edp-prod-data-serving-platform",
-          "cost": 1798.57
-        },
-        {
-          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
-          "cost": 1768.96
-        },
-        {
-          "name": "RG-MFT-PROD-INGEST",
-          "cost": 1498.9
+          "cost": 6382.31
         },
         {
           "name": "rrg-edp-prod-data-ingest-process-platform",
-          "cost": 1332.95
+          "cost": 1594.18
         },
         {
-          "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-          "cost": 1283.69
+          "name": "rg-hr-vibe-01",
+          "cost": 1574.18
         },
         {
-          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-BODBWEMHHFHVM",
-          "cost": 1103.39
+          "name": "central-infosec-ms-weu",
+          "cost": 1511.35
         },
         {
           "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-          "cost": 1010.27
+          "cost": 1491.98
         },
         {
-          "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
-          "cost": 999.84
+          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
+          "cost": 1390.82
         },
         {
-          "name": "rg-aics",
-          "cost": 982.36
+          "name": "RG-MFT-PROD-INGEST",
+          "cost": 1333.28
         },
         {
-          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-EXPLORATORY-2JIMZJYDE7PGS",
-          "cost": 978.25
-        },
-        {
-          "name": "rg-guestvalue-data-ingest-process-platform",
-          "cost": 806.39
-        },
-        {
-          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-REVENUEMGMT-GAXKD7IJGK5KW",
-          "cost": 787.86
-        },
-        {
-          "name": "rg-prod-cops-uaen-01",
-          "cost": 733.04
-        },
-        {
-          "name": "rg-edp-prod-azurevm-backups-platform",
-          "cost": 632.88
-        },
-        {
-          "name": "ey-uaenor-hub-rg",
-          "cost": 593.23
-        },
-        {
-          "name": "rg-ppe-cops-uaen-01",
-          "cost": 586.67
+          "name": "rg-edp-prod-data-serving-platform",
+          "cost": 1169.52
         },
         {
           "name": "rg-edp-prod-cbi-data-storage-platform",
-          "cost": 544.74
+          "cost": 1001.25
         },
         {
-          "name": "rg-edp-data-ingest-process-platform",
-          "cost": 513.12
+          "name": "rg-guestvalue-data-ingest-process-platform",
+          "cost": 986.28
         },
         {
-          "name": "NETWORKWATCHERRG",
-          "cost": 494.7
-        },
-        {
-          "name": "rg-edp-prod-data-ingest-platform",
-          "cost": 491.86
+          "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
+          "cost": 927.74
         },
         {
           "name": "RG-EDP-DATA-SERVING-TABLEAU-PLATFORM",
-          "cost": 466.54
+          "cost": 875.36
+        },
+        {
+          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-BODBWEMHHFHVM",
+          "cost": 850.0
+        },
+        {
+          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-EXPLORATORY-2JIMZJYDE7PGS",
+          "cost": 786.61
+        },
+        {
+          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-REVENUEMGMT-GAXKD7IJGK5KW",
+          "cost": 724.17
+        },
+        {
+          "name": "rg-edp-prod-consume-api-management-platform",
+          "cost": 689.95
+        },
+        {
+          "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
+          "cost": 640.28
+        },
+        {
+          "name": "rg-aicp",
+          "cost": 521.87
+        },
+        {
+          "name": "rg-edp-network-platform",
+          "cost": 455.61
+        },
+        {
+          "name": "rg-edp-prod-azurevm-backups-platform",
+          "cost": 422.38
+        },
+        {
+          "name": "ey-uaenor-hub-rg",
+          "cost": 413.11
+        },
+        {
+          "name": "rg-edp-prod-data-ingest-platform",
+          "cost": 407.39
+        },
+        {
+          "name": "DATABRICKS-MRG-AZDB-EDP-CBI-PROD-UAENORTH",
+          "cost": 400.54
         }
       ],
       "costByRegion": [
         {
           "name": "uaenorth",
-          "cost": 166250.01
+          "cost": 160826.27
         },
         {
           "name": "Unassigned",
@@ -1224,75 +1228,75 @@
         },
         {
           "name": "westeurope",
-          "cost": 17550.61
+          "cost": 16325.83
         },
         {
           "name": "northeurope",
-          "cost": 13676.0
+          "cost": 13726.64
         },
         {
           "name": "Unknown",
           "cost": 5665.23
         },
         {
-          "name": "EastUS",
-          "cost": 2153.69
+          "name": "All Regions",
+          "cost": 1331.46
         },
         {
-          "name": "All Regions",
-          "cost": 1754.27
+          "name": "EastUS",
+          "cost": 1218.49
         },
         {
           "name": "uaecentral",
-          "cost": 673.64
+          "cost": 701.05
         },
         {
           "name": "EastUS2",
-          "cost": 626.55
+          "cost": 673.21
         },
         {
           "name": "swedencentral",
-          "cost": 516.85
+          "cost": 531.95
         },
         {
           "name": "WestUS",
-          "cost": 149.96
+          "cost": 137.79
         },
         {
           "name": "westus2",
-          "cost": 69.73
-        },
-        {
-          "name": "southeastasia",
-          "cost": 19.16
+          "cost": 42.68
         },
         {
           "name": "southindia",
-          "cost": 18.46
+          "cost": 22.73
         },
         {
-          "name": "canadaeast",
-          "cost": 16.38
+          "name": "southeastasia",
+          "cost": 18.12
         },
         {
           "name": "CentralUS",
-          "cost": 15.13
+          "cost": 9.22
         },
         {
           "name": "NorthCentralUs",
-          "cost": 9.28
+          "cost": 9.13
+        },
+        {
+          "name": "canadaeast",
+          "cost": 4.02
         },
         {
           "name": "eastasia",
-          "cost": 1.02
+          "cost": 0.49
         },
         {
           "name": "uksouth",
-          "cost": 0.13
+          "cost": 0.15
         },
         {
           "name": "centralindia",
-          "cost": 0.1
+          "cost": 0.06
         },
         {
           "name": "westindia",
@@ -1306,123 +1310,127 @@
       "dailyTrend": [
         {
           "date": "2026-07-01",
-          "cost": 15196.01
+          "cost": 14272.08
         },
         {
           "date": "2026-07-02",
-          "cost": 2307.84
+          "cost": 572.88
         },
         {
           "date": "2026-07-03",
-          "cost": 6999.19
+          "cost": 7921.66
         },
         {
           "date": "2026-07-04",
-          "cost": 3927.58
+          "cost": 4665.84
         },
         {
           "date": "2026-07-05",
-          "cost": 2986.1
+          "cost": 2642.49
         },
         {
           "date": "2026-07-06",
-          "cost": 2040.53
+          "cost": 236.41
         },
         {
           "date": "2026-07-07",
-          "cost": 2166.94
+          "cost": 3621.34
         },
         {
           "date": "2026-07-08",
-          "cost": 518.85
+          "cost": 0.0
         },
         {
           "date": "2026-07-09",
-          "cost": 1669.72
+          "cost": 1334.87
         },
         {
           "date": "2026-07-10",
-          "cost": 2234.3
+          "cost": 525.47
         },
         {
           "date": "2026-07-11",
-          "cost": 5112.6
+          "cost": 3162.24
         },
         {
           "date": "2026-07-12",
-          "cost": 467.96
+          "cost": 0.0
         },
         {
           "date": "2026-07-13",
-          "cost": 7262.76
+          "cost": 7484.54
         },
         {
           "date": "2026-07-14",
-          "cost": 1989.44
+          "cost": 709.56
         },
         {
           "date": "2026-07-15",
-          "cost": 35040.45
+          "cost": 33010.58
         },
         {
           "date": "2026-07-16",
-          "cost": 3063.59
+          "cost": 2720.17
         },
         {
           "date": "2026-07-17",
-          "cost": 1081.47
+          "cost": 2746.35
         },
         {
           "date": "2026-07-18",
-          "cost": 626.91
+          "cost": 63.16
         },
         {
           "date": "2026-07-19",
-          "cost": 11516.15
+          "cost": 10597.38
         },
         {
           "date": "2026-07-20",
-          "cost": 2448.73
+          "cost": 1261.7
         },
         {
           "date": "2026-07-21",
-          "cost": 99981.54
+          "cost": 96437.84
         },
         {
           "date": "2026-07-22",
-          "cost": 8317.2
+          "cost": 9099.42
         },
         {
           "date": "2026-07-23",
-          "cost": 2916.14
+          "cost": 3417.15
         },
         {
           "date": "2026-07-24",
-          "cost": 543.99
+          "cost": 784.44
         },
         {
           "date": "2026-07-25",
-          "cost": 0.0
+          "cost": 2168.74
         },
         {
           "date": "2026-07-26",
-          "cost": 2169.14
+          "cost": 763.56
         },
         {
           "date": "2026-07-27",
-          "cost": 0.0
+          "cost": 2298.11
         },
         {
           "date": "2026-07-28",
-          "cost": 635.9
+          "cost": 526.71
         },
         {
           "date": "2026-07-29",
-          "cost": 595.56
+          "cost": 2061.38
         },
         {
           "date": "2026-07-30",
-          "cost": 18304.22
+          "cost": 11420.95
+        },
+        {
+          "date": "2026-07-31",
+          "cost": 7672.1
         }
       ],
       "topResources": [
@@ -1487,7 +1495,7 @@
           "region": "northeurope"
         },
         {
-          "cost": 7572.85,
+          "cost": 6376.32,
           "clientKey": "etihad",
           "clientName": "Etihad Airways",
           "month": "2026-07",
@@ -1504,7 +1512,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Microsoft Fabric",
@@ -1516,7 +1524,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Microsoft Fabric",
@@ -1540,7 +1548,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Virtual Machines",
@@ -1552,7 +1560,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Virtual Machines",
@@ -1576,7 +1584,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Microsoft Fabric",
@@ -1588,7 +1596,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Microsoft Fabric",
@@ -1624,7 +1632,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Storage",
@@ -1636,7 +1644,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Storage",
@@ -1667,16 +1675,16 @@
           "region": "uaenorth"
         },
         {
-          "cost": 2064.38,
+          "cost": 1505.59,
           "clientKey": "etihad",
           "clientName": "Etihad Airways",
           "month": "2026-07",
-          "resourceName": "customer-25682944",
-          "resourceId": "/subscriptions/f3f76fa6-5d40-4141-b2ad-a7265533ffa0/providers/GitHub/EnterpriseAccount/customer-25682944",
-          "subscriptionName": "Source Code Management",
-          "resourceGroup": "Unassigned",
-          "service": "GitHub",
-          "region": "EastUS"
+          "resourceName": "vibevideostore",
+          "resourceId": "/subscriptions/ca5c19c2-6ca0-478d-aedd-aaf72b8f5731/resourceGroups/rg-hr-vibe-01/providers/Microsoft.Storage/storageAccounts/vibevideostore",
+          "subscriptionName": "EVS Production",
+          "resourceGroup": "rg-hr-vibe-01",
+          "service": "Storage",
+          "region": "uaenorth"
         },
         {
           "cost": 1467.16,
@@ -1733,14 +1741,14 @@
       "name": "DIFC",
       "prefix": "difc/",
       "status": "Loaded",
-      "sourceBlob": "difc/difc-dashboard-actual-cost/20260701-20260731/cd84809c-2bec-48bc-adda-305abb6f7119/part_0_0001.csv",
+      "sourceBlob": "difc/difc-dashboard-actual-cost/20260701-20260731/1217f6da-cf03-46e5-a2b9-418ba38c53e8/part_0_0001.csv",
       "months": {
         "2026-07": {
           "summary": {
-            "totalCost": 33967.93,
+            "totalCost": 35268.25,
             "subscriptionCount": 8,
             "resourceGroupCount": 118,
-            "resourceCount": 1363
+            "resourceCount": 1367
           },
           "monthList": [
             "2026-07"
@@ -1748,43 +1756,43 @@
           "costByClient": [
             {
               "name": "DIFC",
-              "cost": 33967.93
+              "cost": 35268.25
             }
           ],
           "costByMonth": [
             {
               "name": "2026-07",
-              "cost": 33967.93
+              "cost": 35268.25
             }
           ],
           "costBySubscription": [
             {
               "name": "Digital",
-              "cost": 13663.87
+              "cost": 14230.82
             },
             {
               "name": "InfoSEC-SOC",
-              "cost": 6066.32
+              "cost": 6132.05
             },
             {
               "name": "Enterprise Application BI",
-              "cost": 5404.17
+              "cost": 5606.54
             },
             {
               "name": "Az Network",
-              "cost": 3541.03
+              "cost": 3661.19
             },
             {
               "name": "Digital Dev/Test",
-              "cost": 3105.29
+              "cost": 3211.93
             },
             {
               "name": "Enterprise Application Dev/Test",
-              "cost": 1187.26
+              "cost": 1227.66
             },
             {
               "name": "Copilot Cowork",
-              "cost": 1000.0
+              "cost": 1198.07
             },
             {
               "name": "MS Defender",
@@ -1794,19 +1802,19 @@
           "costByService": [
             {
               "name": "Azure Synapse Analytics",
-              "cost": 4705.12
+              "cost": 4921.22
             },
             {
               "name": "Virtual Machines",
-              "cost": 4108.71
+              "cost": 4209.68
             },
             {
               "name": "Foundry Models",
-              "cost": 3141.78
+              "cost": 3279.57
             },
             {
               "name": "Azure App Service",
-              "cost": 2661.07
+              "cost": 2753.88
             },
             {
               "name": "SaaS",
@@ -1814,31 +1822,31 @@
             },
             {
               "name": "Foundry Tools",
-              "cost": 2385.3
+              "cost": 2479.04
             },
             {
               "name": "Storage",
-              "cost": 2017.24
+              "cost": 2089.64
             },
             {
               "name": "SQL Database",
-              "cost": 1719.14
+              "cost": 1785.42
             },
             {
               "name": "Virtual Network",
-              "cost": 1284.33
-            },
-            {
-              "name": "Azure Database for PostgreSQL",
-              "cost": 1117.27
+              "cost": 1328.42
             },
             {
               "name": "Microsoft Copilot Studio",
-              "cost": 1000.0
+              "cost": 1198.07
+            },
+            {
+              "name": "Azure Database for PostgreSQL",
+              "cost": 1155.41
             },
             {
               "name": "Azure Firewall",
-              "cost": 912.75
+              "cost": 943.47
             },
             {
               "name": "Microsoft Graph data connect",
@@ -1846,175 +1854,175 @@
             },
             {
               "name": "Azure Front Door Service",
-              "cost": 694.85
+              "cost": 718.52
             },
             {
               "name": "Azure Cosmos DB",
-              "cost": 501.97
+              "cost": 519.58
             },
             {
               "name": "Functions",
-              "cost": 486.12
+              "cost": 504.79
             },
             {
               "name": "Application Gateway",
-              "cost": 468.82
+              "cost": 484.78
             },
             {
               "name": "Log Analytics",
-              "cost": 459.46
+              "cost": 483.2
             },
             {
               "name": "Container Registry",
-              "cost": 377.28
+              "cost": 389.61
             },
             {
               "name": "Azure Bastion",
-              "cost": 358.77
+              "cost": 372.45
             },
             {
               "name": "Azure Database for MySQL",
-              "cost": 325.58
+              "cost": 339.85
             },
             {
               "name": "Redis Cache",
-              "cost": 271.18
+              "cost": 280.43
             },
             {
               "name": "Azure DevOps",
-              "cost": 263.84
+              "cost": 272.71
             },
             {
               "name": "Azure DDOS Protection",
-              "cost": 192.18
+              "cost": 198.73
             },
             {
               "name": "API Management",
-              "cost": 187.83
+              "cost": 194.23
             }
           ],
           "costByResourceGroup": [
             {
               "name": "IS_Foundry",
-              "cost": 3230.55
+              "cost": 3236.71
             },
             {
               "name": "PRODUCTION",
-              "cost": 2567.42
+              "cost": 2697.11
             },
             {
               "name": "rg-compliancesentinel",
-              "cost": 2199.41
+              "cost": 2357.65
             },
             {
               "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-              "cost": 1981.14
+              "cost": 2007.81
             },
             {
               "name": "rg-net01",
-              "cost": 1814.35
+              "cost": 1875.6
             },
             {
               "name": "Production",
-              "cost": 1813.37
+              "cost": 1862.67
             },
             {
               "name": "rg-intelligenceonboarding",
-              "cost": 1652.53
+              "cost": 1681.7
             },
             {
               "name": "rg-spaces",
-              "cost": 1335.63
+              "cost": 1382.03
             },
             {
               "name": "rg-synapsedev",
-              "cost": 1181.9
+              "cost": 1222.25
             },
             {
               "name": "rg-aiprospecting",
-              "cost": 1171.26
+              "cost": 1217.88
             },
             {
               "name": "copilot-credits-rg",
-              "cost": 1000.0
+              "cost": 1198.07
             },
             {
               "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-              "cost": 947.57
+              "cost": 980.11
             },
             {
               "name": "rg-govservices",
-              "cost": 917.54
-            },
-            {
-              "name": "rg-azureml01",
-              "cost": 917.43
+              "cost": 972.9
             },
             {
               "name": "rg-venuebooking",
-              "cost": 916.23
+              "cost": 947.5
+            },
+            {
+              "name": "rg-azureml01",
+              "cost": 939.46
             },
             {
               "name": "rg-venuebooking-stg",
-              "cost": 642.26
+              "cost": 664.25
             },
             {
               "name": "RG-COMMV01",
-              "cost": 591.83
+              "cost": 611.9
             },
             {
               "name": "rg-tenex",
-              "cost": 490.18
+              "cost": 508.66
             },
             {
               "name": "rg-tenex-dev",
-              "cost": 483.88
+              "cost": 500.57
             },
             {
               "name": "rg-bpla",
-              "cost": 470.8
+              "cost": 486.33
             },
             {
               "name": "difc-prod-rg",
-              "cost": 464.69
+              "cost": 480.8
             },
             {
               "name": "rg-spaces-stg",
-              "cost": 458.37
+              "cost": 474.05
             },
             {
               "name": "RG-AIPROSPECTING",
-              "cost": 409.63
+              "cost": 423.83
             },
             {
               "name": "rg-MagOneAI",
-              "cost": 382.81
+              "cost": 395.79
             },
             {
               "name": "RG-COMMVRESTORE01",
-              "cost": 340.18
+              "cost": 351.7
             }
           ],
           "costByRegion": [
             {
               "name": "uaenorth",
-              "cost": 28665.94
+              "cost": 29725.82
             },
             {
               "name": "All Regions",
-              "cost": 3232.73
+              "cost": 3258.04
             },
             {
               "name": "uaecentral",
-              "cost": 1000.0
+              "cost": 1198.07
             },
             {
               "name": "EastUS2",
-              "cost": 739.11
+              "cost": 745.27
             },
             {
               "name": "CentralUS",
-              "cost": 263.84
+              "cost": 272.71
             },
             {
               "name": "Unassigned",
@@ -2022,23 +2030,23 @@
             },
             {
               "name": "eastasia",
-              "cost": 18.76
+              "cost": 19.73
             },
             {
               "name": "northeurope",
-              "cost": 11.67
+              "cost": 12.03
             },
             {
               "name": "EastUS",
-              "cost": 11.08
+              "cost": 11.44
             },
             {
               "name": "westeurope",
-              "cost": 3.95
+              "cost": 4.24
             },
             {
               "name": "WestUS",
-              "cost": 0.88
+              "cost": 0.93
             },
             {
               "name": "Europe",
@@ -2168,16 +2176,20 @@
             },
             {
               "date": "2026-07-29",
-              "cost": 1096.72
+              "cost": 1096.76
             },
             {
               "date": "2026-07-30",
-              "cost": 544.69
+              "cost": 1287.4
+            },
+            {
+              "date": "2026-07-31",
+              "cost": 557.59
             }
           ],
           "topResources": [
             {
-              "cost": 2548.65,
+              "cost": 2677.98,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2201,7 +2213,7 @@
               "region": "Unassigned"
             },
             {
-              "cost": 1222.24,
+              "cost": 1315.17,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2213,7 +2225,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 1208.66,
+              "cost": 1223.59,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2225,19 +2237,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 1153.7,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "difcsynapsedev",
-              "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
-              "subscriptionName": "Enterprise Application Dev/Test",
-              "resourceGroup": "rg-synapsedev",
-              "service": "Azure Synapse Analytics",
-              "region": "uaenorth"
-            },
-            {
-              "cost": 1000.0,
+              "cost": 1198.07,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2249,7 +2249,19 @@
               "region": "uaecentral"
             },
             {
-              "cost": 997.41,
+              "cost": 1193.09,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-07",
+              "resourceName": "difcsynapsedev",
+              "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
+              "subscriptionName": "Enterprise Application Dev/Test",
+              "resourceGroup": "rg-synapsedev",
+              "service": "Azure Synapse Analytics",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 1044.74,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2261,7 +2273,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 937.32,
+              "cost": 968.74,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2269,11 +2281,11 @@
               "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/azurefirewalls/hub-fw01",
               "subscriptionName": "Az Network",
               "resourceGroup": "rg-net01",
-              "service": "Bandwidth",
+              "service": "Virtual Network",
               "region": "uaenorth"
             },
             {
-              "cost": 739.11,
+              "cost": 745.27,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2297,7 +2309,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 687.29,
+              "cost": 700.59,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2309,7 +2321,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 595.04,
+              "cost": 644.94,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2333,7 +2345,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 486.7,
+              "cost": 503.48,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2345,19 +2357,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 389.45,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "aks-trproduibk-26684284-vmss",
-              "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trproduibk-26684284-vmss",
-              "subscriptionName": "InfoSEC-SOC",
-              "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-              "service": "Virtual Machines",
-              "region": "uaenorth"
-            },
-            {
-              "cost": 388.1,
+              "cost": 413.6,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2369,7 +2369,19 @@
               "region": "uaenorth"
             },
             {
-              "cost": 346.86,
+              "cost": 402.75,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-07",
+              "resourceName": "aks-trproduibk-26684284-vmss",
+              "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trproduibk-26684284-vmss",
+              "subscriptionName": "InfoSEC-SOC",
+              "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
+              "service": "Virtual Machines",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 370.5,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2381,7 +2393,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 330.72,
+              "cost": 342.0,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2390,6 +2402,18 @@
               "subscriptionName": "Digital",
               "resourceGroup": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
               "service": "Virtual Machines",
+              "region": "uaenorth"
+            },
+            {
+              "cost": 339.01,
+              "clientKey": "difc",
+              "clientName": "DIFC",
+              "month": "2026-07",
+              "resourceName": "sql-tenex-dev",
+              "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-tenex-dev/providers/Microsoft.Sql/servers/sql-tenex-dev/databases/sqldb-tenex-dev",
+              "subscriptionName": "Digital Dev/Test",
+              "resourceGroup": "rg-tenex-dev",
+              "service": "SQL Database",
               "region": "uaenorth"
             },
             {
@@ -2405,19 +2429,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 327.81,
-              "clientKey": "difc",
-              "clientName": "DIFC",
-              "month": "2026-07",
-              "resourceName": "sql-tenex-dev",
-              "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-tenex-dev/providers/Microsoft.Sql/servers/sql-tenex-dev/databases/sqldb-tenex-dev",
-              "subscriptionName": "Digital Dev/Test",
-              "resourceGroup": "rg-tenex-dev",
-              "service": "SQL Database",
-              "region": "uaenorth"
-            },
-            {
-              "cost": 313.8,
+              "cost": 324.51,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2429,7 +2441,7 @@
               "region": "All Regions"
             },
             {
-              "cost": 312.93,
+              "cost": 323.58,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2441,7 +2453,7 @@
               "region": "All Regions"
             },
             {
-              "cost": 309.14,
+              "cost": 319.69,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2453,7 +2465,7 @@
               "region": "uaenorth"
             },
             {
-              "cost": 300.38,
+              "cost": 311.58,
               "clientKey": "difc",
               "clientName": "DIFC",
               "month": "2026-07",
@@ -2480,10 +2492,10 @@
         }
       },
       "summary": {
-        "totalCost": 33967.93,
+        "totalCost": 35268.25,
         "subscriptionCount": 8,
         "resourceGroupCount": 118,
-        "resourceCount": 1363
+        "resourceCount": 1367
       },
       "monthList": [
         "2026-07"
@@ -2491,43 +2503,43 @@
       "costByClient": [
         {
           "name": "DIFC",
-          "cost": 33967.93
+          "cost": 35268.25
         }
       ],
       "costByMonth": [
         {
           "name": "2026-07",
-          "cost": 33967.93
+          "cost": 35268.25
         }
       ],
       "costBySubscription": [
         {
           "name": "Digital",
-          "cost": 13663.87
+          "cost": 14230.82
         },
         {
           "name": "InfoSEC-SOC",
-          "cost": 6066.32
+          "cost": 6132.05
         },
         {
           "name": "Enterprise Application BI",
-          "cost": 5404.17
+          "cost": 5606.54
         },
         {
           "name": "Az Network",
-          "cost": 3541.03
+          "cost": 3661.19
         },
         {
           "name": "Digital Dev/Test",
-          "cost": 3105.29
+          "cost": 3211.93
         },
         {
           "name": "Enterprise Application Dev/Test",
-          "cost": 1187.26
+          "cost": 1227.66
         },
         {
           "name": "Copilot Cowork",
-          "cost": 1000.0
+          "cost": 1198.07
         },
         {
           "name": "MS Defender",
@@ -2537,19 +2549,19 @@
       "costByService": [
         {
           "name": "Azure Synapse Analytics",
-          "cost": 4705.12
+          "cost": 4921.22
         },
         {
           "name": "Virtual Machines",
-          "cost": 4108.71
+          "cost": 4209.68
         },
         {
           "name": "Foundry Models",
-          "cost": 3141.78
+          "cost": 3279.57
         },
         {
           "name": "Azure App Service",
-          "cost": 2661.07
+          "cost": 2753.88
         },
         {
           "name": "SaaS",
@@ -2557,31 +2569,31 @@
         },
         {
           "name": "Foundry Tools",
-          "cost": 2385.3
+          "cost": 2479.04
         },
         {
           "name": "Storage",
-          "cost": 2017.24
+          "cost": 2089.64
         },
         {
           "name": "SQL Database",
-          "cost": 1719.14
+          "cost": 1785.42
         },
         {
           "name": "Virtual Network",
-          "cost": 1284.33
-        },
-        {
-          "name": "Azure Database for PostgreSQL",
-          "cost": 1117.27
+          "cost": 1328.42
         },
         {
           "name": "Microsoft Copilot Studio",
-          "cost": 1000.0
+          "cost": 1198.07
+        },
+        {
+          "name": "Azure Database for PostgreSQL",
+          "cost": 1155.41
         },
         {
           "name": "Azure Firewall",
-          "cost": 912.75
+          "cost": 943.47
         },
         {
           "name": "Microsoft Graph data connect",
@@ -2589,175 +2601,175 @@
         },
         {
           "name": "Azure Front Door Service",
-          "cost": 694.85
+          "cost": 718.52
         },
         {
           "name": "Azure Cosmos DB",
-          "cost": 501.97
+          "cost": 519.58
         },
         {
           "name": "Functions",
-          "cost": 486.12
+          "cost": 504.79
         },
         {
           "name": "Application Gateway",
-          "cost": 468.82
+          "cost": 484.78
         },
         {
           "name": "Log Analytics",
-          "cost": 459.46
+          "cost": 483.2
         },
         {
           "name": "Container Registry",
-          "cost": 377.28
+          "cost": 389.61
         },
         {
           "name": "Azure Bastion",
-          "cost": 358.77
+          "cost": 372.45
         },
         {
           "name": "Azure Database for MySQL",
-          "cost": 325.58
+          "cost": 339.85
         },
         {
           "name": "Redis Cache",
-          "cost": 271.18
+          "cost": 280.43
         },
         {
           "name": "Azure DevOps",
-          "cost": 263.84
+          "cost": 272.71
         },
         {
           "name": "Azure DDOS Protection",
-          "cost": 192.18
+          "cost": 198.73
         },
         {
           "name": "API Management",
-          "cost": 187.83
+          "cost": 194.23
         }
       ],
       "costByResourceGroup": [
         {
           "name": "IS_Foundry",
-          "cost": 3230.55
+          "cost": 3236.71
         },
         {
           "name": "PRODUCTION",
-          "cost": 2567.42
+          "cost": 2697.11
         },
         {
           "name": "rg-compliancesentinel",
-          "cost": 2199.41
+          "cost": 2357.65
         },
         {
           "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "cost": 1981.14
+          "cost": 2007.81
         },
         {
           "name": "rg-net01",
-          "cost": 1814.35
+          "cost": 1875.6
         },
         {
           "name": "Production",
-          "cost": 1813.37
+          "cost": 1862.67
         },
         {
           "name": "rg-intelligenceonboarding",
-          "cost": 1652.53
+          "cost": 1681.7
         },
         {
           "name": "rg-spaces",
-          "cost": 1335.63
+          "cost": 1382.03
         },
         {
           "name": "rg-synapsedev",
-          "cost": 1181.9
+          "cost": 1222.25
         },
         {
           "name": "rg-aiprospecting",
-          "cost": 1171.26
+          "cost": 1217.88
         },
         {
           "name": "copilot-credits-rg",
-          "cost": 1000.0
+          "cost": 1198.07
         },
         {
           "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
-          "cost": 947.57
+          "cost": 980.11
         },
         {
           "name": "rg-govservices",
-          "cost": 917.54
-        },
-        {
-          "name": "rg-azureml01",
-          "cost": 917.43
+          "cost": 972.9
         },
         {
           "name": "rg-venuebooking",
-          "cost": 916.23
+          "cost": 947.5
+        },
+        {
+          "name": "rg-azureml01",
+          "cost": 939.46
         },
         {
           "name": "rg-venuebooking-stg",
-          "cost": 642.26
+          "cost": 664.25
         },
         {
           "name": "RG-COMMV01",
-          "cost": 591.83
+          "cost": 611.9
         },
         {
           "name": "rg-tenex",
-          "cost": 490.18
+          "cost": 508.66
         },
         {
           "name": "rg-tenex-dev",
-          "cost": 483.88
+          "cost": 500.57
         },
         {
           "name": "rg-bpla",
-          "cost": 470.8
+          "cost": 486.33
         },
         {
           "name": "difc-prod-rg",
-          "cost": 464.69
+          "cost": 480.8
         },
         {
           "name": "rg-spaces-stg",
-          "cost": 458.37
+          "cost": 474.05
         },
         {
           "name": "RG-AIPROSPECTING",
-          "cost": 409.63
+          "cost": 423.83
         },
         {
           "name": "rg-MagOneAI",
-          "cost": 382.81
+          "cost": 395.79
         },
         {
           "name": "RG-COMMVRESTORE01",
-          "cost": 340.18
+          "cost": 351.7
         }
       ],
       "costByRegion": [
         {
           "name": "uaenorth",
-          "cost": 28665.94
+          "cost": 29725.82
         },
         {
           "name": "All Regions",
-          "cost": 3232.73
+          "cost": 3258.04
         },
         {
           "name": "uaecentral",
-          "cost": 1000.0
+          "cost": 1198.07
         },
         {
           "name": "EastUS2",
-          "cost": 739.11
+          "cost": 745.27
         },
         {
           "name": "CentralUS",
-          "cost": 263.84
+          "cost": 272.71
         },
         {
           "name": "Unassigned",
@@ -2765,23 +2777,23 @@
         },
         {
           "name": "eastasia",
-          "cost": 18.76
+          "cost": 19.73
         },
         {
           "name": "northeurope",
-          "cost": 11.67
+          "cost": 12.03
         },
         {
           "name": "EastUS",
-          "cost": 11.08
+          "cost": 11.44
         },
         {
           "name": "westeurope",
-          "cost": 3.95
+          "cost": 4.24
         },
         {
           "name": "WestUS",
-          "cost": 0.88
+          "cost": 0.93
         },
         {
           "name": "Europe",
@@ -2911,16 +2923,20 @@
         },
         {
           "date": "2026-07-29",
-          "cost": 1096.72
+          "cost": 1096.76
         },
         {
           "date": "2026-07-30",
-          "cost": 544.69
+          "cost": 1287.4
+        },
+        {
+          "date": "2026-07-31",
+          "cost": 557.59
         }
       ],
       "topResources": [
         {
-          "cost": 2548.65,
+          "cost": 2677.98,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -2944,7 +2960,7 @@
           "region": "Unassigned"
         },
         {
-          "cost": 1222.24,
+          "cost": 1315.17,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -2956,7 +2972,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 1208.66,
+          "cost": 1223.59,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -2968,19 +2984,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 1153.7,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "difcsynapsedev",
-          "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
-          "subscriptionName": "Enterprise Application Dev/Test",
-          "resourceGroup": "rg-synapsedev",
-          "service": "Azure Synapse Analytics",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 1000.0,
+          "cost": 1198.07,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -2992,7 +2996,19 @@
           "region": "uaecentral"
         },
         {
-          "cost": 997.41,
+          "cost": 1193.09,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-07",
+          "resourceName": "difcsynapsedev",
+          "resourceId": "/subscriptions/E67C7CD9-50A3-4AF6-95DA-6A5C3958C2E9/resourceGroups/rg-synapsedev/providers/Microsoft.Synapse/workspaces/difcsynapsedev/sqlPools/dwh_dev",
+          "subscriptionName": "Enterprise Application Dev/Test",
+          "resourceGroup": "rg-synapsedev",
+          "service": "Azure Synapse Analytics",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 1044.74,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3004,7 +3020,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 937.32,
+          "cost": 968.74,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3012,11 +3028,11 @@
           "resourceId": "/subscriptions/4204181e-c92a-4d8d-962d-639104a033dc/resourcegroups/rg-net01/providers/microsoft.network/azurefirewalls/hub-fw01",
           "subscriptionName": "Az Network",
           "resourceGroup": "rg-net01",
-          "service": "Bandwidth",
+          "service": "Virtual Network",
           "region": "uaenorth"
         },
         {
-          "cost": 739.11,
+          "cost": 745.27,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3040,7 +3056,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 687.29,
+          "cost": 700.59,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3052,7 +3068,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 595.04,
+          "cost": 644.94,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3076,7 +3092,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 486.7,
+          "cost": 503.48,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3088,19 +3104,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 389.45,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "aks-trproduibk-26684284-vmss",
-          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trproduibk-26684284-vmss",
-          "subscriptionName": "InfoSEC-SOC",
-          "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "service": "Virtual Machines",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 388.1,
+          "cost": 413.6,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3112,7 +3116,19 @@
           "region": "uaenorth"
         },
         {
-          "cost": 346.86,
+          "cost": 402.75,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-07",
+          "resourceName": "aks-trproduibk-26684284-vmss",
+          "resourceId": "/subscriptions/6970c4ff-7bed-4a67-adef-1ce4502bb8ca/resourceGroups/MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH/providers/Microsoft.Compute/virtualMachineScaleSets/aks-trproduibk-26684284-vmss",
+          "subscriptionName": "InfoSEC-SOC",
+          "resourceGroup": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
+          "service": "Virtual Machines",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 370.5,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3124,7 +3140,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 330.72,
+          "cost": 342.0,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3133,6 +3149,18 @@
           "subscriptionName": "Digital",
           "resourceGroup": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
           "service": "Virtual Machines",
+          "region": "uaenorth"
+        },
+        {
+          "cost": 339.01,
+          "clientKey": "difc",
+          "clientName": "DIFC",
+          "month": "2026-07",
+          "resourceName": "sql-tenex-dev",
+          "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-tenex-dev/providers/Microsoft.Sql/servers/sql-tenex-dev/databases/sqldb-tenex-dev",
+          "subscriptionName": "Digital Dev/Test",
+          "resourceGroup": "rg-tenex-dev",
+          "service": "SQL Database",
           "region": "uaenorth"
         },
         {
@@ -3148,19 +3176,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 327.81,
-          "clientKey": "difc",
-          "clientName": "DIFC",
-          "month": "2026-07",
-          "resourceName": "sql-tenex-dev",
-          "resourceId": "/subscriptions/92e95c69-0fd9-40c7-8a2a-2e67c2d3b08d/resourceGroups/rg-tenex-dev/providers/Microsoft.Sql/servers/sql-tenex-dev/databases/sqldb-tenex-dev",
-          "subscriptionName": "Digital Dev/Test",
-          "resourceGroup": "rg-tenex-dev",
-          "service": "SQL Database",
-          "region": "uaenorth"
-        },
-        {
-          "cost": 313.8,
+          "cost": 324.51,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3172,7 +3188,7 @@
           "region": "All Regions"
         },
         {
-          "cost": 312.93,
+          "cost": 323.58,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3184,7 +3200,7 @@
           "region": "All Regions"
         },
         {
-          "cost": 309.14,
+          "cost": 319.69,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3196,7 +3212,7 @@
           "region": "uaenorth"
         },
         {
-          "cost": 300.38,
+          "cost": 311.58,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -3246,10 +3262,10 @@
   },
   "overall": {
     "summary": {
-      "totalCost": 276088.76,
+      "totalCost": 269467.38,
       "subscriptionCount": 53,
-      "resourceGroupCount": 951,
-      "resourceCount": 221589
+      "resourceGroupCount": 941,
+      "resourceCount": 202539
     },
     "monthList": [
       "2026-07"
@@ -3257,137 +3273,137 @@
     "costByClient": [
       {
         "name": "Etihad Airways",
-        "cost": 242120.83
+        "cost": 234199.12
       },
       {
         "name": "DIFC",
-        "cost": 33967.93
+        "cost": 35268.25
       }
     ],
     "costByMonth": [
       {
         "name": "2026-07",
-        "cost": 276088.76
+        "cost": 269467.38
       }
     ],
     "costBySubscription": [
       {
         "name": "EDP2 PROD",
-        "cost": 133738.89
+        "cost": 131365.27
       },
       {
         "name": "Connected Ops",
-        "cost": 33426.84
+        "cost": 32821.85
       },
       {
         "name": "Amadeus Data Platform",
-        "cost": 24432.16
+        "cost": 24413.65
       },
       {
         "name": "Digital",
-        "cost": 13663.87
+        "cost": 14230.82
       },
       {
         "name": "Spoke_EY_Digital",
-        "cost": 9679.17
+        "cost": 9548.6
       },
       {
         "name": "EDP2 PPE",
-        "cost": 8646.86
+        "cost": 7967.27
       },
       {
         "name": "InfoSEC-SOC",
-        "cost": 6066.32
-      },
-      {
-        "name": "Dev_Test_EY_Digital",
-        "cost": 5535.44
+        "cost": 6132.05
       },
       {
         "name": "Enterprise Application BI",
-        "cost": 5404.17
+        "cost": 5606.54
+      },
+      {
+        "name": "Dev_Test_EY_Digital",
+        "cost": 5573.81
       },
       {
         "name": "PPE_Spoke_EY_Digital",
-        "cost": 4595.23
+        "cost": 4395.58
       },
       {
         "name": "Az Network",
-        "cost": 3541.03
-      },
-      {
-        "name": "AI Hub - PPE",
-        "cost": 3411.07
+        "cost": 3661.19
       },
       {
         "name": "Digital Dev/Test",
-        "cost": 3105.29
+        "cost": 3211.93
       },
       {
-        "name": "Source Code Management",
-        "cost": 2064.38
+        "name": "AI Hub - PPE",
+        "cost": 2622.92
+      },
+      {
+        "name": "EVS Production",
+        "cost": 1754.52
       },
       {
         "name": "Managed File Transfer Prod",
-        "cost": 1867.04
-      },
-      {
-        "name": "Hub_EY_Digital",
-        "cost": 1530.58
-      },
-      {
-        "name": "SecOps Azure LogsToQRadar",
-        "cost": 1398.62
-      },
-      {
-        "name": "Crew PDA (F2O)",
-        "cost": 1331.6
-      },
-      {
-        "name": "Connected OPS PPE",
-        "cost": 1292.14
+        "cost": 1690.15
       },
       {
         "name": "Enterprise Application Dev/Test",
-        "cost": 1187.26
-      },
-      {
-        "name": "AI HUB",
-        "cost": 1014.27
-      },
-      {
-        "name": "FPR production",
-        "cost": 1009.78
+        "cost": 1227.66
       },
       {
         "name": "Copilot Cowork",
-        "cost": 1000.0
+        "cost": 1198.07
       },
       {
-        "name": "SecurityOperations Azure QRadar Inegration",
-        "cost": 751.8
+        "name": "FPR production",
+        "cost": 1133.35
       },
       {
-        "name": "Landing Zone",
-        "cost": 682.39
+        "name": "Source Code Management",
+        "cost": 1085.17
+      },
+      {
+        "name": "Hub_EY_Digital",
+        "cost": 974.62
+      },
+      {
+        "name": "Crew PDA (F2O)",
+        "cost": 973.46
+      },
+      {
+        "name": "Connected OPS PPE",
+        "cost": 942.29
+      },
+      {
+        "name": "AI HUB",
+        "cost": 856.37
+      },
+      {
+        "name": "Conversation Platform - PROD",
+        "cost": 732.29
+      },
+      {
+        "name": "SecOps Azure LogsToQRadar",
+        "cost": 623.96
       }
     ],
     "costByService": [
       {
         "name": "Storage",
-        "cost": 81169.3
+        "cost": 80224.21
       },
       {
         "name": "Virtual Machines",
-        "cost": 53403.52
+        "cost": 50132.38
       },
       {
         "name": "SaaS",
-        "cost": 36043.15
+        "cost": 35683.86
       },
       {
         "name": "Azure Synapse Analytics",
-        "cost": 28609.36
+        "cost": 28248.81
       },
       {
         "name": "Microsoft Fabric",
@@ -3395,89 +3411,89 @@
       },
       {
         "name": "Azure Cosmos DB",
-        "cost": 8616.28
+        "cost": 8659.78
       },
       {
         "name": "Azure App Service",
-        "cost": 4476.11
-      },
-      {
-        "name": "Azure Databricks",
-        "cost": 4428.42
+        "cost": 4560.56
       },
       {
         "name": "Foundry Models",
-        "cost": 3689.65
+        "cost": 3841.22
+      },
+      {
+        "name": "Azure Databricks",
+        "cost": 3724.49
       },
       {
         "name": "API Management",
-        "cost": 3239.64
+        "cost": 3353.06
       },
       {
         "name": "Azure Database for PostgreSQL",
-        "cost": 3151.34
+        "cost": 3126.44
       },
       {
         "name": "Virtual Network",
-        "cost": 3022.33
-      },
-      {
-        "name": "Log Analytics",
-        "cost": 2823.3
+        "cost": 2610.63
       },
       {
         "name": "Foundry Tools",
-        "cost": 2444.48
+        "cost": 2594.53
       },
       {
-        "name": "GitHub",
-        "cost": 2104.1
-      },
-      {
-        "name": "Azure Data Factory v2",
-        "cost": 1742.89
-      },
-      {
-        "name": "Redis Cache",
-        "cost": 1732.26
-      },
-      {
-        "name": "SQL Database",
-        "cost": 1721.64
-      },
-      {
-        "name": "Application Gateway",
-        "cost": 1532.66
-      },
-      {
-        "name": "Microsoft Copilot Studio",
-        "cost": 1175.67
-      },
-      {
-        "name": "Load Balancer",
-        "cost": 1092.32
-      },
-      {
-        "name": "Azure Front Door Service",
-        "cost": 999.07
-      },
-      {
-        "name": "Azure Bastion",
-        "cost": 998.82
-      },
-      {
-        "name": "Azure Firewall",
-        "cost": 912.75
+        "name": "Log Analytics",
+        "cost": 2243.79
       },
       {
         "name": "Bandwidth",
-        "cost": 802.53
+        "cost": 1958.02
+      },
+      {
+        "name": "SQL Database",
+        "cost": 1788.9
+      },
+      {
+        "name": "Redis Cache",
+        "cost": 1723.55
+      },
+      {
+        "name": "Azure Data Factory v2",
+        "cost": 1564.47
+      },
+      {
+        "name": "Application Gateway",
+        "cost": 1385.08
+      },
+      {
+        "name": "Microsoft Copilot Studio",
+        "cost": 1200.7
+      },
+      {
+        "name": "GitHub",
+        "cost": 1184.46
+      },
+      {
+        "name": "Load Balancer",
+        "cost": 1054.54
+      },
+      {
+        "name": "Azure Bastion",
+        "cost": 995.62
+      },
+      {
+        "name": "Azure Front Door Service",
+        "cost": 973.76
+      },
+      {
+        "name": "Azure Firewall",
+        "cost": 943.47
       }
     ],
     "costByResourceGroup": [
       {
         "name": "Unassigned",
-        "cost": 155575.91
+        "cost": 154705.8
       },
       {
         "name": "ComplexEventProcessingMonthlyBilling",
@@ -3485,101 +3501,101 @@
       },
       {
         "name": "rg-edp-prod-data-storage-platform",
-        "cost": 7581.87
+        "cost": 6382.31
       },
       {
         "name": "IS_Foundry",
-        "cost": 3230.55
+        "cost": 3236.71
       },
       {
         "name": "PRODUCTION",
-        "cost": 2567.42
+        "cost": 2697.11
       },
       {
         "name": "rg-compliancesentinel",
-        "cost": 2199.41
+        "cost": 2357.65
       },
       {
         "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-        "cost": 1981.14
-      },
-      {
-        "name": "central-infosec-ms-weu",
-        "cost": 1980.24
+        "cost": 2007.81
       },
       {
         "name": "rg-net01",
-        "cost": 1814.35
+        "cost": 1875.6
       },
       {
         "name": "Production",
-        "cost": 1813.37
-      },
-      {
-        "name": "rg-edp-prod-data-serving-platform",
-        "cost": 1798.57
-      },
-      {
-        "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
-        "cost": 1768.96
+        "cost": 1862.67
       },
       {
         "name": "rg-intelligenceonboarding",
-        "cost": 1652.53
-      },
-      {
-        "name": "RG-MFT-PROD-INGEST",
-        "cost": 1498.9
-      },
-      {
-        "name": "rg-spaces",
-        "cost": 1335.63
+        "cost": 1681.7
       },
       {
         "name": "rrg-edp-prod-data-ingest-process-platform",
-        "cost": 1332.95
+        "cost": 1594.18
       },
       {
-        "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-        "cost": 1283.69
+        "name": "rg-hr-vibe-01",
+        "cost": 1574.18
       },
       {
-        "name": "rg-synapsedev",
-        "cost": 1181.9
-      },
-      {
-        "name": "copilot-credits-rg",
-        "cost": 1175.67
-      },
-      {
-        "name": "rg-aiprospecting",
-        "cost": 1171.26
-      },
-      {
-        "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-BODBWEMHHFHVM",
-        "cost": 1103.39
+        "name": "central-infosec-ms-weu",
+        "cost": 1511.35
       },
       {
         "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-        "cost": 1010.27
+        "cost": 1491.98
       },
       {
-        "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
-        "cost": 999.84
+        "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
+        "cost": 1390.82
       },
       {
-        "name": "rg-aics",
-        "cost": 982.36
+        "name": "rg-spaces",
+        "cost": 1382.03
       },
       {
-        "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-EXPLORATORY-2JIMZJYDE7PGS",
-        "cost": 978.25
+        "name": "RG-MFT-PROD-INGEST",
+        "cost": 1333.28
+      },
+      {
+        "name": "rg-synapsedev",
+        "cost": 1222.25
+      },
+      {
+        "name": "rg-aiprospecting",
+        "cost": 1217.88
+      },
+      {
+        "name": "copilot-credits-rg",
+        "cost": 1200.7
+      },
+      {
+        "name": "rg-edp-prod-data-serving-platform",
+        "cost": 1169.52
+      },
+      {
+        "name": "rg-edp-prod-cbi-data-storage-platform",
+        "cost": 1001.25
+      },
+      {
+        "name": "rg-guestvalue-data-ingest-process-platform",
+        "cost": 986.28
+      },
+      {
+        "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
+        "cost": 980.11
+      },
+      {
+        "name": "rg-govservices",
+        "cost": 972.9
       }
     ],
     "costByRegion": [
       {
         "name": "uaenorth",
-        "cost": 194915.95
+        "cost": 190552.09
       },
       {
         "name": "Unassigned",
@@ -3587,11 +3603,11 @@
       },
       {
         "name": "westeurope",
-        "cost": 17554.56
+        "cost": 16330.07
       },
       {
         "name": "northeurope",
-        "cost": 13687.67
+        "cost": 13738.67
       },
       {
         "name": "Unknown",
@@ -3599,63 +3615,63 @@
       },
       {
         "name": "All Regions",
-        "cost": 4987.01
-      },
-      {
-        "name": "EastUS",
-        "cost": 2164.77
+        "cost": 4589.5
       },
       {
         "name": "uaecentral",
-        "cost": 1673.64
+        "cost": 1899.11
       },
       {
         "name": "EastUS2",
-        "cost": 1365.66
+        "cost": 1418.49
+      },
+      {
+        "name": "EastUS",
+        "cost": 1229.93
       },
       {
         "name": "swedencentral",
-        "cost": 516.85
+        "cost": 531.95
       },
       {
         "name": "CentralUS",
-        "cost": 278.96
+        "cost": 281.93
       },
       {
         "name": "WestUS",
-        "cost": 150.83
+        "cost": 138.72
       },
       {
         "name": "westus2",
-        "cost": 69.73
-      },
-      {
-        "name": "eastasia",
-        "cost": 19.79
-      },
-      {
-        "name": "southeastasia",
-        "cost": 19.16
+        "cost": 42.68
       },
       {
         "name": "southindia",
-        "cost": 18.46
+        "cost": 22.73
       },
       {
-        "name": "canadaeast",
-        "cost": 16.38
+        "name": "eastasia",
+        "cost": 20.22
+      },
+      {
+        "name": "southeastasia",
+        "cost": 18.12
       },
       {
         "name": "NorthCentralUs",
-        "cost": 9.28
+        "cost": 9.13
+      },
+      {
+        "name": "canadaeast",
+        "cost": 4.02
       },
       {
         "name": "uksouth",
-        "cost": 0.13
+        "cost": 0.15
       },
       {
         "name": "centralindia",
-        "cost": 0.1
+        "cost": 0.06
       },
       {
         "name": "Europe",
@@ -3673,123 +3689,127 @@
     "dailyTrend": [
       {
         "date": "2026-07-01",
-        "cost": 16270.32
+        "cost": 15346.39
       },
       {
         "date": "2026-07-02",
-        "cost": 3421.55
+        "cost": 1686.59
       },
       {
         "date": "2026-07-03",
-        "cost": 8136.27
+        "cost": 9058.74
       },
       {
         "date": "2026-07-04",
-        "cost": 4688.38
+        "cost": 5426.64
       },
       {
         "date": "2026-07-05",
-        "cost": 3740.98
+        "cost": 3397.37
       },
       {
         "date": "2026-07-06",
-        "cost": 3617.41
+        "cost": 1813.29
       },
       {
         "date": "2026-07-07",
-        "cost": 3500.11
+        "cost": 4954.51
       },
       {
         "date": "2026-07-08",
-        "cost": 1869.12
+        "cost": 1350.27
       },
       {
         "date": "2026-07-09",
-        "cost": 3302.03
+        "cost": 2967.18
       },
       {
         "date": "2026-07-10",
-        "cost": 3971.3
+        "cost": 2262.47
       },
       {
         "date": "2026-07-11",
-        "cost": 6140.05
+        "cost": 4189.69
       },
       {
         "date": "2026-07-12",
-        "cost": 1417.54
+        "cost": 949.58
       },
       {
         "date": "2026-07-13",
-        "cost": 8366.05
+        "cost": 8587.83
       },
       {
         "date": "2026-07-14",
-        "cost": 3265.84
+        "cost": 1985.96
       },
       {
         "date": "2026-07-15",
-        "cost": 36500.8
+        "cost": 34470.93
       },
       {
         "date": "2026-07-16",
-        "cost": 4597.97
+        "cost": 4254.56
       },
       {
         "date": "2026-07-17",
-        "cost": 2216.27
+        "cost": 3881.15
       },
       {
         "date": "2026-07-18",
-        "cost": 1508.47
+        "cost": 944.71
       },
       {
         "date": "2026-07-19",
-        "cost": 12268.86
+        "cost": 11350.09
       },
       {
         "date": "2026-07-20",
-        "cost": 3579.32
+        "cost": 2392.28
       },
       {
         "date": "2026-07-21",
-        "cost": 101153.87
+        "cost": 97610.16
       },
       {
         "date": "2026-07-22",
-        "cost": 9522.95
+        "cost": 10305.16
       },
       {
         "date": "2026-07-23",
-        "cost": 4032.35
+        "cost": 4533.37
       },
       {
         "date": "2026-07-24",
-        "cost": 1778.98
+        "cost": 2019.43
       },
       {
         "date": "2026-07-25",
-        "cost": 973.55
+        "cost": 3142.28
       },
       {
         "date": "2026-07-26",
-        "cost": 2894.11
+        "cost": 1488.53
       },
       {
         "date": "2026-07-27",
-        "cost": 1087.4
+        "cost": 3385.51
       },
       {
         "date": "2026-07-28",
-        "cost": 1725.71
+        "cost": 1616.53
       },
       {
         "date": "2026-07-29",
-        "cost": 1692.28
+        "cost": 3158.14
       },
       {
         "date": "2026-07-30",
-        "cost": 18848.92
+        "cost": 12708.35
+      },
+      {
+        "date": "2026-07-31",
+        "cost": 8229.69
       }
     ],
     "topResources": [
@@ -3854,7 +3874,7 @@
         "region": "northeurope"
       },
       {
-        "cost": 7572.85,
+        "cost": 6376.32,
         "clientKey": "etihad",
         "clientName": "Etihad Airways",
         "month": "2026-07",
@@ -3871,7 +3891,7 @@
         "clientName": "Etihad Airways",
         "month": "2026-07",
         "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
+        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
         "subscriptionName": "EDP2 PROD",
         "resourceGroup": "Unassigned",
         "service": "Microsoft Fabric",
@@ -3883,7 +3903,7 @@
         "clientName": "Etihad Airways",
         "month": "2026-07",
         "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
+        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
         "subscriptionName": "EDP2 PROD",
         "resourceGroup": "Unassigned",
         "service": "Microsoft Fabric",
@@ -3907,7 +3927,7 @@
         "clientName": "Etihad Airways",
         "month": "2026-07",
         "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
+        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
         "subscriptionName": "EDP2 PROD",
         "resourceGroup": "Unassigned",
         "service": "Virtual Machines",
@@ -3919,7 +3939,7 @@
         "clientName": "Etihad Airways",
         "month": "2026-07",
         "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
+        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
         "subscriptionName": "EDP2 PROD",
         "resourceGroup": "Unassigned",
         "service": "Virtual Machines",
@@ -3943,7 +3963,7 @@
         "clientName": "Etihad Airways",
         "month": "2026-07",
         "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
+        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
         "subscriptionName": "EDP2 PROD",
         "resourceGroup": "Unassigned",
         "service": "Microsoft Fabric",
@@ -3955,7 +3975,7 @@
         "clientName": "Etihad Airways",
         "month": "2026-07",
         "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
+        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
         "subscriptionName": "EDP2 PROD",
         "resourceGroup": "Unassigned",
         "service": "Microsoft Fabric",
@@ -3991,7 +4011,7 @@
         "clientName": "Etihad Airways",
         "month": "2026-07",
         "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
+        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
         "subscriptionName": "EDP2 PROD",
         "resourceGroup": "Unassigned",
         "service": "Storage",
@@ -4003,7 +4023,7 @@
         "clientName": "Etihad Airways",
         "month": "2026-07",
         "resourceName": "",
-        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
+        "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
         "subscriptionName": "EDP2 PROD",
         "resourceGroup": "Unassigned",
         "service": "Storage",
@@ -4022,7 +4042,7 @@
         "region": "westeurope"
       },
       {
-        "cost": 2548.65,
+        "cost": 2677.98,
         "clientKey": "difc",
         "clientName": "DIFC",
         "month": "2026-07",
@@ -4058,16 +4078,16 @@
         "region": "uaenorth"
       },
       {
-        "cost": 2064.38,
+        "cost": 1505.59,
         "clientKey": "etihad",
         "clientName": "Etihad Airways",
         "month": "2026-07",
-        "resourceName": "customer-25682944",
-        "resourceId": "/subscriptions/f3f76fa6-5d40-4141-b2ad-a7265533ffa0/providers/GitHub/EnterpriseAccount/customer-25682944",
-        "subscriptionName": "Source Code Management",
-        "resourceGroup": "Unassigned",
-        "service": "GitHub",
-        "region": "EastUS"
+        "resourceName": "vibevideostore",
+        "resourceId": "/subscriptions/ca5c19c2-6ca0-478d-aedd-aaf72b8f5731/resourceGroups/rg-hr-vibe-01/providers/Microsoft.Storage/storageAccounts/vibevideostore",
+        "subscriptionName": "EVS Production",
+        "resourceGroup": "rg-hr-vibe-01",
+        "service": "Storage",
+        "region": "uaenorth"
       },
       {
         "cost": 1467.16,
@@ -4097,10 +4117,10 @@
     "months": {
       "2026-07": {
         "summary": {
-          "totalCost": 276088.76,
+          "totalCost": 269467.38,
           "subscriptionCount": 53,
-          "resourceGroupCount": 951,
-          "resourceCount": 221589
+          "resourceGroupCount": 941,
+          "resourceCount": 202539
         },
         "monthList": [
           "2026-07"
@@ -4108,137 +4128,137 @@
         "costByClient": [
           {
             "name": "Etihad Airways",
-            "cost": 242120.83
+            "cost": 234199.12
           },
           {
             "name": "DIFC",
-            "cost": 33967.93
+            "cost": 35268.25
           }
         ],
         "costByMonth": [
           {
             "name": "2026-07",
-            "cost": 276088.76
+            "cost": 269467.38
           }
         ],
         "costBySubscription": [
           {
             "name": "EDP2 PROD",
-            "cost": 133738.89
+            "cost": 131365.27
           },
           {
             "name": "Connected Ops",
-            "cost": 33426.84
+            "cost": 32821.85
           },
           {
             "name": "Amadeus Data Platform",
-            "cost": 24432.16
+            "cost": 24413.65
           },
           {
             "name": "Digital",
-            "cost": 13663.87
+            "cost": 14230.82
           },
           {
             "name": "Spoke_EY_Digital",
-            "cost": 9679.17
+            "cost": 9548.6
           },
           {
             "name": "EDP2 PPE",
-            "cost": 8646.86
+            "cost": 7967.27
           },
           {
             "name": "InfoSEC-SOC",
-            "cost": 6066.32
-          },
-          {
-            "name": "Dev_Test_EY_Digital",
-            "cost": 5535.44
+            "cost": 6132.05
           },
           {
             "name": "Enterprise Application BI",
-            "cost": 5404.17
+            "cost": 5606.54
+          },
+          {
+            "name": "Dev_Test_EY_Digital",
+            "cost": 5573.81
           },
           {
             "name": "PPE_Spoke_EY_Digital",
-            "cost": 4595.23
+            "cost": 4395.58
           },
           {
             "name": "Az Network",
-            "cost": 3541.03
-          },
-          {
-            "name": "AI Hub - PPE",
-            "cost": 3411.07
+            "cost": 3661.19
           },
           {
             "name": "Digital Dev/Test",
-            "cost": 3105.29
+            "cost": 3211.93
           },
           {
-            "name": "Source Code Management",
-            "cost": 2064.38
+            "name": "AI Hub - PPE",
+            "cost": 2622.92
+          },
+          {
+            "name": "EVS Production",
+            "cost": 1754.52
           },
           {
             "name": "Managed File Transfer Prod",
-            "cost": 1867.04
-          },
-          {
-            "name": "Hub_EY_Digital",
-            "cost": 1530.58
-          },
-          {
-            "name": "SecOps Azure LogsToQRadar",
-            "cost": 1398.62
-          },
-          {
-            "name": "Crew PDA (F2O)",
-            "cost": 1331.6
-          },
-          {
-            "name": "Connected OPS PPE",
-            "cost": 1292.14
+            "cost": 1690.15
           },
           {
             "name": "Enterprise Application Dev/Test",
-            "cost": 1187.26
-          },
-          {
-            "name": "AI HUB",
-            "cost": 1014.27
-          },
-          {
-            "name": "FPR production",
-            "cost": 1009.78
+            "cost": 1227.66
           },
           {
             "name": "Copilot Cowork",
-            "cost": 1000.0
+            "cost": 1198.07
           },
           {
-            "name": "SecurityOperations Azure QRadar Inegration",
-            "cost": 751.8
+            "name": "FPR production",
+            "cost": 1133.35
           },
           {
-            "name": "Landing Zone",
-            "cost": 682.39
+            "name": "Source Code Management",
+            "cost": 1085.17
+          },
+          {
+            "name": "Hub_EY_Digital",
+            "cost": 974.62
+          },
+          {
+            "name": "Crew PDA (F2O)",
+            "cost": 973.46
+          },
+          {
+            "name": "Connected OPS PPE",
+            "cost": 942.29
+          },
+          {
+            "name": "AI HUB",
+            "cost": 856.37
+          },
+          {
+            "name": "Conversation Platform - PROD",
+            "cost": 732.29
+          },
+          {
+            "name": "SecOps Azure LogsToQRadar",
+            "cost": 623.96
           }
         ],
         "costByService": [
           {
             "name": "Storage",
-            "cost": 81169.3
+            "cost": 80224.21
           },
           {
             "name": "Virtual Machines",
-            "cost": 53403.52
+            "cost": 50132.38
           },
           {
             "name": "SaaS",
-            "cost": 36043.15
+            "cost": 35683.86
           },
           {
             "name": "Azure Synapse Analytics",
-            "cost": 28609.36
+            "cost": 28248.81
           },
           {
             "name": "Microsoft Fabric",
@@ -4246,89 +4266,89 @@
           },
           {
             "name": "Azure Cosmos DB",
-            "cost": 8616.28
+            "cost": 8659.78
           },
           {
             "name": "Azure App Service",
-            "cost": 4476.11
-          },
-          {
-            "name": "Azure Databricks",
-            "cost": 4428.42
+            "cost": 4560.56
           },
           {
             "name": "Foundry Models",
-            "cost": 3689.65
+            "cost": 3841.22
+          },
+          {
+            "name": "Azure Databricks",
+            "cost": 3724.49
           },
           {
             "name": "API Management",
-            "cost": 3239.64
+            "cost": 3353.06
           },
           {
             "name": "Azure Database for PostgreSQL",
-            "cost": 3151.34
+            "cost": 3126.44
           },
           {
             "name": "Virtual Network",
-            "cost": 3022.33
-          },
-          {
-            "name": "Log Analytics",
-            "cost": 2823.3
+            "cost": 2610.63
           },
           {
             "name": "Foundry Tools",
-            "cost": 2444.48
+            "cost": 2594.53
           },
           {
-            "name": "GitHub",
-            "cost": 2104.1
-          },
-          {
-            "name": "Azure Data Factory v2",
-            "cost": 1742.89
-          },
-          {
-            "name": "Redis Cache",
-            "cost": 1732.26
-          },
-          {
-            "name": "SQL Database",
-            "cost": 1721.64
-          },
-          {
-            "name": "Application Gateway",
-            "cost": 1532.66
-          },
-          {
-            "name": "Microsoft Copilot Studio",
-            "cost": 1175.67
-          },
-          {
-            "name": "Load Balancer",
-            "cost": 1092.32
-          },
-          {
-            "name": "Azure Front Door Service",
-            "cost": 999.07
-          },
-          {
-            "name": "Azure Bastion",
-            "cost": 998.82
-          },
-          {
-            "name": "Azure Firewall",
-            "cost": 912.75
+            "name": "Log Analytics",
+            "cost": 2243.79
           },
           {
             "name": "Bandwidth",
-            "cost": 802.53
+            "cost": 1958.02
+          },
+          {
+            "name": "SQL Database",
+            "cost": 1788.9
+          },
+          {
+            "name": "Redis Cache",
+            "cost": 1723.55
+          },
+          {
+            "name": "Azure Data Factory v2",
+            "cost": 1564.47
+          },
+          {
+            "name": "Application Gateway",
+            "cost": 1385.08
+          },
+          {
+            "name": "Microsoft Copilot Studio",
+            "cost": 1200.7
+          },
+          {
+            "name": "GitHub",
+            "cost": 1184.46
+          },
+          {
+            "name": "Load Balancer",
+            "cost": 1054.54
+          },
+          {
+            "name": "Azure Bastion",
+            "cost": 995.62
+          },
+          {
+            "name": "Azure Front Door Service",
+            "cost": 973.76
+          },
+          {
+            "name": "Azure Firewall",
+            "cost": 943.47
           }
         ],
         "costByResourceGroup": [
           {
             "name": "Unassigned",
-            "cost": 155575.91
+            "cost": 154705.8
           },
           {
             "name": "ComplexEventProcessingMonthlyBilling",
@@ -4336,101 +4356,101 @@
           },
           {
             "name": "rg-edp-prod-data-storage-platform",
-            "cost": 7581.87
+            "cost": 6382.31
           },
           {
             "name": "IS_Foundry",
-            "cost": 3230.55
+            "cost": 3236.71
           },
           {
             "name": "PRODUCTION",
-            "cost": 2567.42
+            "cost": 2697.11
           },
           {
             "name": "rg-compliancesentinel",
-            "cost": 2199.41
+            "cost": 2357.65
           },
           {
             "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-            "cost": 1981.14
-          },
-          {
-            "name": "central-infosec-ms-weu",
-            "cost": 1980.24
+            "cost": 2007.81
           },
           {
             "name": "rg-net01",
-            "cost": 1814.35
+            "cost": 1875.6
           },
           {
             "name": "Production",
-            "cost": 1813.37
-          },
-          {
-            "name": "rg-edp-prod-data-serving-platform",
-            "cost": 1798.57
-          },
-          {
-            "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
-            "cost": 1768.96
+            "cost": 1862.67
           },
           {
             "name": "rg-intelligenceonboarding",
-            "cost": 1652.53
-          },
-          {
-            "name": "RG-MFT-PROD-INGEST",
-            "cost": 1498.9
-          },
-          {
-            "name": "rg-spaces",
-            "cost": 1335.63
+            "cost": 1681.7
           },
           {
             "name": "rrg-edp-prod-data-ingest-process-platform",
-            "cost": 1332.95
+            "cost": 1594.18
           },
           {
-            "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-            "cost": 1283.69
+            "name": "rg-hr-vibe-01",
+            "cost": 1574.18
           },
           {
-            "name": "rg-synapsedev",
-            "cost": 1181.9
-          },
-          {
-            "name": "copilot-credits-rg",
-            "cost": 1175.67
-          },
-          {
-            "name": "rg-aiprospecting",
-            "cost": 1171.26
-          },
-          {
-            "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-BODBWEMHHFHVM",
-            "cost": 1103.39
+            "name": "central-infosec-ms-weu",
+            "cost": 1511.35
           },
           {
             "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-            "cost": 1010.27
+            "cost": 1491.98
           },
           {
-            "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
-            "cost": 999.84
+            "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
+            "cost": 1390.82
           },
           {
-            "name": "rg-aics",
-            "cost": 982.36
+            "name": "rg-spaces",
+            "cost": 1382.03
           },
           {
-            "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-EXPLORATORY-2JIMZJYDE7PGS",
-            "cost": 978.25
+            "name": "RG-MFT-PROD-INGEST",
+            "cost": 1333.28
+          },
+          {
+            "name": "rg-synapsedev",
+            "cost": 1222.25
+          },
+          {
+            "name": "rg-aiprospecting",
+            "cost": 1217.88
+          },
+          {
+            "name": "copilot-credits-rg",
+            "cost": 1200.7
+          },
+          {
+            "name": "rg-edp-prod-data-serving-platform",
+            "cost": 1169.52
+          },
+          {
+            "name": "rg-edp-prod-cbi-data-storage-platform",
+            "cost": 1001.25
+          },
+          {
+            "name": "rg-guestvalue-data-ingest-process-platform",
+            "cost": 986.28
+          },
+          {
+            "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
+            "cost": 980.11
+          },
+          {
+            "name": "rg-govservices",
+            "cost": 972.9
           }
         ],
         "costByRegion": [
           {
             "name": "uaenorth",
-            "cost": 194915.95
+            "cost": 190552.09
           },
           {
             "name": "Unassigned",
@@ -4438,11 +4458,11 @@
           },
           {
             "name": "westeurope",
-            "cost": 17554.56
+            "cost": 16330.07
           },
           {
             "name": "northeurope",
-            "cost": 13687.67
+            "cost": 13738.67
           },
           {
             "name": "Unknown",
@@ -4450,63 +4470,63 @@
           },
           {
             "name": "All Regions",
-            "cost": 4987.01
-          },
-          {
-            "name": "EastUS",
-            "cost": 2164.77
+            "cost": 4589.5
           },
           {
             "name": "uaecentral",
-            "cost": 1673.64
+            "cost": 1899.11
           },
           {
             "name": "EastUS2",
-            "cost": 1365.66
+            "cost": 1418.49
+          },
+          {
+            "name": "EastUS",
+            "cost": 1229.93
           },
           {
             "name": "swedencentral",
-            "cost": 516.85
+            "cost": 531.95
           },
           {
             "name": "CentralUS",
-            "cost": 278.96
+            "cost": 281.93
           },
           {
             "name": "WestUS",
-            "cost": 150.83
+            "cost": 138.72
           },
           {
             "name": "westus2",
-            "cost": 69.73
-          },
-          {
-            "name": "eastasia",
-            "cost": 19.79
-          },
-          {
-            "name": "southeastasia",
-            "cost": 19.16
+            "cost": 42.68
           },
           {
             "name": "southindia",
-            "cost": 18.46
+            "cost": 22.73
           },
           {
-            "name": "canadaeast",
-            "cost": 16.38
+            "name": "eastasia",
+            "cost": 20.22
+          },
+          {
+            "name": "southeastasia",
+            "cost": 18.12
           },
           {
             "name": "NorthCentralUs",
-            "cost": 9.28
+            "cost": 9.13
+          },
+          {
+            "name": "canadaeast",
+            "cost": 4.02
           },
           {
             "name": "uksouth",
-            "cost": 0.13
+            "cost": 0.15
           },
           {
             "name": "centralindia",
-            "cost": 0.1
+            "cost": 0.06
           },
           {
             "name": "Europe",
@@ -4524,123 +4544,127 @@
         "dailyTrend": [
           {
             "date": "2026-07-01",
-            "cost": 16270.32
+            "cost": 15346.39
           },
           {
             "date": "2026-07-02",
-            "cost": 3421.55
+            "cost": 1686.59
           },
           {
             "date": "2026-07-03",
-            "cost": 8136.27
+            "cost": 9058.74
           },
           {
             "date": "2026-07-04",
-            "cost": 4688.38
+            "cost": 5426.64
           },
           {
             "date": "2026-07-05",
-            "cost": 3740.98
+            "cost": 3397.37
           },
           {
             "date": "2026-07-06",
-            "cost": 3617.41
+            "cost": 1813.29
           },
           {
             "date": "2026-07-07",
-            "cost": 3500.11
+            "cost": 4954.51
           },
           {
             "date": "2026-07-08",
-            "cost": 1869.12
+            "cost": 1350.27
           },
           {
             "date": "2026-07-09",
-            "cost": 3302.03
+            "cost": 2967.18
           },
           {
             "date": "2026-07-10",
-            "cost": 3971.3
+            "cost": 2262.47
           },
           {
             "date": "2026-07-11",
-            "cost": 6140.05
+            "cost": 4189.69
           },
           {
             "date": "2026-07-12",
-            "cost": 1417.54
+            "cost": 949.58
           },
           {
             "date": "2026-07-13",
-            "cost": 8366.05
+            "cost": 8587.83
           },
           {
             "date": "2026-07-14",
-            "cost": 3265.84
+            "cost": 1985.96
           },
           {
             "date": "2026-07-15",
-            "cost": 36500.8
+            "cost": 34470.93
           },
           {
             "date": "2026-07-16",
-            "cost": 4597.97
+            "cost": 4254.56
           },
           {
             "date": "2026-07-17",
-            "cost": 2216.27
+            "cost": 3881.15
           },
           {
             "date": "2026-07-18",
-            "cost": 1508.47
+            "cost": 944.71
           },
           {
             "date": "2026-07-19",
-            "cost": 12268.86
+            "cost": 11350.09
           },
           {
             "date": "2026-07-20",
-            "cost": 3579.32
+            "cost": 2392.28
           },
           {
             "date": "2026-07-21",
-            "cost": 101153.87
+            "cost": 97610.16
           },
           {
             "date": "2026-07-22",
-            "cost": 9522.95
+            "cost": 10305.16
           },
           {
             "date": "2026-07-23",
-            "cost": 4032.35
+            "cost": 4533.37
           },
           {
             "date": "2026-07-24",
-            "cost": 1778.98
+            "cost": 2019.43
           },
           {
             "date": "2026-07-25",
-            "cost": 973.55
+            "cost": 3142.28
           },
           {
             "date": "2026-07-26",
-            "cost": 2894.11
+            "cost": 1488.53
           },
           {
             "date": "2026-07-27",
-            "cost": 1087.4
+            "cost": 3385.51
           },
           {
             "date": "2026-07-28",
-            "cost": 1725.71
+            "cost": 1616.53
           },
           {
             "date": "2026-07-29",
-            "cost": 1692.28
+            "cost": 3158.14
           },
           {
             "date": "2026-07-30",
-            "cost": 18848.92
+            "cost": 12708.35
+          },
+          {
+            "date": "2026-07-31",
+            "cost": 8229.69
           }
         ],
         "topResources": [
@@ -4705,7 +4729,7 @@
             "region": "northeurope"
           },
           {
-            "cost": 7572.85,
+            "cost": 6376.32,
             "clientKey": "etihad",
             "clientName": "Etihad Airways",
             "month": "2026-07",
@@ -4722,7 +4746,7 @@
             "clientName": "Etihad Airways",
             "month": "2026-07",
             "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
+            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
             "subscriptionName": "EDP2 PROD",
             "resourceGroup": "Unassigned",
             "service": "Microsoft Fabric",
@@ -4734,7 +4758,7 @@
             "clientName": "Etihad Airways",
             "month": "2026-07",
             "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
+            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
             "subscriptionName": "EDP2 PROD",
             "resourceGroup": "Unassigned",
             "service": "Microsoft Fabric",
@@ -4758,7 +4782,7 @@
             "clientName": "Etihad Airways",
             "month": "2026-07",
             "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
+            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
             "subscriptionName": "EDP2 PROD",
             "resourceGroup": "Unassigned",
             "service": "Virtual Machines",
@@ -4770,7 +4794,7 @@
             "clientName": "Etihad Airways",
             "month": "2026-07",
             "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
+            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
             "subscriptionName": "EDP2 PROD",
             "resourceGroup": "Unassigned",
             "service": "Virtual Machines",
@@ -4794,7 +4818,7 @@
             "clientName": "Etihad Airways",
             "month": "2026-07",
             "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
+            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
             "subscriptionName": "EDP2 PROD",
             "resourceGroup": "Unassigned",
             "service": "Microsoft Fabric",
@@ -4806,7 +4830,7 @@
             "clientName": "Etihad Airways",
             "month": "2026-07",
             "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
+            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
             "subscriptionName": "EDP2 PROD",
             "resourceGroup": "Unassigned",
             "service": "Microsoft Fabric",
@@ -4842,7 +4866,7 @@
             "clientName": "Etihad Airways",
             "month": "2026-07",
             "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
+            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
             "subscriptionName": "EDP2 PROD",
             "resourceGroup": "Unassigned",
             "service": "Storage",
@@ -4854,7 +4878,7 @@
             "clientName": "Etihad Airways",
             "month": "2026-07",
             "resourceName": "",
-            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
+            "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
             "subscriptionName": "EDP2 PROD",
             "resourceGroup": "Unassigned",
             "service": "Storage",
@@ -4873,7 +4897,7 @@
             "region": "westeurope"
           },
           {
-            "cost": 2548.65,
+            "cost": 2677.98,
             "clientKey": "difc",
             "clientName": "DIFC",
             "month": "2026-07",
@@ -4909,16 +4933,16 @@
             "region": "uaenorth"
           },
           {
-            "cost": 2064.38,
+            "cost": 1505.59,
             "clientKey": "etihad",
             "clientName": "Etihad Airways",
             "month": "2026-07",
-            "resourceName": "customer-25682944",
-            "resourceId": "/subscriptions/f3f76fa6-5d40-4141-b2ad-a7265533ffa0/providers/GitHub/EnterpriseAccount/customer-25682944",
-            "subscriptionName": "Source Code Management",
-            "resourceGroup": "Unassigned",
-            "service": "GitHub",
-            "region": "EastUS"
+            "resourceName": "vibevideostore",
+            "resourceId": "/subscriptions/ca5c19c2-6ca0-478d-aedd-aaf72b8f5731/resourceGroups/rg-hr-vibe-01/providers/Microsoft.Storage/storageAccounts/vibevideostore",
+            "subscriptionName": "EVS Production",
+            "resourceGroup": "rg-hr-vibe-01",
+            "service": "Storage",
+            "region": "uaenorth"
           },
           {
             "cost": 1467.16,
@@ -4949,145 +4973,145 @@
     }
   },
   "summary": {
-    "totalCost": 276088.76,
+    "totalCost": 269467.38,
     "subscriptionCount": 53,
-    "resourceGroupCount": 951,
-    "resourceCount": 221589
+    "resourceGroupCount": 941,
+    "resourceCount": 202539
   },
   "costByClient": [
     {
       "name": "Etihad Airways",
-      "cost": 242120.83
+      "cost": 234199.12
     },
     {
       "name": "DIFC",
-      "cost": 33967.93
+      "cost": 35268.25
     }
   ],
   "costByMonth": [
     {
       "name": "2026-07",
-      "cost": 276088.76
+      "cost": 269467.38
     }
   ],
   "costBySubscription": [
     {
       "name": "EDP2 PROD",
-      "cost": 133738.89
+      "cost": 131365.27
     },
     {
       "name": "Connected Ops",
-      "cost": 33426.84
+      "cost": 32821.85
     },
     {
       "name": "Amadeus Data Platform",
-      "cost": 24432.16
+      "cost": 24413.65
     },
     {
       "name": "Digital",
-      "cost": 13663.87
+      "cost": 14230.82
     },
     {
       "name": "Spoke_EY_Digital",
-      "cost": 9679.17
+      "cost": 9548.6
     },
     {
       "name": "EDP2 PPE",
-      "cost": 8646.86
+      "cost": 7967.27
     },
     {
       "name": "InfoSEC-SOC",
-      "cost": 6066.32
-    },
-    {
-      "name": "Dev_Test_EY_Digital",
-      "cost": 5535.44
+      "cost": 6132.05
     },
     {
       "name": "Enterprise Application BI",
-      "cost": 5404.17
+      "cost": 5606.54
+    },
+    {
+      "name": "Dev_Test_EY_Digital",
+      "cost": 5573.81
     },
     {
       "name": "PPE_Spoke_EY_Digital",
-      "cost": 4595.23
+      "cost": 4395.58
     },
     {
       "name": "Az Network",
-      "cost": 3541.03
-    },
-    {
-      "name": "AI Hub - PPE",
-      "cost": 3411.07
+      "cost": 3661.19
     },
     {
       "name": "Digital Dev/Test",
-      "cost": 3105.29
+      "cost": 3211.93
     },
     {
-      "name": "Source Code Management",
-      "cost": 2064.38
+      "name": "AI Hub - PPE",
+      "cost": 2622.92
+    },
+    {
+      "name": "EVS Production",
+      "cost": 1754.52
     },
     {
       "name": "Managed File Transfer Prod",
-      "cost": 1867.04
-    },
-    {
-      "name": "Hub_EY_Digital",
-      "cost": 1530.58
-    },
-    {
-      "name": "SecOps Azure LogsToQRadar",
-      "cost": 1398.62
-    },
-    {
-      "name": "Crew PDA (F2O)",
-      "cost": 1331.6
-    },
-    {
-      "name": "Connected OPS PPE",
-      "cost": 1292.14
+      "cost": 1690.15
     },
     {
       "name": "Enterprise Application Dev/Test",
-      "cost": 1187.26
-    },
-    {
-      "name": "AI HUB",
-      "cost": 1014.27
-    },
-    {
-      "name": "FPR production",
-      "cost": 1009.78
+      "cost": 1227.66
     },
     {
       "name": "Copilot Cowork",
-      "cost": 1000.0
+      "cost": 1198.07
     },
     {
-      "name": "SecurityOperations Azure QRadar Inegration",
-      "cost": 751.8
+      "name": "FPR production",
+      "cost": 1133.35
     },
     {
-      "name": "Landing Zone",
-      "cost": 682.39
+      "name": "Source Code Management",
+      "cost": 1085.17
+    },
+    {
+      "name": "Hub_EY_Digital",
+      "cost": 974.62
+    },
+    {
+      "name": "Crew PDA (F2O)",
+      "cost": 973.46
+    },
+    {
+      "name": "Connected OPS PPE",
+      "cost": 942.29
+    },
+    {
+      "name": "AI HUB",
+      "cost": 856.37
+    },
+    {
+      "name": "Conversation Platform - PROD",
+      "cost": 732.29
+    },
+    {
+      "name": "SecOps Azure LogsToQRadar",
+      "cost": 623.96
     }
   ],
   "costByService": [
     {
       "name": "Storage",
-      "cost": 81169.3
+      "cost": 80224.21
     },
     {
       "name": "Virtual Machines",
-      "cost": 53403.52
+      "cost": 50132.38
     },
     {
       "name": "SaaS",
-      "cost": 36043.15
+      "cost": 35683.86
     },
     {
       "name": "Azure Synapse Analytics",
-      "cost": 28609.36
+      "cost": 28248.81
     },
     {
       "name": "Microsoft Fabric",
@@ -5095,89 +5119,89 @@
     },
     {
       "name": "Azure Cosmos DB",
-      "cost": 8616.28
+      "cost": 8659.78
     },
     {
       "name": "Azure App Service",
-      "cost": 4476.11
-    },
-    {
-      "name": "Azure Databricks",
-      "cost": 4428.42
+      "cost": 4560.56
     },
     {
       "name": "Foundry Models",
-      "cost": 3689.65
+      "cost": 3841.22
+    },
+    {
+      "name": "Azure Databricks",
+      "cost": 3724.49
     },
     {
       "name": "API Management",
-      "cost": 3239.64
+      "cost": 3353.06
     },
     {
       "name": "Azure Database for PostgreSQL",
-      "cost": 3151.34
+      "cost": 3126.44
     },
     {
       "name": "Virtual Network",
-      "cost": 3022.33
-    },
-    {
-      "name": "Log Analytics",
-      "cost": 2823.3
+      "cost": 2610.63
     },
     {
       "name": "Foundry Tools",
-      "cost": 2444.48
+      "cost": 2594.53
     },
     {
-      "name": "GitHub",
-      "cost": 2104.1
-    },
-    {
-      "name": "Azure Data Factory v2",
-      "cost": 1742.89
-    },
-    {
-      "name": "Redis Cache",
-      "cost": 1732.26
-    },
-    {
-      "name": "SQL Database",
-      "cost": 1721.64
-    },
-    {
-      "name": "Application Gateway",
-      "cost": 1532.66
-    },
-    {
-      "name": "Microsoft Copilot Studio",
-      "cost": 1175.67
-    },
-    {
-      "name": "Load Balancer",
-      "cost": 1092.32
-    },
-    {
-      "name": "Azure Front Door Service",
-      "cost": 999.07
-    },
-    {
-      "name": "Azure Bastion",
-      "cost": 998.82
-    },
-    {
-      "name": "Azure Firewall",
-      "cost": 912.75
+      "name": "Log Analytics",
+      "cost": 2243.79
     },
     {
       "name": "Bandwidth",
-      "cost": 802.53
+      "cost": 1958.02
+    },
+    {
+      "name": "SQL Database",
+      "cost": 1788.9
+    },
+    {
+      "name": "Redis Cache",
+      "cost": 1723.55
+    },
+    {
+      "name": "Azure Data Factory v2",
+      "cost": 1564.47
+    },
+    {
+      "name": "Application Gateway",
+      "cost": 1385.08
+    },
+    {
+      "name": "Microsoft Copilot Studio",
+      "cost": 1200.7
+    },
+    {
+      "name": "GitHub",
+      "cost": 1184.46
+    },
+    {
+      "name": "Load Balancer",
+      "cost": 1054.54
+    },
+    {
+      "name": "Azure Bastion",
+      "cost": 995.62
+    },
+    {
+      "name": "Azure Front Door Service",
+      "cost": 973.76
+    },
+    {
+      "name": "Azure Firewall",
+      "cost": 943.47
     }
   ],
   "costByResourceGroup": [
     {
       "name": "Unassigned",
-      "cost": 155575.91
+      "cost": 154705.8
     },
     {
       "name": "ComplexEventProcessingMonthlyBilling",
@@ -5185,101 +5209,101 @@
     },
     {
       "name": "rg-edp-prod-data-storage-platform",
-      "cost": 7581.87
+      "cost": 6382.31
     },
     {
       "name": "IS_Foundry",
-      "cost": 3230.55
+      "cost": 3236.71
     },
     {
       "name": "PRODUCTION",
-      "cost": 2567.42
+      "cost": 2697.11
     },
     {
       "name": "rg-compliancesentinel",
-      "cost": 2199.41
+      "cost": 2357.65
     },
     {
       "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-      "cost": 1981.14
-    },
-    {
-      "name": "central-infosec-ms-weu",
-      "cost": 1980.24
+      "cost": 2007.81
     },
     {
       "name": "rg-net01",
-      "cost": 1814.35
+      "cost": 1875.6
     },
     {
       "name": "Production",
-      "cost": 1813.37
-    },
-    {
-      "name": "rg-edp-prod-data-serving-platform",
-      "cost": 1798.57
-    },
-    {
-      "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
-      "cost": 1768.96
+      "cost": 1862.67
     },
     {
       "name": "rg-intelligenceonboarding",
-      "cost": 1652.53
-    },
-    {
-      "name": "RG-MFT-PROD-INGEST",
-      "cost": 1498.9
-    },
-    {
-      "name": "rg-spaces",
-      "cost": 1335.63
+      "cost": 1681.7
     },
     {
       "name": "rrg-edp-prod-data-ingest-process-platform",
-      "cost": 1332.95
+      "cost": 1594.18
     },
     {
-      "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-      "cost": 1283.69
+      "name": "rg-hr-vibe-01",
+      "cost": 1574.18
     },
     {
-      "name": "rg-synapsedev",
-      "cost": 1181.9
-    },
-    {
-      "name": "copilot-credits-rg",
-      "cost": 1175.67
-    },
-    {
-      "name": "rg-aiprospecting",
-      "cost": 1171.26
-    },
-    {
-      "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-BODBWEMHHFHVM",
-      "cost": 1103.39
+      "name": "central-infosec-ms-weu",
+      "cost": 1511.35
     },
     {
       "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-      "cost": 1010.27
+      "cost": 1491.98
     },
     {
-      "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
-      "cost": 999.84
+      "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
+      "cost": 1390.82
     },
     {
-      "name": "rg-aics",
-      "cost": 982.36
+      "name": "rg-spaces",
+      "cost": 1382.03
     },
     {
-      "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-EXPLORATORY-2JIMZJYDE7PGS",
-      "cost": 978.25
+      "name": "RG-MFT-PROD-INGEST",
+      "cost": 1333.28
+    },
+    {
+      "name": "rg-synapsedev",
+      "cost": 1222.25
+    },
+    {
+      "name": "rg-aiprospecting",
+      "cost": 1217.88
+    },
+    {
+      "name": "copilot-credits-rg",
+      "cost": 1200.7
+    },
+    {
+      "name": "rg-edp-prod-data-serving-platform",
+      "cost": 1169.52
+    },
+    {
+      "name": "rg-edp-prod-cbi-data-storage-platform",
+      "cost": 1001.25
+    },
+    {
+      "name": "rg-guestvalue-data-ingest-process-platform",
+      "cost": 986.28
+    },
+    {
+      "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
+      "cost": 980.11
+    },
+    {
+      "name": "rg-govservices",
+      "cost": 972.9
     }
   ],
   "costByRegion": [
     {
       "name": "uaenorth",
-      "cost": 194915.95
+      "cost": 190552.09
     },
     {
       "name": "Unassigned",
@@ -5287,11 +5311,11 @@
     },
     {
       "name": "westeurope",
-      "cost": 17554.56
+      "cost": 16330.07
     },
     {
       "name": "northeurope",
-      "cost": 13687.67
+      "cost": 13738.67
     },
     {
       "name": "Unknown",
@@ -5299,63 +5323,63 @@
     },
     {
       "name": "All Regions",
-      "cost": 4987.01
-    },
-    {
-      "name": "EastUS",
-      "cost": 2164.77
+      "cost": 4589.5
     },
     {
       "name": "uaecentral",
-      "cost": 1673.64
+      "cost": 1899.11
     },
     {
       "name": "EastUS2",
-      "cost": 1365.66
+      "cost": 1418.49
+    },
+    {
+      "name": "EastUS",
+      "cost": 1229.93
     },
     {
       "name": "swedencentral",
-      "cost": 516.85
+      "cost": 531.95
     },
     {
       "name": "CentralUS",
-      "cost": 278.96
+      "cost": 281.93
     },
     {
       "name": "WestUS",
-      "cost": 150.83
+      "cost": 138.72
     },
     {
       "name": "westus2",
-      "cost": 69.73
-    },
-    {
-      "name": "eastasia",
-      "cost": 19.79
-    },
-    {
-      "name": "southeastasia",
-      "cost": 19.16
+      "cost": 42.68
     },
     {
       "name": "southindia",
-      "cost": 18.46
+      "cost": 22.73
     },
     {
-      "name": "canadaeast",
-      "cost": 16.38
+      "name": "eastasia",
+      "cost": 20.22
+    },
+    {
+      "name": "southeastasia",
+      "cost": 18.12
     },
     {
       "name": "NorthCentralUs",
-      "cost": 9.28
+      "cost": 9.13
+    },
+    {
+      "name": "canadaeast",
+      "cost": 4.02
     },
     {
       "name": "uksouth",
-      "cost": 0.13
+      "cost": 0.15
     },
     {
       "name": "centralindia",
-      "cost": 0.1
+      "cost": 0.06
     },
     {
       "name": "Europe",
@@ -5373,123 +5397,127 @@
   "dailyTrend": [
     {
       "date": "2026-07-01",
-      "cost": 16270.32
+      "cost": 15346.39
     },
     {
       "date": "2026-07-02",
-      "cost": 3421.55
+      "cost": 1686.59
     },
     {
       "date": "2026-07-03",
-      "cost": 8136.27
+      "cost": 9058.74
     },
     {
       "date": "2026-07-04",
-      "cost": 4688.38
+      "cost": 5426.64
     },
     {
       "date": "2026-07-05",
-      "cost": 3740.98
+      "cost": 3397.37
     },
     {
       "date": "2026-07-06",
-      "cost": 3617.41
+      "cost": 1813.29
     },
     {
       "date": "2026-07-07",
-      "cost": 3500.11
+      "cost": 4954.51
     },
     {
       "date": "2026-07-08",
-      "cost": 1869.12
+      "cost": 1350.27
     },
     {
       "date": "2026-07-09",
-      "cost": 3302.03
+      "cost": 2967.18
     },
     {
       "date": "2026-07-10",
-      "cost": 3971.3
+      "cost": 2262.47
     },
     {
       "date": "2026-07-11",
-      "cost": 6140.05
+      "cost": 4189.69
     },
     {
       "date": "2026-07-12",
-      "cost": 1417.54
+      "cost": 949.58
     },
     {
       "date": "2026-07-13",
-      "cost": 8366.05
+      "cost": 8587.83
     },
     {
       "date": "2026-07-14",
-      "cost": 3265.84
+      "cost": 1985.96
     },
     {
       "date": "2026-07-15",
-      "cost": 36500.8
+      "cost": 34470.93
     },
     {
       "date": "2026-07-16",
-      "cost": 4597.97
+      "cost": 4254.56
     },
     {
       "date": "2026-07-17",
-      "cost": 2216.27
+      "cost": 3881.15
     },
     {
       "date": "2026-07-18",
-      "cost": 1508.47
+      "cost": 944.71
     },
     {
       "date": "2026-07-19",
-      "cost": 12268.86
+      "cost": 11350.09
     },
     {
       "date": "2026-07-20",
-      "cost": 3579.32
+      "cost": 2392.28
     },
     {
       "date": "2026-07-21",
-      "cost": 101153.87
+      "cost": 97610.16
     },
     {
       "date": "2026-07-22",
-      "cost": 9522.95
+      "cost": 10305.16
     },
     {
       "date": "2026-07-23",
-      "cost": 4032.35
+      "cost": 4533.37
     },
     {
       "date": "2026-07-24",
-      "cost": 1778.98
+      "cost": 2019.43
     },
     {
       "date": "2026-07-25",
-      "cost": 973.55
+      "cost": 3142.28
     },
     {
       "date": "2026-07-26",
-      "cost": 2894.11
+      "cost": 1488.53
     },
     {
       "date": "2026-07-27",
-      "cost": 1087.4
+      "cost": 3385.51
     },
     {
       "date": "2026-07-28",
-      "cost": 1725.71
+      "cost": 1616.53
     },
     {
       "date": "2026-07-29",
-      "cost": 1692.28
+      "cost": 3158.14
     },
     {
       "date": "2026-07-30",
-      "cost": 18848.92
+      "cost": 12708.35
+    },
+    {
+      "date": "2026-07-31",
+      "cost": 8229.69
     }
   ],
   "topResources": [
@@ -5554,7 +5582,7 @@
       "region": "northeurope"
     },
     {
-      "cost": 7572.85,
+      "cost": 6376.32,
       "clientKey": "etihad",
       "clientName": "Etihad Airways",
       "month": "2026-07",
@@ -5571,7 +5599,7 @@
       "clientName": "Etihad Airways",
       "month": "2026-07",
       "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
+      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
       "subscriptionName": "EDP2 PROD",
       "resourceGroup": "Unassigned",
       "service": "Microsoft Fabric",
@@ -5583,7 +5611,7 @@
       "clientName": "Etihad Airways",
       "month": "2026-07",
       "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
+      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
       "subscriptionName": "EDP2 PROD",
       "resourceGroup": "Unassigned",
       "service": "Microsoft Fabric",
@@ -5607,7 +5635,7 @@
       "clientName": "Etihad Airways",
       "month": "2026-07",
       "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
+      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
       "subscriptionName": "EDP2 PROD",
       "resourceGroup": "Unassigned",
       "service": "Virtual Machines",
@@ -5619,7 +5647,7 @@
       "clientName": "Etihad Airways",
       "month": "2026-07",
       "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
+      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
       "subscriptionName": "EDP2 PROD",
       "resourceGroup": "Unassigned",
       "service": "Virtual Machines",
@@ -5643,7 +5671,7 @@
       "clientName": "Etihad Airways",
       "month": "2026-07",
       "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
+      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
       "subscriptionName": "EDP2 PROD",
       "resourceGroup": "Unassigned",
       "service": "Microsoft Fabric",
@@ -5655,7 +5683,7 @@
       "clientName": "Etihad Airways",
       "month": "2026-07",
       "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
+      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
       "subscriptionName": "EDP2 PROD",
       "resourceGroup": "Unassigned",
       "service": "Microsoft Fabric",
@@ -5691,7 +5719,7 @@
       "clientName": "Etihad Airways",
       "month": "2026-07",
       "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
+      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
       "subscriptionName": "EDP2 PROD",
       "resourceGroup": "Unassigned",
       "service": "Storage",
@@ -5703,7 +5731,7 @@
       "clientName": "Etihad Airways",
       "month": "2026-07",
       "resourceName": "",
-      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
+      "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
       "subscriptionName": "EDP2 PROD",
       "resourceGroup": "Unassigned",
       "service": "Storage",
@@ -5722,7 +5750,7 @@
       "region": "westeurope"
     },
     {
-      "cost": 2548.65,
+      "cost": 2677.98,
       "clientKey": "difc",
       "clientName": "DIFC",
       "month": "2026-07",
@@ -5758,16 +5786,16 @@
       "region": "uaenorth"
     },
     {
-      "cost": 2064.38,
+      "cost": 1505.59,
       "clientKey": "etihad",
       "clientName": "Etihad Airways",
       "month": "2026-07",
-      "resourceName": "customer-25682944",
-      "resourceId": "/subscriptions/f3f76fa6-5d40-4141-b2ad-a7265533ffa0/providers/GitHub/EnterpriseAccount/customer-25682944",
-      "subscriptionName": "Source Code Management",
-      "resourceGroup": "Unassigned",
-      "service": "GitHub",
-      "region": "EastUS"
+      "resourceName": "vibevideostore",
+      "resourceId": "/subscriptions/ca5c19c2-6ca0-478d-aedd-aaf72b8f5731/resourceGroups/rg-hr-vibe-01/providers/Microsoft.Storage/storageAccounts/vibevideostore",
+      "subscriptionName": "EVS Production",
+      "resourceGroup": "rg-hr-vibe-01",
+      "service": "Storage",
+      "region": "uaenorth"
     },
     {
       "cost": 1467.16,
@@ -5797,10 +5825,10 @@
   "months": {
     "2026-07": {
       "summary": {
-        "totalCost": 276088.76,
+        "totalCost": 269467.38,
         "subscriptionCount": 53,
-        "resourceGroupCount": 951,
-        "resourceCount": 221589
+        "resourceGroupCount": 941,
+        "resourceCount": 202539
       },
       "monthList": [
         "2026-07"
@@ -5808,137 +5836,137 @@
       "costByClient": [
         {
           "name": "Etihad Airways",
-          "cost": 242120.83
+          "cost": 234199.12
         },
         {
           "name": "DIFC",
-          "cost": 33967.93
+          "cost": 35268.25
         }
       ],
       "costByMonth": [
         {
           "name": "2026-07",
-          "cost": 276088.76
+          "cost": 269467.38
         }
       ],
       "costBySubscription": [
         {
           "name": "EDP2 PROD",
-          "cost": 133738.89
+          "cost": 131365.27
         },
         {
           "name": "Connected Ops",
-          "cost": 33426.84
+          "cost": 32821.85
         },
         {
           "name": "Amadeus Data Platform",
-          "cost": 24432.16
+          "cost": 24413.65
         },
         {
           "name": "Digital",
-          "cost": 13663.87
+          "cost": 14230.82
         },
         {
           "name": "Spoke_EY_Digital",
-          "cost": 9679.17
+          "cost": 9548.6
         },
         {
           "name": "EDP2 PPE",
-          "cost": 8646.86
+          "cost": 7967.27
         },
         {
           "name": "InfoSEC-SOC",
-          "cost": 6066.32
-        },
-        {
-          "name": "Dev_Test_EY_Digital",
-          "cost": 5535.44
+          "cost": 6132.05
         },
         {
           "name": "Enterprise Application BI",
-          "cost": 5404.17
+          "cost": 5606.54
+        },
+        {
+          "name": "Dev_Test_EY_Digital",
+          "cost": 5573.81
         },
         {
           "name": "PPE_Spoke_EY_Digital",
-          "cost": 4595.23
+          "cost": 4395.58
         },
         {
           "name": "Az Network",
-          "cost": 3541.03
-        },
-        {
-          "name": "AI Hub - PPE",
-          "cost": 3411.07
+          "cost": 3661.19
         },
         {
           "name": "Digital Dev/Test",
-          "cost": 3105.29
+          "cost": 3211.93
         },
         {
-          "name": "Source Code Management",
-          "cost": 2064.38
+          "name": "AI Hub - PPE",
+          "cost": 2622.92
+        },
+        {
+          "name": "EVS Production",
+          "cost": 1754.52
         },
         {
           "name": "Managed File Transfer Prod",
-          "cost": 1867.04
-        },
-        {
-          "name": "Hub_EY_Digital",
-          "cost": 1530.58
-        },
-        {
-          "name": "SecOps Azure LogsToQRadar",
-          "cost": 1398.62
-        },
-        {
-          "name": "Crew PDA (F2O)",
-          "cost": 1331.6
-        },
-        {
-          "name": "Connected OPS PPE",
-          "cost": 1292.14
+          "cost": 1690.15
         },
         {
           "name": "Enterprise Application Dev/Test",
-          "cost": 1187.26
-        },
-        {
-          "name": "AI HUB",
-          "cost": 1014.27
-        },
-        {
-          "name": "FPR production",
-          "cost": 1009.78
+          "cost": 1227.66
         },
         {
           "name": "Copilot Cowork",
-          "cost": 1000.0
+          "cost": 1198.07
         },
         {
-          "name": "SecurityOperations Azure QRadar Inegration",
-          "cost": 751.8
+          "name": "FPR production",
+          "cost": 1133.35
         },
         {
-          "name": "Landing Zone",
-          "cost": 682.39
+          "name": "Source Code Management",
+          "cost": 1085.17
+        },
+        {
+          "name": "Hub_EY_Digital",
+          "cost": 974.62
+        },
+        {
+          "name": "Crew PDA (F2O)",
+          "cost": 973.46
+        },
+        {
+          "name": "Connected OPS PPE",
+          "cost": 942.29
+        },
+        {
+          "name": "AI HUB",
+          "cost": 856.37
+        },
+        {
+          "name": "Conversation Platform - PROD",
+          "cost": 732.29
+        },
+        {
+          "name": "SecOps Azure LogsToQRadar",
+          "cost": 623.96
         }
       ],
       "costByService": [
         {
           "name": "Storage",
-          "cost": 81169.3
+          "cost": 80224.21
         },
         {
           "name": "Virtual Machines",
-          "cost": 53403.52
+          "cost": 50132.38
         },
         {
           "name": "SaaS",
-          "cost": 36043.15
+          "cost": 35683.86
         },
         {
           "name": "Azure Synapse Analytics",
-          "cost": 28609.36
+          "cost": 28248.81
         },
         {
           "name": "Microsoft Fabric",
@@ -5946,89 +5974,89 @@
         },
         {
           "name": "Azure Cosmos DB",
-          "cost": 8616.28
+          "cost": 8659.78
         },
         {
           "name": "Azure App Service",
-          "cost": 4476.11
-        },
-        {
-          "name": "Azure Databricks",
-          "cost": 4428.42
+          "cost": 4560.56
         },
         {
           "name": "Foundry Models",
-          "cost": 3689.65
+          "cost": 3841.22
+        },
+        {
+          "name": "Azure Databricks",
+          "cost": 3724.49
         },
         {
           "name": "API Management",
-          "cost": 3239.64
+          "cost": 3353.06
         },
         {
           "name": "Azure Database for PostgreSQL",
-          "cost": 3151.34
+          "cost": 3126.44
         },
         {
           "name": "Virtual Network",
-          "cost": 3022.33
-        },
-        {
-          "name": "Log Analytics",
-          "cost": 2823.3
+          "cost": 2610.63
         },
         {
           "name": "Foundry Tools",
-          "cost": 2444.48
+          "cost": 2594.53
         },
         {
-          "name": "GitHub",
-          "cost": 2104.1
-        },
-        {
-          "name": "Azure Data Factory v2",
-          "cost": 1742.89
-        },
-        {
-          "name": "Redis Cache",
-          "cost": 1732.26
-        },
-        {
-          "name": "SQL Database",
-          "cost": 1721.64
-        },
-        {
-          "name": "Application Gateway",
-          "cost": 1532.66
-        },
-        {
-          "name": "Microsoft Copilot Studio",
-          "cost": 1175.67
-        },
-        {
-          "name": "Load Balancer",
-          "cost": 1092.32
-        },
-        {
-          "name": "Azure Front Door Service",
-          "cost": 999.07
-        },
-        {
-          "name": "Azure Bastion",
-          "cost": 998.82
-        },
-        {
-          "name": "Azure Firewall",
-          "cost": 912.75
+          "name": "Log Analytics",
+          "cost": 2243.79
         },
         {
           "name": "Bandwidth",
-          "cost": 802.53
+          "cost": 1958.02
+        },
+        {
+          "name": "SQL Database",
+          "cost": 1788.9
+        },
+        {
+          "name": "Redis Cache",
+          "cost": 1723.55
+        },
+        {
+          "name": "Azure Data Factory v2",
+          "cost": 1564.47
+        },
+        {
+          "name": "Application Gateway",
+          "cost": 1385.08
+        },
+        {
+          "name": "Microsoft Copilot Studio",
+          "cost": 1200.7
+        },
+        {
+          "name": "GitHub",
+          "cost": 1184.46
+        },
+        {
+          "name": "Load Balancer",
+          "cost": 1054.54
+        },
+        {
+          "name": "Azure Bastion",
+          "cost": 995.62
+        },
+        {
+          "name": "Azure Front Door Service",
+          "cost": 973.76
+        },
+        {
+          "name": "Azure Firewall",
+          "cost": 943.47
         }
       ],
       "costByResourceGroup": [
         {
           "name": "Unassigned",
-          "cost": 155575.91
+          "cost": 154705.8
         },
         {
           "name": "ComplexEventProcessingMonthlyBilling",
@@ -6036,101 +6064,101 @@
         },
         {
           "name": "rg-edp-prod-data-storage-platform",
-          "cost": 7581.87
+          "cost": 6382.31
         },
         {
           "name": "IS_Foundry",
-          "cost": 3230.55
+          "cost": 3236.71
         },
         {
           "name": "PRODUCTION",
-          "cost": 2567.42
+          "cost": 2697.11
         },
         {
           "name": "rg-compliancesentinel",
-          "cost": 2199.41
+          "cost": 2357.65
         },
         {
           "name": "MC_RG-THREATREAPER_AKS-THREATREAPER_UAENORTH",
-          "cost": 1981.14
-        },
-        {
-          "name": "central-infosec-ms-weu",
-          "cost": 1980.24
+          "cost": 2007.81
         },
         {
           "name": "rg-net01",
-          "cost": 1814.35
+          "cost": 1875.6
         },
         {
           "name": "Production",
-          "cost": 1813.37
-        },
-        {
-          "name": "rg-edp-prod-data-serving-platform",
-          "cost": 1798.57
-        },
-        {
-          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
-          "cost": 1768.96
+          "cost": 1862.67
         },
         {
           "name": "rg-intelligenceonboarding",
-          "cost": 1652.53
-        },
-        {
-          "name": "RG-MFT-PROD-INGEST",
-          "cost": 1498.9
-        },
-        {
-          "name": "rg-spaces",
-          "cost": 1335.63
+          "cost": 1681.7
         },
         {
           "name": "rrg-edp-prod-data-ingest-process-platform",
-          "cost": 1332.95
+          "cost": 1594.18
         },
         {
-          "name": "rg-edp-cops-ppe-realtime-ingest-process-platform",
-          "cost": 1283.69
+          "name": "rg-hr-vibe-01",
+          "cost": 1574.18
         },
         {
-          "name": "rg-synapsedev",
-          "cost": 1181.9
-        },
-        {
-          "name": "copilot-credits-rg",
-          "cost": 1175.67
-        },
-        {
-          "name": "rg-aiprospecting",
-          "cost": 1171.26
-        },
-        {
-          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-BODBWEMHHFHVM",
-          "cost": 1103.39
+          "name": "central-infosec-ms-weu",
+          "cost": 1511.35
         },
         {
           "name": "rg-edp-cops-prod-realtime-ingest-process-platform",
-          "cost": 1010.27
+          "cost": 1491.98
         },
         {
-          "name": "DATABRICKS-RG-AZDB-EDPPROD-COPS-UAENORTH-YR5GMPTO4HLYM",
-          "cost": 999.84
+          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-PRIM-YIQC4CP4Q3TS6",
+          "cost": 1390.82
         },
         {
-          "name": "rg-aics",
-          "cost": 982.36
+          "name": "rg-spaces",
+          "cost": 1382.03
         },
         {
-          "name": "DATABRICKS-RG-AZDB-EDP-PROD-UAENORTH-EXPLORATORY-2JIMZJYDE7PGS",
-          "cost": 978.25
+          "name": "RG-MFT-PROD-INGEST",
+          "cost": 1333.28
+        },
+        {
+          "name": "rg-synapsedev",
+          "cost": 1222.25
+        },
+        {
+          "name": "rg-aiprospecting",
+          "cost": 1217.88
+        },
+        {
+          "name": "copilot-credits-rg",
+          "cost": 1200.7
+        },
+        {
+          "name": "rg-edp-prod-data-serving-platform",
+          "cost": 1169.52
+        },
+        {
+          "name": "rg-edp-prod-cbi-data-storage-platform",
+          "cost": 1001.25
+        },
+        {
+          "name": "rg-guestvalue-data-ingest-process-platform",
+          "cost": 986.28
+        },
+        {
+          "name": "MC_RG-MAGONEAI_MAGONEAI-AKS_UAENORTH",
+          "cost": 980.11
+        },
+        {
+          "name": "rg-govservices",
+          "cost": 972.9
         }
       ],
       "costByRegion": [
         {
           "name": "uaenorth",
-          "cost": 194915.95
+          "cost": 190552.09
         },
         {
           "name": "Unassigned",
@@ -6138,11 +6166,11 @@
         },
         {
           "name": "westeurope",
-          "cost": 17554.56
+          "cost": 16330.07
         },
         {
           "name": "northeurope",
-          "cost": 13687.67
+          "cost": 13738.67
         },
         {
           "name": "Unknown",
@@ -6150,63 +6178,63 @@
         },
         {
           "name": "All Regions",
-          "cost": 4987.01
-        },
-        {
-          "name": "EastUS",
-          "cost": 2164.77
+          "cost": 4589.5
         },
         {
           "name": "uaecentral",
-          "cost": 1673.64
+          "cost": 1899.11
         },
         {
           "name": "EastUS2",
-          "cost": 1365.66
+          "cost": 1418.49
+        },
+        {
+          "name": "EastUS",
+          "cost": 1229.93
         },
         {
           "name": "swedencentral",
-          "cost": 516.85
+          "cost": 531.95
         },
         {
           "name": "CentralUS",
-          "cost": 278.96
+          "cost": 281.93
         },
         {
           "name": "WestUS",
-          "cost": 150.83
+          "cost": 138.72
         },
         {
           "name": "westus2",
-          "cost": 69.73
-        },
-        {
-          "name": "eastasia",
-          "cost": 19.79
-        },
-        {
-          "name": "southeastasia",
-          "cost": 19.16
+          "cost": 42.68
         },
         {
           "name": "southindia",
-          "cost": 18.46
+          "cost": 22.73
         },
         {
-          "name": "canadaeast",
-          "cost": 16.38
+          "name": "eastasia",
+          "cost": 20.22
+        },
+        {
+          "name": "southeastasia",
+          "cost": 18.12
         },
         {
           "name": "NorthCentralUs",
-          "cost": 9.28
+          "cost": 9.13
+        },
+        {
+          "name": "canadaeast",
+          "cost": 4.02
         },
         {
           "name": "uksouth",
-          "cost": 0.13
+          "cost": 0.15
         },
         {
           "name": "centralindia",
-          "cost": 0.1
+          "cost": 0.06
         },
         {
           "name": "Europe",
@@ -6224,123 +6252,127 @@
       "dailyTrend": [
         {
           "date": "2026-07-01",
-          "cost": 16270.32
+          "cost": 15346.39
         },
         {
           "date": "2026-07-02",
-          "cost": 3421.55
+          "cost": 1686.59
         },
         {
           "date": "2026-07-03",
-          "cost": 8136.27
+          "cost": 9058.74
         },
         {
           "date": "2026-07-04",
-          "cost": 4688.38
+          "cost": 5426.64
         },
         {
           "date": "2026-07-05",
-          "cost": 3740.98
+          "cost": 3397.37
         },
         {
           "date": "2026-07-06",
-          "cost": 3617.41
+          "cost": 1813.29
         },
         {
           "date": "2026-07-07",
-          "cost": 3500.11
+          "cost": 4954.51
         },
         {
           "date": "2026-07-08",
-          "cost": 1869.12
+          "cost": 1350.27
         },
         {
           "date": "2026-07-09",
-          "cost": 3302.03
+          "cost": 2967.18
         },
         {
           "date": "2026-07-10",
-          "cost": 3971.3
+          "cost": 2262.47
         },
         {
           "date": "2026-07-11",
-          "cost": 6140.05
+          "cost": 4189.69
         },
         {
           "date": "2026-07-12",
-          "cost": 1417.54
+          "cost": 949.58
         },
         {
           "date": "2026-07-13",
-          "cost": 8366.05
+          "cost": 8587.83
         },
         {
           "date": "2026-07-14",
-          "cost": 3265.84
+          "cost": 1985.96
         },
         {
           "date": "2026-07-15",
-          "cost": 36500.8
+          "cost": 34470.93
         },
         {
           "date": "2026-07-16",
-          "cost": 4597.97
+          "cost": 4254.56
         },
         {
           "date": "2026-07-17",
-          "cost": 2216.27
+          "cost": 3881.15
         },
         {
           "date": "2026-07-18",
-          "cost": 1508.47
+          "cost": 944.71
         },
         {
           "date": "2026-07-19",
-          "cost": 12268.86
+          "cost": 11350.09
         },
         {
           "date": "2026-07-20",
-          "cost": 3579.32
+          "cost": 2392.28
         },
         {
           "date": "2026-07-21",
-          "cost": 101153.87
+          "cost": 97610.16
         },
         {
           "date": "2026-07-22",
-          "cost": 9522.95
+          "cost": 10305.16
         },
         {
           "date": "2026-07-23",
-          "cost": 4032.35
+          "cost": 4533.37
         },
         {
           "date": "2026-07-24",
-          "cost": 1778.98
+          "cost": 2019.43
         },
         {
           "date": "2026-07-25",
-          "cost": 973.55
+          "cost": 3142.28
         },
         {
           "date": "2026-07-26",
-          "cost": 2894.11
+          "cost": 1488.53
         },
         {
           "date": "2026-07-27",
-          "cost": 1087.4
+          "cost": 3385.51
         },
         {
           "date": "2026-07-28",
-          "cost": 1725.71
+          "cost": 1616.53
         },
         {
           "date": "2026-07-29",
-          "cost": 1692.28
+          "cost": 3158.14
         },
         {
           "date": "2026-07-30",
-          "cost": 18848.92
+          "cost": 12708.35
+        },
+        {
+          "date": "2026-07-31",
+          "cost": 8229.69
         }
       ],
       "topResources": [
@@ -6405,7 +6437,7 @@
           "region": "northeurope"
         },
         {
-          "cost": 7572.85,
+          "cost": 6376.32,
           "clientKey": "etihad",
           "clientName": "Etihad Airways",
           "month": "2026-07",
@@ -6422,7 +6454,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Microsoft Fabric",
@@ -6434,7 +6466,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/676f6972-5034-4136-abfe-4fcdf4bfc693/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/87017537-77e5-4c01-8d4f-9c48c3944391/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Microsoft Fabric",
@@ -6458,7 +6490,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Virtual Machines",
@@ -6470,7 +6502,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/41816840-dcc1-4242-8152-a8100b86f11a/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/a374f883-a22b-469c-8c2d-5b6ce88c4da4/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Virtual Machines",
@@ -6494,7 +6526,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Microsoft Fabric",
@@ -6506,7 +6538,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/d2707216-19a1-45ec-9d07-46a136d9fb93/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/dfe6ef7e-a988-4a4e-b3a2-d7382903de9d/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Microsoft Fabric",
@@ -6542,7 +6574,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Storage",
@@ -6554,7 +6586,7 @@
           "clientName": "Etihad Airways",
           "month": "2026-07",
           "resourceName": "",
-          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/c9f3ccaa-1674-459b-8b89-04cb944f3835/reservations/",
+          "resourceId": "/providers/Microsoft.Capacity/reservationOrders/f0f0f4e7-2a36-425c-8991-e166384494bf/reservations/",
           "subscriptionName": "EDP2 PROD",
           "resourceGroup": "Unassigned",
           "service": "Storage",
@@ -6573,7 +6605,7 @@
           "region": "westeurope"
         },
         {
-          "cost": 2548.65,
+          "cost": 2677.98,
           "clientKey": "difc",
           "clientName": "DIFC",
           "month": "2026-07",
@@ -6609,16 +6641,16 @@
           "region": "uaenorth"
         },
         {
-          "cost": 2064.38,
+          "cost": 1505.59,
           "clientKey": "etihad",
           "clientName": "Etihad Airways",
           "month": "2026-07",
-          "resourceName": "customer-25682944",
-          "resourceId": "/subscriptions/f3f76fa6-5d40-4141-b2ad-a7265533ffa0/providers/GitHub/EnterpriseAccount/customer-25682944",
-          "subscriptionName": "Source Code Management",
-          "resourceGroup": "Unassigned",
-          "service": "GitHub",
-          "region": "EastUS"
+          "resourceName": "vibevideostore",
+          "resourceId": "/subscriptions/ca5c19c2-6ca0-478d-aedd-aaf72b8f5731/resourceGroups/rg-hr-vibe-01/providers/Microsoft.Storage/storageAccounts/vibevideostore",
+          "subscriptionName": "EVS Production",
+          "resourceGroup": "rg-hr-vibe-01",
+          "service": "Storage",
+          "region": "uaenorth"
         },
         {
           "cost": 1467.16,
