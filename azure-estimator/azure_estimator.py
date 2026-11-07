@@ -556,11 +556,10 @@ PRICERS = {"vm": price_vm, "disk": price_disk, "sql_db": price_sql, "sql_mi": pr
 def _rows_xlsx(path):
     import openpyxl
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
-    out = {}
-    for ws in wb.worksheets:
-        rows = [list(r) for r in ws.iter_rows(values_only=True)]
-        out[ws.title] = rows
-    return out
+    try:
+        return {ws.title: [list(r) for r in ws.iter_rows(values_only=True)] for ws in wb.worksheets}
+    finally:
+        wb.close()                      # release the file handle (Windows keeps read-only workbooks locked)
 
 
 def _rows_csv(path):
